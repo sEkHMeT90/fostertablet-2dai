@@ -8,6 +8,7 @@
     drop table estados_mesa;
     drop table lineas_factura;
     drop table facturas;
+    drop table tipo_pago;
     drop table guarniciones;
     drop table lineas_pedido; 
     drop table pedidos;
@@ -89,11 +90,20 @@
         CONSTRAINT FK_GUARNICION_2 FOREIGN KEY (codigo_guarnicion) REFERENCES productos (codigo)
     );
     
+    CREATE TABLE tipos_pago(
+        codigo number(3),
+        nombre varchar2(30),
+        CONSTRAINT PK_TIPO_PAGO PRIMARY KEY (codigo),
+        CONSTRAINT UK_TIPO_PAGO UNIQUE (nombre)
+    );
+    
     CREATE TABLE facturas(
         codigo number(8),
         fecha  date not null,
         precio_total number(6,2) not null,
-        CONSTRAINT PK_FACTURAS PRIMARY KEY (codigo)
+        codigo_tipo_pago number(3) not null,
+        CONSTRAINT PK_FACTURAS PRIMARY KEY (codigo),
+        CONSTRAINT FK_FACTURAS FOREIGN KEY (codigo_tipo_pago) REFERENCES tipos_pago (codigo)
     );
     
     CREATE TABLE lineas_factura(
@@ -159,17 +169,5 @@
         CONSTRAINT FK_PRODUCTOS_PEDIR FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
     );
 
-
-    INSERT INTO estados_mesa (codigo, nombre) VALUES (1, 'Libre');
-    INSERT INTO estados_mesa (codigo, nombre) VALUES (2, 'Ocupada');
-    INSERT INTO estados_mesa (codigo, nombre) VALUES (3, 'Esperando pedido');
-    INSERT INTO estados_mesa (codigo, nombre) VALUES (4, 'Esperando ticket');
-    INSERT INTO estados_mesa (codigo, nombre) VALUES (5, 'Esperando cobro');
-    INSERT INTO estados_mesa (codigo, nombre) VALUES (6, 'Por limpiar');
-
-    INSERT INTO estados_comanda (codigo, nombre) VALUES (1, 'Pendiente');
-    INSERT INTO estados_comanda (codigo, nombre) VALUES (2, 'En proceso');
-    INSERT INTO estados_comanda (codigo, nombre) VALUES (3, 'Entregada');
-    INSERT INTO estados_comanda (codigo, nombre) VALUES (4, 'Pagada');
 
     commit;
