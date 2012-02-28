@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XMLDocCommentSchema>
+
+  <CodeElement type="Module">
+    <Template>
+      <summary/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Class">
+    <Template>
+      <summary/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Structure">
+    <Template>
+      <summary/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Interface">
+    <Template>
+      <summary/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Enum">
+    <Template>
+      <summary/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Property">
+    <Template>
+      <summary/>
+      <param/>
+      <value/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <exception cref=""/>
+      <include file="" path=""/>
+      <param name=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+      <value/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Sub">
+    <Template>
+      <summary/>
+      <param/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <exception cref=""/>
+      <include file="" path=""/>
+      <param name=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Function">
+    <Template>
+      <summary/>
+      <param/>
+      <returns/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <exception cref=""/>
+      <include file="" path=""/>
+      <param name=""/>
+      <permission cref=""/>
+      <author/>
+      <returns/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Operator">
+    <Template>
+      <summary/>
+      <param/>
+      <returns/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <exception cref=""/>
+      <include file="" path=""/>
+      <param name=""/>
+      <permission cref=""/>
+      <author/>
+      <returns/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Declare">
+    <Template>
+      <summary/>
+      <param/>
+      <returns/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <exception cref=""/>
+      <include file="" path=""/>
+      <param name=""/>
+      <permission cref=""/>
+      <author/>
+      <returns/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Field">
+    <Template>
+      <summary/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Delegate">
+    <Template>
+      <summary/>
+      <param/>
+      <returns/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <param name=""/>
+      <permission cref=""/>
+      <author/>
+      <returns/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <CodeElement type="Event">
+    <Template>
+      <summary/>
+      <param/>
+      <author/>
+    </Template>
+    <CompletionList>
+      <include file="" path=""/>
+      <param name=""/>
+      <permission cref=""/>
+      <author/>
+      <summary/>
+    </CompletionList>
+  </CodeElement>
+
+  <ChildCompletionList>
+    <c/>
+    <code/>
+    <example/>
+    <list type="">
+      <listheader>
+        <term/>
+        <description/>
+      </listheader>
+    </list>
+    <para/>
+    <paramref name=""/>
+    <see cref=""/>
+    <seealso cref=""/>
+  </ChildCompletionList>
+
+</XMLDocCommentSchema>
