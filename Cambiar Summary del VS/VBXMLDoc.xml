@@ -71,6 +71,7 @@
       <summary/>
       <param/>
       <value/>
+	  <returns/>
       <author/>
     </Template>
     <CompletionList>
@@ -81,6 +82,7 @@
       <author/>
       <summary/>
       <value/>
+	  <returns/>
     </CompletionList>
   </CodeElement>
 
