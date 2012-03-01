@@ -24,15 +24,15 @@
     
     
     -- Mesas
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (1, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (2, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (3, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (4, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (5, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (6, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (7, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (8, 1);
-    INSERT INTO mesa (codigo, codigo_estado) VALUES (9, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 1, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 2, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 3, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 4, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 5, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 6, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 7, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 8, 1);
+    INSERT INTO mesa (codigo, codigo_estado) VALUES ( 9, 1);
     INSERT INTO mesa (codigo, codigo_estado) VALUES (10, 1);
     
     
@@ -77,147 +77,145 @@
     
     --entrantes - 8 3
     
-     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   1, 'Bacon and Cheese Fries', '',  2.90, 5.45, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   2, 'Flautas Santa Fe', '', 2.85, 5.35, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   3, 'Combo de Quesadillas', '', 3.20, 6.40, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   4, 'Aros de Cebolla', '', 2.30, 4.65, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   5, 'Fingers de Queso Grand Central', '', 2.65, 5.35, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   6, 'Hollywood Combo', '',  4.45, 8.95, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   7, 'Macho Nachos Supreme', '', 2.8, 5.95,  3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   9, 'Choice Chicken Fingers', '', 2.6, 5.35,  8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  10, 'Alitas de Pollo Duke"S Baby Wings', '', 2.25 4.55, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  11, 'Academy Potato Skins', '', 3, 6.00, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  12, 'Fingers de Mozarella', '', 2.55, 5.35, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  13, 'Jalapeños Tahoe', '', 3.15, 6.35, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  14, 'Macho Nachos', '', 2.32, 4.65, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  15, 'Tortita de Trigo Cinematic Chili Chicken', '', 6.15, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  16, 'Sopa de cebolla', '', 4.65, 8, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  17, 'Quesadilla Monterrey', '', 2.7, 5.20, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  1, 'Bacon and Cheese Fries', 'Descripción del producto',  2.90, 5.45, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  2, 'Flautas Santa Fe', 'Descripción del producto', 2.85, 5.35, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  3, 'Combo de Quesadillas', 'Descripción del producto', 3.20, 6.40, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  4, 'Aros de Cebolla', 'Descripción del producto', 2.30, 4.65, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  5, 'Fingers de Queso Grand Central', 'Descripción del producto', 2.65, 5.35, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  6, 'Hollywood Combo', 'Descripción del producto',  4.45, 8.95, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  7, 'Macho Nachos Supreme', 'Descripción del producto', 2.8, 5.95, 500,  3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  8, 'Choice Chicken Fingers', 'Descripción del producto', 2.6, 5.35, 500,  8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  9, 'Alitas de Pollo Duke"S Baby Wings', 'Descripción del producto', 2.25, 4.55, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 10, 'Academy Potato Skins', 'Descripción del producto', 3.00, 6.00, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 11, 'Fingers de Mozarella', 'Descripción del producto', 2.55, 5.35, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 12, 'Jalapeños Tahoe', 'Descripción del producto', 3.15, 6.35, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 13, 'Macho Nachos', 'Descripción del producto', 2.32, 4.65, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 14, 'Tortita de Trigo Cinematic Chili Chicken', 'Descripción del producto', 6.15, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 15, 'Sopa de cebolla', 'Descripción del producto', 4.65, 500, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 16, 'Quesadilla Monterrey', 'Descripción del producto', 2.7, 5.20, 500, 8, 3, 50, 1);
 
     --ensaladas - 1 1
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  18, 'Santa Mónica Salad', '', 3.50, 7.55, 1, 1, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  19, 'Caesar Salad', '', 3.50, 7.55, 1, 1, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  20, 'Camembert Salad', '', 3.50, 7.55, 1, 1, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  22, 'Tara Salad', '',  3.50, 7.55, 1, 1, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  23, 'Foster´S Super Chef Salad', '', 3.50, 7.55, 1, 1, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  24, 'Olivia´S Love Salad', '',  3.50, 7.55, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 17, 'Santa Mónica Salad', 'Descripción del producto', 3.50, 7.55, 500, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 18, 'Caesar Salad', 'Descripción del producto', 3.50, 7.55, 500, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 19, 'Camembert Salad', 'Descripción del producto', 3.50, 7.55, 500, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 20, 'Tara Salad', 'Descripción del producto',  3.50, 7.55, 500, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 21, 'Foster´S Super Chef Salad', 'Descripción del producto', 3.50, 7.55, 500, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 22, 'Olivia´S Love Salad', 'Descripción del producto',  3.50, 7.55, 500, 1, 1, 50, 1);
 
 
     -- texmex - 10  3
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  26, 'Fajitas El Paso', '', 8.8, 17.65,  10, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  27, 'Center Stage Cajun Pasta ', '', 3.7, 7.40,  10, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  28, 'Burrito Pancho ', '', 3.8, 7.70, 10, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  29, 'Al Sur De La Frontera ', '', 4.8, 9.65, 10, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  30, 'Chili Con Carne Rio Grande ', '', 3.15, 6.30,  10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 23, 'Fajitas El Paso', 'Descripción del producto', 8.8, 17.65, 500, 10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 24, 'Center Stage Cajun Pasta ', 'Descripción del producto', 3.7, 7.40, 500, 10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 25, 'Burrito Pancho ', 'Descripción del producto', 3.8, 7.70, 500, 10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 26, 'Al Sur De La Frontera ', 'Descripción del producto', 4.8, 9.65, 500, 10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 27, 'Chili Con Carne Rio Grande ', 'Descripción del producto', 3.15, 6.30, 500, 10, 3, 50, 1);
      
 
     -- sandwiches - 11   3
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  32, 'Cotton Club Sandwich', '', 4.0, 8.00,  11, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  33, 'Philly Cheese Steak Sandwich', '', 4.20,  8.40,  11, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  34, 'Caesar Sandwich ', '', 4.10, 8.20,  11, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  35, 'Turkey Sandwich', '', 3.70, 7.45,  11, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  36, 'Cotton Club Sandwich', '', 4.00,  8.00, 11, 3, 50, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  37, 'Gran Studio Sandwich', '', 4.20, 8.40,  11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 28, 'Cotton Club Sandwich', 'Descripción del producto', 4.0, 8.00, 500, 11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 29, 'Philly Cheese Steak Sandwich', 'Descripción del producto', 4.20,  8.40, 500, 11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 30, 'Caesar Sandwich ', 'Descripción del producto', 4.10, 8.20, 500, 11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 31, 'Turkey Sandwich', 'Descripción del producto', 3.70, 7.45, 500, 11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 32, 'Cotton Club Sandwich', 'Descripción del producto', 4.00, 8.00, 500, 11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 33, 'Gran Studio Sandwich', 'Descripción del producto', 4.20, 8.40, 500, 11, 3, 50, 1);
 
     -- pollo/pescado - 12  3  
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  38, 'Pollo Sunset Boulevard', '',  9.05, 12, 3, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  39, 'Pollo a la Barbacoa', '',  8.60, 1, 5, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  40, 'Pollo Beverly Hills', '',  9.05, 1, 5, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  41, 'Teriyaki Chicken Brochette', '',  9.20, 1, 5, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  42, 'Merluza Grill', '',  11.95, 1, 5, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  43, 'Salmón Papillón', '',  11.95, 1, 5, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  44, 'El Último Emperador', '', , 11.55, 1, 5, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 34, 'Pollo Sunset Boulevard', 'Descripción del producto', 4.50,  9.05, 500, 12, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 35, 'Pollo a la Barbacoa', 'Descripción del producto', 4.30, 8.60, 500, 12, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 36, 'Pollo Beverly Hills', 'Descripción del producto', 4.50, 9.05, 500, 12, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 37, 'Teriyaki Chicken Brochette', 'Descripción del producto', 4.60, 9.20, 500, 12, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 38, 'Merluza Grill', 'Descripción del producto', 5.50, 11.95, 500, 12, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 39, 'Salmón Papillón', 'Descripción del producto', 5.70, 11.95, 500, 12, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 40, 'El Último Emperador', 'Descripción del producto', 5.50, 11.55, 500, 12, 3, 50, 1);
 
-    -- parrila -- 6
+    -- parrilla --  13    3
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  45, 'Filet Mignon Supreme', '', '', 0, 0, 15.20, 1, 6, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  46, 'El Neoyorkino Buey', '', '', 0, 0, 12.45, 1, 6, 1, 50, 5, 1, 0, 1);   
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  47, 'El Neoyorkino Buey', '', '', 0, 0, 14.55, 1, 6, 2, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  48, 'El Ranchero', '', '', 0, 0, 10.00, 1, 6, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  49, 'Liteing Delight', '', '', 0, 0, 9.05, 1, 6, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 41, 'Filet Mignon Supreme', 'Descripción del producto', 7.60, 15.20, 500, 13, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 42, 'El Neoyorkino Buey', 'Descripción del producto', 7.20, 14.55, 500, 13, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 43, 'El Ranchero', 'Descripción del producto', 5.00, 10.00, 500, 13, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 44, 'Liteing Delight', 'Descripción del producto', 4.50, 9.05, 500, 13, 3, 50, 1);
 
-
-    -- costillas --7  
+    -- costillas --   14 3
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  50, 'Costillas California Honey', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  51, 'Costillas California Honey', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  52, 'Costillas Bar B-Q', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  53, 'Costillas Bar B-Q', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  54, 'Costillas Cajun Style', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  55, 'Costillas Cajun Style', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  56, 'Costillas Costillas Tex Hot Pepper', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  57, 'Costillas Costillas Tex Hot Pepper', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 45, 'Costillas California Honey', 'Descripción del producto', 4.40, 8.95, 500, 14, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 46, 'Costillas Bar B-Q', 'Descripción del producto', 4.40, 8.95, 500, 14, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 47, 'Costillas Cajun Style', 'Descripción del producto', 4.40, 8.95, 500, 14, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 48, 'Costillas Costillas Tex Hot Pepper', 'Descripción del producto', 4.40, 8.95, 500, 14, 3, 50, 1);
 
-    -- hamburguesas --8  
+    -- hamburguesas --   15 3
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  58, 'Director´S Choice', '', '', 0, 0, 7.90, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  61, 'Chicken Burguer', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  62, 'Onion Patty Melt', '', '', 0, 0, 8.15, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  63, 'Cheeseburger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  66, 'Champiburger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  69, 'Bacon Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  72, 'Bar B-Q Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  75, 'Todo Americano Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  78, 'Hawaiian Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  81, 'ChiliBurger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  84, 'Roquefort Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  87, 'Mariachi Burger', '', '', 0, 0, 7.20, 1, 8, 1,50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  90, 'Gourmet Mediterranian Burger', '', '', 0, 0, 9.85, 1, 8, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  91, 'Gourmet Le Grand Chef', '', '', 0, 0, 9.85, 1, 8, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 49, 'Director´S Choice', 'Descripción del producto', 3.85, 7.90, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 50, 'Chicken Burguer', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 51, 'Onion Patty Melt', 'Descripción del producto', 4.05, 8.15, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 52, 'Cheeseburger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 53, 'Champiburger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 54, 'Bacon Burger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 55, 'Bar B-Q Burger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 56, 'Todo Americano Burger', 'Descripción del producto', 3.60, 7.20,  500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 57, 'Hawaiian Burger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 60, 'ChiliBurger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 61, 'Roquefort Burger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 62, 'Mariachi Burger', 'Descripción del producto', 3.60, 7.20, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 63, 'Gourmet Mediterranian Burger', 'Descripción del producto', 4.90, 9.85, 500, 15, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 64, 'Gourmet Le Grand Chef', 'Descripción del producto', 4.90, 9.85, 500, 15, 3, 50, 1);
 
-    --platos infantiles --9 
+    --platos infantiles --  16   3
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  92, 'Hamburguesas', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  93, 'CheeseBurger', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  94, 'Fingers De Pollo', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  95, 'De Luxe Sandwich', '', '', 0, 0, 4.05, 1, 9, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  96, 'Bocaditos De Merluza Rebozada', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  97, 'Bocaditos Fingers De Queso', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 65, 'Hamburguesas', 'Descripción del producto', 'Descripción del producto', 2.10, 4.35, 500, 16, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 66, 'CheeseBurger', 'Descripción del producto', 'Descripción del producto', 2.10, 4.35, 500, 16, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 67, 'Fingers De Pollo', 'Descripción del producto', 2.10, 4.35, 500, 16, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 68, 'De Luxe Sandwich', 'Descripción del producto', 2.00, 4.05, 500, 16, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 69, 'Bocaditos De Merluza Rebozada', 'Descripción del producto', 2.10, 4.35, 500, 16, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 70, 'Bocaditos Fingers De Queso', 'Descripción del producto', 2.10, 4.35, 500, 16, 3, 50, 1);
 
 
-    --bebidas- -10
+    --bebidas- Refrescos -  4   2
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  98, 'Cocacola Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  99, 'Cocacola Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 100, 'Cocacola Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 101, 'Cocacola Ligth Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 102, 'Cocacola Ligth Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 103, 'Cocacola Ligth Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 104, 'Fanta Naranja Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 105, 'Fanta Naranja Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 106, 'Fanta Naranja Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 107, 'Fanta Limon Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 108, 'Fanta Limon Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 109, 'Fanta Limon Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 110, 'Agua 500ml', 'Bebida Refrescante', '', 0, 0, 1.25, 1, 10, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 111, 'Agua 1l', 'Bebida Refrescante', '', 0, 0, 2.00, 1, 10, 3, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 112, 'Cerveza Lata', 'Bebida Refrescante', '', 0, 0, 1.5, 1, 10, 1, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 113, 'Cerveza Tercio 33ml', 'Bebida Refrescante', '', 0, 0, 1.5, 1, 10, 2, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 114, 'Cerveza Pinta 0.5L', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 115, 'Cerveza Jarra 1L', 'Bebida Refrescante', '', 0, 0, 5, 1, 10, 3, 50, 5, 1, 0, 1);
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 116, 'Cerveza Barril 2.5L', 'Bebida Refrescante', '', 0, 0, 8, 1, 10, 3, 50, 5, 1, 0, 1);
-
-
-    --postres --11
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 71, 'Cocacola Lata', 'Descripción del producto', 0.7, 1.4, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 72, 'Cocacola Botella 500ml', 'Descripción del producto', 0.90, 1.9, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 73, 'Cocacola Jarra 1l', 'Descripción del producto', 1.45, 2.95, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 74, 'Cocacola Ligth Lata', 'Descripción del producto', 0.7, 1.4, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 75, 'Cocacola Ligth Botella 500ml', 'Descripción del producto', 0.9, 1.9, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 76, 'Cocacola Ligth Jarra 1l', 'Descripción del producto', 1.45, 2.95, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 77, 'Fanta Naranja Lata', 'Descripción del producto', 0.7, 1.4, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 78, 'Fanta Naranja Botella 500ml', 'Descripción del producto', 0.9, 1.9, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 79, 'Fanta Naranja Jarra 1l', 'Descripción del producto', 1.45, 2.95, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 80, 'Fanta Limon Lata', 'Descripción del producto', 0.7, 1.4, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 81, 'Fanta Limon Botella 500ml', 'Descripción del producto', 0.9, 1.9, 500, 4, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 82, 'Fanta Limon Jarra 1l', 'Descripción del producto', 1.45, 2.95, 500, 4, 2, 50, 1);
+        
+    -- Agua   6   2
     
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 117, 'Choco Cheese Cake', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 118, 'Pastel de Chocolate', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 119, 'Brownies', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 121, 'Sunny Pancakes', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 122, 'Combo De Postres', '', '', 0, 0, 7.60, 1, 11, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 123, 'The Stars Apangled Banana Split', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 124, 'Helado Supremo', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 125, 'Viva Tiramisu', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1);  
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 126, 'Profiteroles Al Estilo New Orleans', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 127, 'New:Oreo Cookie Sundae', '', '', 0, 0, 4.15, 1, 11, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 128, 'Hawaian Paradise', '', '', 0, 0, 4.00, 1, 11, 1, 50, 5, 1, 0, 1); 
-    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 129, 'Action Apple Pie', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1);
-
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 83, 'Agua 500ml', 'Descripción del producto', 0.7, 1.25, 500, 6, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 84, 'Agua 1l', 'Descripción del producto', 0.95, 2.00, 500, 6, 2, 50, 1);
     
+    -- Cerveza   5   2
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 85, 'Cerveza Lata', 'Descripción del producto', 0.70, 1.5, 500, 5, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 86, 'Cerveza Tercio 33ml', 'Descripción del producto', 0.70, 1.5, 500, 5, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 87, 'Cerveza Pinta 0.5L', 'Descripción del producto', 1.45, 2.95, 500, 5, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 88, 'Cerveza Jarra 1L', 'Descripción del producto', 2.5, 5, 500, 5, 2, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 89, 'Cerveza Barril 2.5L', 'Descripción del producto', 3.85, 8, 500, 5, 2, 50, 1);
+
+
+    --postres -- 17  3
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 90, 'Choco Cheese Cake', 'Descripción del producto', 1.95, 3.95, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 91, 'Pastel de Chocolate', 'Descripción del producto', 1.95, 3.95,500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 92, 'Brownies', 'Descripción del producto', 2.00, 4.20, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 93, 'Sunny Pancakes', 'Descripción del producto', 1.90, 3.80, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 94, 'Combo De Postres', 'Descripción del producto', 3.80, 7.60, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 95, 'The Stars Apangled Banana Split', 'Descripción del producto', 2.00, 4.20, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 96, 'Helado Supremo', 'Descripción del producto', 2.00, 4.20, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 97, 'Viva Tiramisu', 'Descripción del producto', 1.95, 3.95, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 98, 'Profiteroles Al Estilo New Orleans', 'Descripción del producto', 1.90, 3.80, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 99, 'New:Oreo Cookie Sundae', 'Descripción del producto', 1.95, 4.15, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (100, 'Hawaian Paradise', 'Descripción del producto',  1.95, 4.00, 500, 17, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (101, 'Action Apple Pie', 'Descripción del producto', 1.90, 3.80, 500, 17, 3, 50, 1);
+
     
     COMMIT;
