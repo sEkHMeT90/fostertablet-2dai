@@ -75,177 +75,148 @@
     
     -- SIN CAMBIAR 
     
-    --entrantes - 1
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bacon and Cheese Fries', '', '', 0, 0, 5.45, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Flautas Santa Fe', '', '', 0, 0, 5.35, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Combo de Quesadillas', '', '', 0, 0, 6.40, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Aros de Cebolla', '', '', 0, 0, 4.65, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fingers de Queso Grand Central', '', '', 0, 50, 5.35, 1, 1, 1, 0, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Hollywood Combo', '', '', 0, 0, 8.95, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Macho Nachos Supreme', '', '', 0, 0, 5.95, 1, 1, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Macho Nachos Supreme', '', '', 0, 0, 5.95, 1, 1, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Choice Chicken Fingers', '', '', 0, 0, 5.35, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Alitas de Pollo Duke"S Baby Wings', '', '', 0, 0, 4.55, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Academy Potato Skins', '', '', 0, 0, 6.00, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fingers de Mozarella', '', '', 0, 0, 5.35, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Jalapeños Tahoe', '', '', 0, 0, 6.35, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Macho Nachos', '', '', 0, 0, 4.65, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Tortita de Trigo Cinematic Chili Chicken', '', '', 0, 0, 6.15, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Sopa de cebolla', '', '', 0, 0, 4.65, 1, 1, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Quesadilla Monterrey', '', '', 0, 0, 5.20, 1, 1, 1, 50, 5, 1, 0, 1);
+    --entrantes - 8 3
+    
+     
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   1, 'Bacon and Cheese Fries', '',  2.90, 5.45, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   2, 'Flautas Santa Fe', '', 2.85, 5.35, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   3, 'Combo de Quesadillas', '', 3.20, 6.40, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   4, 'Aros de Cebolla', '', 2.30, 4.65, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   5, 'Fingers de Queso Grand Central', '', 2.65, 5.35, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   6, 'Hollywood Combo', '',  4.45, 8.95, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   7, 'Macho Nachos Supreme', '', 2.8, 5.95,  3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (   9, 'Choice Chicken Fingers', '', 2.6, 5.35,  8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  10, 'Alitas de Pollo Duke"S Baby Wings', '', 2.25 4.55, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  11, 'Academy Potato Skins', '', 3, 6.00, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  12, 'Fingers de Mozarella', '', 2.55, 5.35, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  13, 'Jalapeños Tahoe', '', 3.15, 6.35, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  14, 'Macho Nachos', '', 2.32, 4.65, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  15, 'Tortita de Trigo Cinematic Chili Chicken', '', 6.15, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  16, 'Sopa de cebolla', '', 4.65, 8, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  17, 'Quesadilla Monterrey', '', 2.7, 5.20, 8, 3, 50, 1);
 
-commit;
+    --ensaladas - 1 1
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  18, 'Santa Mónica Salad', '', 3.50, 7.55, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  19, 'Caesar Salad', '', 3.50, 7.55, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  20, 'Camembert Salad', '', 3.50, 7.55, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  22, 'Tara Salad', '',  3.50, 7.55, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  23, 'Foster´S Super Chef Salad', '', 3.50, 7.55, 1, 1, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  24, 'Olivia´S Love Salad', '',  3.50, 7.55, 1, 1, 50, 1);
 
---ensaladas -2
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Santa Mónica Salad', '', '', 0, 0, 7.55, 1, 2, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Caesar Salad', '', '', 0, 0, 7.55, 1, 2, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Camembert Salad', '', '', 0, 0, 7.55, 1,2, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Caesar Salad', '', '', 0, 0, 7.55, 1, 2, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Tara Salad', '', '', 0, 0, 7.55, 1, 2, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Foster"S Super Chef Salad', '', '', 0, 0, 7.55, 1, 2, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Olivia"S Love Salad', '', '', 0, 0, 7.55, 1, 2, 1, 50, 5, 1, 0, 1); 
 
-commit;
+    -- texmex - 10  3
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  26, 'Fajitas El Paso', '', 8.8, 17.65,  10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  27, 'Center Stage Cajun Pasta ', '', 3.7, 7.40,  10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  28, 'Burrito Pancho ', '', 3.8, 7.70, 10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  29, 'Al Sur De La Frontera ', '', 4.8, 9.65, 10, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  30, 'Chili Con Carne Rio Grande ', '', 3.15, 6.30,  10, 3, 50, 1);
+     
 
--- texmex -3 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fajitas El Paso ', '', '', 0, 0, 11.65, 1, 3, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fajitas El Paso', '', '', 0, 0, 17.65, 1, 3, 2, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Center Stage Cajun Pasta ', '', '', 0, 0, 7.40, 1, 3, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Burrito Pancho ', '', '', 0, 0, 7.70, 1, 3, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Al Sur De La Frontera ', '', '', 0, 0, 9.65, 1, 3, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Chili Con Carne Rio Grande ', '', '', 0, 0, 6.30, 1, 3, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Chili Con Carne Rio Grande ', '', '', 0, 0, 4.50, 1, 3, 1, 50, 5, 1, 0, 1);  
- 
-commit;
+    -- sandwiches - 11   3
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  32, 'Cotton Club Sandwich', '', 4.0, 8.00,  11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  33, 'Philly Cheese Steak Sandwich', '', 4.20,  8.40,  11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  34, 'Caesar Sandwich ', '', 4.10, 8.20,  11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  35, 'Turkey Sandwich', '', 3.70, 7.45,  11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  36, 'Cotton Club Sandwich', '', 4.00,  8.00, 11, 3, 50, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  37, 'Gran Studio Sandwich', '', 4.20, 8.40,  11, 3, 50, 1);
 
--- sandwiches -4 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cotton Club Sandwich', '', '', 0, 0, 8.00, 1, 4, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Philly Cheese Steak Sandwich', '', '', 0, 0, 8.40, 1, 4, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Caesar Sandwich ', '', '', 0, 0, 8.20, 1, 4, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Turkey Sandwich', '', '', 0, 0, 7.45, 1, 4, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cotton Club Sandwich', '', '', 0, 0, 8.00, 1, 4, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Gran Studio Sandwich', '', '', 0, 0, 8.40, 1, 4, 1, 50, 5, 1, 0, 1); 
+    -- pollo/pescado - 12  3  
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  38, 'Pollo Sunset Boulevard', '',  9.05, 12, 3, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  39, 'Pollo a la Barbacoa', '',  8.60, 1, 5, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  40, 'Pollo Beverly Hills', '',  9.05, 1, 5, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  41, 'Teriyaki Chicken Brochette', '',  9.20, 1, 5, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  42, 'Merluza Grill', '',  11.95, 1, 5, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  43, 'Salmón Papillón', '',  11.95, 1, 5, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  44, 'El Último Emperador', '', , 11.55, 1, 5, 1, 50, 5, 1, 0, 1); 
 
-commit;
+    -- parrila -- 6
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  45, 'Filet Mignon Supreme', '', '', 0, 0, 15.20, 1, 6, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  46, 'El Neoyorkino Buey', '', '', 0, 0, 12.45, 1, 6, 1, 50, 5, 1, 0, 1);   
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  47, 'El Neoyorkino Buey', '', '', 0, 0, 14.55, 1, 6, 2, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  48, 'El Ranchero', '', '', 0, 0, 10.00, 1, 6, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  49, 'Liteing Delight', '', '', 0, 0, 9.05, 1, 6, 1, 50, 5, 1, 0, 1); 
 
--- pollo/pescado -5  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Pollo Sunset Boulevard', '', '', 0, 0, 9.05, 1, 5, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Pollo a la Barbacoa', '', '', 0, 0, 8.60, 1, 5, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Pollo Beverly Hills', '', '', 0, 0, 9.05, 1, 5, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Teriyaki Chicken Brochette', '', '', 0, 0, 9.20, 1, 5, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Merluza Grill', '', '', 0, 0, 11.95, 1, 5, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Salmón Papillón', '', '', 0, 0, 11.95, 1, 5, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'El Último Emperador', '', '', 0, 0, 11.55, 1, 5, 1, 50, 5, 1, 0, 1); 
 
-commit;
+    -- costillas --7  
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  50, 'Costillas California Honey', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  51, 'Costillas California Honey', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  52, 'Costillas Bar B-Q', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  53, 'Costillas Bar B-Q', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  54, 'Costillas Cajun Style', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  55, 'Costillas Cajun Style', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  56, 'Costillas Costillas Tex Hot Pepper', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  57, 'Costillas Costillas Tex Hot Pepper', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
 
--- parrila --6
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Filet Mignon Supreme', '', '', 0, 0, 15.20, 1, 6, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'El Neoyorkino Buey', '', '', 0, 0, 12.45, 1, 6, 1, 50, 5, 1, 0, 1);   
-insert into producto values(FOSTERS."SeqProducto".nextval, 'El Neoyorkino Buey', '', '', 0, 0, 14.55, 1, 6, 2, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'El Ranchero', '', '', 0, 0, 10.00, 1, 6, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Liteing Delight', '', '', 0, 0, 9.05, 1, 6, 1, 50, 5, 1, 0, 1); 
+    -- hamburguesas --8  
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  58, 'Director´S Choice', '', '', 0, 0, 7.90, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  61, 'Chicken Burguer', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  62, 'Onion Patty Melt', '', '', 0, 0, 8.15, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  63, 'Cheeseburger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  66, 'Champiburger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  69, 'Bacon Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  72, 'Bar B-Q Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  75, 'Todo Americano Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  78, 'Hawaiian Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  81, 'ChiliBurger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  84, 'Roquefort Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  87, 'Mariachi Burger', '', '', 0, 0, 7.20, 1, 8, 1,50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  90, 'Gourmet Mediterranian Burger', '', '', 0, 0, 9.85, 1, 8, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  91, 'Gourmet Le Grand Chef', '', '', 0, 0, 9.85, 1, 8, 1, 50, 5, 1, 0, 1);
 
-commit;
+    --platos infantiles --9 
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  92, 'Hamburguesas', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  93, 'CheeseBurger', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  94, 'Fingers De Pollo', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  95, 'De Luxe Sandwich', '', '', 0, 0, 4.05, 1, 9, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  96, 'Bocaditos De Merluza Rebozada', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  97, 'Bocaditos Fingers De Queso', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
 
--- costillas --7 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas California Honey', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas California Honey', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas Bar B-Q', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas Bar B-Q', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas Cajun Style', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas Cajun Style', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas Costillas Tex Hot Pepper', '', '', 0, 0, 8.95, 1, 7, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Costillas Costillas Tex Hot Pepper', '', '', 0, 0, 12.65, 1, 7, 2, 50, 5, 1, 0, 1); 
 
-commit;
+    --bebidas- -10
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  98, 'Cocacola Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES (  99, 'Cocacola Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 100, 'Cocacola Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 101, 'Cocacola Ligth Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 102, 'Cocacola Ligth Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 103, 'Cocacola Ligth Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 104, 'Fanta Naranja Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 105, 'Fanta Naranja Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 106, 'Fanta Naranja Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 107, 'Fanta Limon Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 108, 'Fanta Limon Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 109, 'Fanta Limon Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 110, 'Agua 500ml', 'Bebida Refrescante', '', 0, 0, 1.25, 1, 10, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 111, 'Agua 1l', 'Bebida Refrescante', '', 0, 0, 2.00, 1, 10, 3, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 112, 'Cerveza Lata', 'Bebida Refrescante', '', 0, 0, 1.5, 1, 10, 1, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 113, 'Cerveza Tercio 33ml', 'Bebida Refrescante', '', 0, 0, 1.5, 1, 10, 2, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 114, 'Cerveza Pinta 0.5L', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 115, 'Cerveza Jarra 1L', 'Bebida Refrescante', '', 0, 0, 5, 1, 10, 3, 50, 5, 1, 0, 1);
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 116, 'Cerveza Barril 2.5L', 'Bebida Refrescante', '', 0, 0, 8, 1, 10, 3, 50, 5, 1, 0, 1);
 
--- hamburguesas --8 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Director"S Choice', '', '', 0, 0, 7.90, 1, 8, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Director"S Choice', '', '', 0, 0, 9.50, 1, 8, 2, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Director"S Choice', '', '', 0, 0, 10.55, 1, 8, 3, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Chicken Burguer', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Onion Patty Melt', '', '', 0, 0, 8.15, 1, 8, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cheeseburger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cheeseburger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cheeseburger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Champiburger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Champiburger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Champiburger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bacon Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bacon Burger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bacon Burger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bar B-Q Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bar B-Q Burger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bar B-Q Burger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Todo Americano Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Todo Americano Burger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Todo Americano Burger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Hawaiian Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Hawaiian Burger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Hawaiian Burger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'ChiliBurger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'ChiliBurger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'ChiliBurger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Roquefort Burger', '', '', 0, 0, 7.20, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Roquefort Burger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Roquefort Burger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Mariachi Burger', '', '', 0, 0, 7.20, 1, 8, 1,50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Mariachi Burger', '', '', 0, 0, 9.05, 1, 8, 2, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Mariachi Burger', '', '', 0, 0, 10.05, 1, 8, 3, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Gourmet Mediterranian Burger', '', '', 0, 0, 9.85, 1, 8, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Gourmet Le Grand Chef', '', '', 0, 0, 9.85, 1, 8, 1, 50, 5, 1, 0, 1);
 
-commit;
-
---platos infantiles --9 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Hamburguesas', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'CheeseBurger', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fingers De Pollo', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'De Luxe Sandwich', '', '', 0, 0, 4.05, 1, 9, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bocaditos De Merluza Rebozada', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Bocaditos Fingers De Queso', '', '', 0, 0, 4.35, 1, 9, 1, 50, 5, 1, 0, 1);  
-
-commit;
-
---bebidas- -10
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cocacola Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cocacola Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cocacola Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cocacola Ligth Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cocacola Ligth Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cocacola Ligth Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fanta Naranja Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fanta Naranja Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fanta Naranja Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fanta Limon Lata', 'Bebida Refrescante', '', 0, 0, 1.4, 1, 10, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fanta Limon Botella 500ml', 'Bebida Refrescante', '', 0, 0, 1.9, 1, 10, 2, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Fanta Limon Jarra 1l', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Agua 500ml', 'Bebida Refrescante', '', 0, 0, 1.25, 1, 10, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Agua 1l', 'Bebida Refrescante', '', 0, 0, 2.00, 1, 10, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cerveza Lata', 'Bebida Refrescante', '', 0, 0, 1.5, 1, 10, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cerveza Tercio 33ml', 'Bebida Refrescante', '', 0, 0, 1.5, 1, 10, 2, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cerveza Pinta 0.5L', 'Bebida Refrescante', '', 0, 0, 2.95, 1, 10, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cerveza Jarra 1L', 'Bebida Refrescante', '', 0, 0, 5, 1, 10, 3, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Cerveza Barril 2.5L', 'Bebida Refrescante', '', 0, 0, 8, 1, 10, 3, 50, 5, 1, 0, 1);
-
-commit;
-
---postres --11
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Choco Cheese Cake', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Pastel de Chocolate', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Brownies', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Brownies', '', '', 0, 0, 4.95, 1, 11, 2, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Sunny Pancakes', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Combo De Postres', '', '', 0, 0, 7.60, 1, 11, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'The Stars Apangled Banana Split', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Helado Supremo', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Viva Tiramisu', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1);  
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Profiteroles Al Estilo New Orleans', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'New:Oreo Cookie Sundae', '', '', 0, 0, 4.15, 1, 11, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Hawaian Paradise', '', '', 0, 0, 4.00, 1, 11, 1, 50, 5, 1, 0, 1); 
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Action Apple Pie', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1);
-insert into producto values(FOSTERS."SeqProducto".nextval, 'Action Apple Pie', '', '', 0, 0, 4.55, 1, 11, 2, 50, 5, 1, 0, 1); 
+    --postres --11
+    
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 117, 'Choco Cheese Cake', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 118, 'Pastel de Chocolate', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 119, 'Brownies', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 121, 'Sunny Pancakes', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 122, 'Combo De Postres', '', '', 0, 0, 7.60, 1, 11, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 123, 'The Stars Apangled Banana Split', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 124, 'Helado Supremo', '', '', 0, 0, 4.20, 1, 11, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 125, 'Viva Tiramisu', '', '', 0, 0, 3.95, 1, 11, 1, 50, 5, 1, 0, 1);  
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 126, 'Profiteroles Al Estilo New Orleans', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 127, 'New:Oreo Cookie Sundae', '', '', 0, 0, 4.15, 1, 11, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 128, 'Hawaian Paradise', '', '', 0, 0, 4.00, 1, 11, 1, 50, 5, 1, 0, 1); 
+    INSERT INTO producto (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, cantidad, activo) VALUES ( 129, 'Action Apple Pie', '', '', 0, 0, 3.80, 1, 11, 1, 50, 5, 1, 0, 1);
 
     
     

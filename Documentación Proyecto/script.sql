@@ -151,6 +151,7 @@
         codigo_comanda number(8),
         numero number(3),
         codigo_producto number(8) not null,
+        entregada number(1) not null,
         CONSTRAINT PK_LINEAS_COMANDA PRIMARY KEY (numero, codigo_comanda),
         CONSTRAINT FK_LINEAS_COMANDA FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
     );
