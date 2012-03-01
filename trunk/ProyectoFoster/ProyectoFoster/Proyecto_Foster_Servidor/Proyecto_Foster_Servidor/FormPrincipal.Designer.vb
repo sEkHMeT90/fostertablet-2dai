@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class FormPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -27,43 +27,37 @@ Partial Class Form1
         Me.tsmiCopiaSeguridad = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiRestaurarCopiaSeguridad = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiSalir = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenúToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiCobrar = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiFacturas = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiPedidos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ManualToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiConsultarFecturas = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiGenerarFacturas = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiModificarFecturas = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiPedidos = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiConsultarPedidos = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiAñadirPedidos = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiModificarPedidos = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiEliminarPedidos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiConsultarPedidos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PlatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PostresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenúToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BebidasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EntrantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InfantilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PlatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HamburguesasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CostillasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EntrantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TexMexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SandwichToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PollopescadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ParillaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InfantilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PostresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcompañamientoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EstadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManualToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LibreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OcupadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PendienteDePedidoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PendienteDeServirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ComiendoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PendienteDeCobroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NecesitaLimpiezaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DesactivadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiGenerarFacturas = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiModificarFecturas = New System.Windows.Forms.ToolStripMenuItem()
         Me.msBarra.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,7 +66,7 @@ Partial Class Form1
         Me.msBarra.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiArchivo, Me.tsmiCobrar, Me.tsmiFacturas, Me.tsmiPedidos, Me.MesasToolStripMenuItem, Me.MenúToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.msBarra.Location = New System.Drawing.Point(0, 0)
         Me.msBarra.Name = "msBarra"
-        Me.msBarra.Size = New System.Drawing.Size(894, 24)
+        Me.msBarra.Size = New System.Drawing.Size(784, 24)
         Me.msBarra.TabIndex = 0
         Me.msBarra.Text = "MenuStrip1"
         '
@@ -101,20 +95,6 @@ Partial Class Form1
         Me.tsmiSalir.Size = New System.Drawing.Size(210, 22)
         Me.tsmiSalir.Text = "Salir"
         '
-        'MenúToolStripMenuItem
-        '
-        Me.MenúToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BebidasToolStripMenuItem, Me.EntrantesToolStripMenuItem, Me.InfantilesToolStripMenuItem, Me.PlatosToolStripMenuItem, Me.PostresToolStripMenuItem, Me.AcompañamientoToolStripMenuItem})
-        Me.MenúToolStripMenuItem.Name = "MenúToolStripMenuItem"
-        Me.MenúToolStripMenuItem.Size = New System.Drawing.Size(120, 20)
-        Me.MenúToolStripMenuItem.Text = "Carta de productos"
-        '
-        'MesasToolStripMenuItem
-        '
-        Me.MesasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EstadoToolStripMenuItem, Me.VerToolStripMenuItem})
-        Me.MesasToolStripMenuItem.Name = "MesasToolStripMenuItem"
-        Me.MesasToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
-        Me.MesasToolStripMenuItem.Text = "Mesas"
-        '
         'tsmiCobrar
         '
         Me.tsmiCobrar.Name = "tsmiCobrar"
@@ -128,6 +108,24 @@ Partial Class Form1
         Me.tsmiFacturas.Size = New System.Drawing.Size(63, 20)
         Me.tsmiFacturas.Text = "Facturas"
         '
+        'tsmiConsultarFecturas
+        '
+        Me.tsmiConsultarFecturas.Name = "tsmiConsultarFecturas"
+        Me.tsmiConsultarFecturas.Size = New System.Drawing.Size(125, 22)
+        Me.tsmiConsultarFecturas.Text = "Consultar"
+        '
+        'tsmiGenerarFacturas
+        '
+        Me.tsmiGenerarFacturas.Name = "tsmiGenerarFacturas"
+        Me.tsmiGenerarFacturas.Size = New System.Drawing.Size(125, 22)
+        Me.tsmiGenerarFacturas.Text = "Generar"
+        '
+        'tsmiModificarFecturas
+        '
+        Me.tsmiModificarFecturas.Name = "tsmiModificarFecturas"
+        Me.tsmiModificarFecturas.Size = New System.Drawing.Size(125, 22)
+        Me.tsmiModificarFecturas.Text = "Modificar"
+        '
         'tsmiPedidos
         '
         Me.tsmiPedidos.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiConsultarPedidos, Me.tsmiAñadirPedidos, Me.tsmiModificarPedidos, Me.tsmiEliminarPedidos})
@@ -135,54 +133,61 @@ Partial Class Form1
         Me.tsmiPedidos.Size = New System.Drawing.Size(61, 20)
         Me.tsmiPedidos.Text = "Pedidos"
         '
-        'AyudaToolStripMenuItem
+        'tsmiConsultarPedidos
         '
-        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManualToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
-        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.AyudaToolStripMenuItem.Text = "Ayuda"
-        '
-        'ManualToolStripMenuItem
-        '
-        Me.ManualToolStripMenuItem.Name = "ManualToolStripMenuItem"
-        Me.ManualToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ManualToolStripMenuItem.Text = "Manual"
-        '
-        'AcercaDeToolStripMenuItem
-        '
-        Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
-        '
-        'tsmiConsultarFecturas
-        '
-        Me.tsmiConsultarFecturas.Name = "tsmiConsultarFecturas"
-        Me.tsmiConsultarFecturas.Size = New System.Drawing.Size(152, 22)
-        Me.tsmiConsultarFecturas.Text = "Consultar"
+        Me.tsmiConsultarPedidos.Name = "tsmiConsultarPedidos"
+        Me.tsmiConsultarPedidos.Size = New System.Drawing.Size(125, 22)
+        Me.tsmiConsultarPedidos.Text = "Consultar"
         '
         'tsmiAñadirPedidos
         '
         Me.tsmiAñadirPedidos.Name = "tsmiAñadirPedidos"
-        Me.tsmiAñadirPedidos.Size = New System.Drawing.Size(152, 22)
+        Me.tsmiAñadirPedidos.Size = New System.Drawing.Size(125, 22)
         Me.tsmiAñadirPedidos.Text = "Añadir"
         '
         'tsmiModificarPedidos
         '
         Me.tsmiModificarPedidos.Name = "tsmiModificarPedidos"
-        Me.tsmiModificarPedidos.Size = New System.Drawing.Size(152, 22)
+        Me.tsmiModificarPedidos.Size = New System.Drawing.Size(125, 22)
         Me.tsmiModificarPedidos.Text = "Modificar"
         '
         'tsmiEliminarPedidos
         '
         Me.tsmiEliminarPedidos.Name = "tsmiEliminarPedidos"
-        Me.tsmiEliminarPedidos.Size = New System.Drawing.Size(152, 22)
+        Me.tsmiEliminarPedidos.Size = New System.Drawing.Size(125, 22)
         Me.tsmiEliminarPedidos.Text = "Eliminar"
         '
-        'tsmiConsultarPedidos
+        'MesasToolStripMenuItem
         '
-        Me.tsmiConsultarPedidos.Name = "tsmiConsultarPedidos"
-        Me.tsmiConsultarPedidos.Size = New System.Drawing.Size(152, 22)
-        Me.tsmiConsultarPedidos.Text = "Consultar"
+        Me.MesasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.VerToolStripMenuItem})
+        Me.MesasToolStripMenuItem.Name = "MesasToolStripMenuItem"
+        Me.MesasToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.MesasToolStripMenuItem.Text = "Mesas"
+        '
+        'MenúToolStripMenuItem
+        '
+        Me.MenúToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BebidasToolStripMenuItem, Me.EntrantesToolStripMenuItem, Me.InfantilesToolStripMenuItem, Me.PlatosToolStripMenuItem, Me.PostresToolStripMenuItem, Me.AcompañamientoToolStripMenuItem})
+        Me.MenúToolStripMenuItem.Name = "MenúToolStripMenuItem"
+        Me.MenúToolStripMenuItem.Size = New System.Drawing.Size(120, 20)
+        Me.MenúToolStripMenuItem.Text = "Carta de productos"
+        '
+        'BebidasToolStripMenuItem
+        '
+        Me.BebidasToolStripMenuItem.Name = "BebidasToolStripMenuItem"
+        Me.BebidasToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.BebidasToolStripMenuItem.Text = "Bebidas"
+        '
+        'EntrantesToolStripMenuItem
+        '
+        Me.EntrantesToolStripMenuItem.Name = "EntrantesToolStripMenuItem"
+        Me.EntrantesToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.EntrantesToolStripMenuItem.Text = "Entrantes"
+        '
+        'InfantilesToolStripMenuItem
+        '
+        Me.InfantilesToolStripMenuItem.Name = "InfantilesToolStripMenuItem"
+        Me.InfantilesToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.InfantilesToolStripMenuItem.Text = "Infantiles"
         '
         'PlatosToolStripMenuItem
         '
@@ -190,18 +195,6 @@ Partial Class Form1
         Me.PlatosToolStripMenuItem.Name = "PlatosToolStripMenuItem"
         Me.PlatosToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.PlatosToolStripMenuItem.Text = "Platos"
-        '
-        'PostresToolStripMenuItem
-        '
-        Me.PostresToolStripMenuItem.Name = "PostresToolStripMenuItem"
-        Me.PostresToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.PostresToolStripMenuItem.Text = "Postres"
-        '
-        'BebidasToolStripMenuItem
-        '
-        Me.BebidasToolStripMenuItem.Name = "BebidasToolStripMenuItem"
-        Me.BebidasToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.BebidasToolStripMenuItem.Text = "Bebidas"
         '
         'HamburguesasToolStripMenuItem
         '
@@ -214,12 +207,6 @@ Partial Class Form1
         Me.CostillasToolStripMenuItem.Name = "CostillasToolStripMenuItem"
         Me.CostillasToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
         Me.CostillasToolStripMenuItem.Text = "Costillas"
-        '
-        'EntrantesToolStripMenuItem
-        '
-        Me.EntrantesToolStripMenuItem.Name = "EntrantesToolStripMenuItem"
-        Me.EntrantesToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.EntrantesToolStripMenuItem.Text = "Entrantes"
         '
         'TexMexToolStripMenuItem
         '
@@ -245,11 +232,11 @@ Partial Class Form1
         Me.ParillaToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
         Me.ParillaToolStripMenuItem.Text = "Parilla"
         '
-        'InfantilesToolStripMenuItem
+        'PostresToolStripMenuItem
         '
-        Me.InfantilesToolStripMenuItem.Name = "InfantilesToolStripMenuItem"
-        Me.InfantilesToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.InfantilesToolStripMenuItem.Text = "Infantiles"
+        Me.PostresToolStripMenuItem.Name = "PostresToolStripMenuItem"
+        Me.PostresToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.PostresToolStripMenuItem.Text = "Postres"
         '
         'AcompañamientoToolStripMenuItem
         '
@@ -257,12 +244,42 @@ Partial Class Form1
         Me.AcompañamientoToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.AcompañamientoToolStripMenuItem.Text = "Acompañamiento"
         '
-        'EstadoToolStripMenuItem
+        'AyudaToolStripMenuItem
         '
-        Me.EstadoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LibreToolStripMenuItem, Me.OcupadoToolStripMenuItem, Me.PendienteDePedidoToolStripMenuItem, Me.PendienteDeServirToolStripMenuItem, Me.ComiendoToolStripMenuItem, Me.PendienteDeCobroToolStripMenuItem, Me.NecesitaLimpiezaToolStripMenuItem, Me.DesactivadaToolStripMenuItem})
-        Me.EstadoToolStripMenuItem.Name = "EstadoToolStripMenuItem"
-        Me.EstadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EstadoToolStripMenuItem.Text = "Estado"
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManualToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        '
+        'ManualToolStripMenuItem
+        '
+        Me.ManualToolStripMenuItem.Name = "ManualToolStripMenuItem"
+        Me.ManualToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.ManualToolStripMenuItem.Text = "Manual"
+        '
+        'AcercaDeToolStripMenuItem
+        '
+        Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
+        '
+        'AgregarToolStripMenuItem
+        '
+        Me.AgregarToolStripMenuItem.Name = "AgregarToolStripMenuItem"
+        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AgregarToolStripMenuItem.Text = "Agregar"
+        '
+        'ModificarToolStripMenuItem
+        '
+        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModificarToolStripMenuItem.Text = "Modificar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'VerToolStripMenuItem
         '
@@ -270,75 +287,18 @@ Partial Class Form1
         Me.VerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.VerToolStripMenuItem.Text = "Ver"
         '
-        'LibreToolStripMenuItem
-        '
-        Me.LibreToolStripMenuItem.Name = "LibreToolStripMenuItem"
-        Me.LibreToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.LibreToolStripMenuItem.Text = "Libre"
-        '
-        'OcupadoToolStripMenuItem
-        '
-        Me.OcupadoToolStripMenuItem.Name = "OcupadoToolStripMenuItem"
-        Me.OcupadoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.OcupadoToolStripMenuItem.Text = "Ocupado"
-        '
-        'PendienteDePedidoToolStripMenuItem
-        '
-        Me.PendienteDePedidoToolStripMenuItem.Name = "PendienteDePedidoToolStripMenuItem"
-        Me.PendienteDePedidoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.PendienteDePedidoToolStripMenuItem.Text = "Pendiente de Pedido"
-        '
-        'PendienteDeServirToolStripMenuItem
-        '
-        Me.PendienteDeServirToolStripMenuItem.Name = "PendienteDeServirToolStripMenuItem"
-        Me.PendienteDeServirToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.PendienteDeServirToolStripMenuItem.Text = "Pendiente de Servir"
-        '
-        'ComiendoToolStripMenuItem
-        '
-        Me.ComiendoToolStripMenuItem.Name = "ComiendoToolStripMenuItem"
-        Me.ComiendoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.ComiendoToolStripMenuItem.Text = "Comiendo"
-        '
-        'PendienteDeCobroToolStripMenuItem
-        '
-        Me.PendienteDeCobroToolStripMenuItem.Name = "PendienteDeCobroToolStripMenuItem"
-        Me.PendienteDeCobroToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.PendienteDeCobroToolStripMenuItem.Text = "Pendiente de Cobro"
-        '
-        'NecesitaLimpiezaToolStripMenuItem
-        '
-        Me.NecesitaLimpiezaToolStripMenuItem.Name = "NecesitaLimpiezaToolStripMenuItem"
-        Me.NecesitaLimpiezaToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.NecesitaLimpiezaToolStripMenuItem.Text = "Necesita limpieza"
-        '
-        'DesactivadaToolStripMenuItem
-        '
-        Me.DesactivadaToolStripMenuItem.Name = "DesactivadaToolStripMenuItem"
-        Me.DesactivadaToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.DesactivadaToolStripMenuItem.Text = "Desactivada"
-        '
-        'tsmiGenerarFacturas
-        '
-        Me.tsmiGenerarFacturas.Name = "tsmiGenerarFacturas"
-        Me.tsmiGenerarFacturas.Size = New System.Drawing.Size(152, 22)
-        Me.tsmiGenerarFacturas.Text = "Generar"
-        '
-        'tsmiModificarFecturas
-        '
-        Me.tsmiModificarFecturas.Name = "tsmiModificarFecturas"
-        Me.tsmiModificarFecturas.Size = New System.Drawing.Size(152, 22)
-        Me.tsmiModificarFecturas.Text = "Modificar"
-        '
-        'Form1
+        'FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(894, 592)
+        Me.BackgroundImage = Global.Proyecto_Foster_Servidor.My.Resources.Resources.cartel_carta2
+        Me.ClientSize = New System.Drawing.Size(784, 201)
         Me.Controls.Add(Me.msBarra)
+        Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.msBarra
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "FormPrincipal"
+        Me.ShowInTaskbar = False
+        Me.Text = "Administración Foster Hollywood"
         Me.msBarra.ResumeLayout(False)
         Me.msBarra.PerformLayout()
         Me.ResumeLayout(False)
@@ -365,16 +325,6 @@ Partial Class Form1
     Friend WithEvents tsmiAñadirPedidos As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsmiModificarPedidos As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tsmiEliminarPedidos As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EstadoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents LibreToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents OcupadoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PendienteDePedidoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PendienteDeServirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ComiendoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PendienteDeCobroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NecesitaLimpiezaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents DesactivadaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents VerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BebidasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EntrantesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents InfantilesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -387,5 +337,9 @@ Partial Class Form1
     Friend WithEvents ParillaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PostresToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AcompañamientoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AgregarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents VerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
