@@ -1,0 +1,11 @@
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\bin\Debug\Proyecto_Foster_Servidor.exe
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\bin\Debug\Proyecto_Foster_Servidor.pdb
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\bin\Debug\Proyecto_Foster_Servidor.xml
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.FormPrincipal.resources
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.Resources.resources
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.exe
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.xml
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.pdb
