@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Proyecto_Foster_Cliente
+</name>
+</assembly>
+<members>
+<member name="P:Proyecto_Foster_Cliente.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Proyecto_Foster_Cliente.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member><member name="T:Proyecto_Foster_Cliente.My.Resources.Resources">
+	<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="T:Proyecto_Foster_Cliente.FormBienvenida">
+	<summary>
+  Pantalla de Bienvenida.
+ Sera la primera pantalla que vera el cliente al entregarle la tablet o 
+ sentarse en la mesa.
+ 
+ La aplicacion dispone de un ".ini" donde se guardara entre otros datos 
+ el numero de mesa asignado a la tablet. En caso de no disponer de 
+ ese dato se abrira una pantalla para seleccionar la mesa y se creara 
+ o actualizara el fichero ".ini".
+ 
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member>
+</members>
+</doc>
