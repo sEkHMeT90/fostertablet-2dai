@@ -1,0 +1,6 @@
+- Libre -> Verde
+- Ocupada -> Negra
+- Esperando pedido -> Rojo
+- Esperando ticket -> Naranja
+- Esperando cobro -> Amarilla
+- Por limpiar -> Marron
