@@ -91,7 +91,7 @@
     );
     
     CREATE TABLE tipos_pago(
-        codigo number(3),
+        codigo number(2),
         nombre varchar2(30),
         CONSTRAINT PK_TIPO_PAGO PRIMARY KEY (codigo),
         CONSTRAINT UK_TIPO_PAGO UNIQUE (nombre)
@@ -101,9 +101,15 @@
         codigo number(8),
         fecha  date not null,
         precio_total number(6,2) not null,
-        codigo_tipo_pago number(3) not null,
         CONSTRAINT PK_FACTURAS PRIMARY KEY (codigo),
-        CONSTRAINT FK_FACTURAS FOREIGN KEY (codigo_tipo_pago) REFERENCES tipos_pago (codigo)
+    );
+    
+    CREATE TABLE pagos_factura(
+		codigo_factura number(8),
+		codigo_tipo_pago number(2),
+		CONSTRAINT PK_PAGOS_FACTURA PRIMARY KEY (codigo_factura, codigo_tipo_pago),
+		CONSTRAINT FK_PAGOS_FACTURA_1 FOREIGN KEY (codigo_factura) REFERENCES facturas (codigo),
+		CONSTRAINT FK_PAGOS_FACTURA_2 FOREIGN KEY (codigo_tipo_pago) REFERENCES tipos_pago (codigo)
     );
     
     CREATE TABLE lineas_factura(
