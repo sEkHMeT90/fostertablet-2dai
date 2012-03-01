@@ -1,0 +1,10 @@
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\bin\Debug\Proyecto_Foster_Empleado.exe
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\bin\Debug\Proyecto_Foster_Empleado.pdb
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\bin\Debug\Proyecto_Foster_Empleado.xml
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.Resources.resources
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.exe
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.xml
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.pdb
