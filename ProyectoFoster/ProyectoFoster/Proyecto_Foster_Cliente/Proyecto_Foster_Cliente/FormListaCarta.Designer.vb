@@ -22,22 +22,29 @@ Partial Class FormListaCarta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormListaCarta))
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbCartel = New System.Windows.Forms.PictureBox()
         Me.pbPublicidad = New System.Windows.Forms.PictureBox()
         Me.pbPlatos = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.pbBebidas = New System.Windows.Forms.PictureBox()
+        Me.pbPostres = New System.Windows.Forms.PictureBox()
+        Me.pbEspeciales = New System.Windows.Forms.PictureBox()
         Me.pbAyuda = New System.Windows.Forms.PictureBox()
+        Me.pbComensalSeleccionado = New System.Windows.Forms.PictureBox()
+        Me.pbCambiarComensal = New System.Windows.Forms.PictureBox()
+        Me.ilIconosComensales = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCartel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPublicidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPlatos, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbBebidas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPostres, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbEspeciales, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbAyuda, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbComensalSeleccionado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbCambiarComensal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pbCerrar
@@ -81,32 +88,35 @@ Partial Class FormListaCarta
         Me.pbPlatos.TabIndex = 5
         Me.pbPlatos.TabStop = False
         '
-        'PictureBox4
+        'pbBebidas
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Black
-        Me.PictureBox4.Location = New System.Drawing.Point(313, 206)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(271, 166)
-        Me.PictureBox4.TabIndex = 6
-        Me.PictureBox4.TabStop = False
+        Me.pbBebidas.BackColor = System.Drawing.Color.Transparent
+        Me.pbBebidas.BackgroundImage = CType(resources.GetObject("pbBebidas.BackgroundImage"), System.Drawing.Image)
+        Me.pbBebidas.Location = New System.Drawing.Point(313, 206)
+        Me.pbBebidas.Name = "pbBebidas"
+        Me.pbBebidas.Size = New System.Drawing.Size(271, 166)
+        Me.pbBebidas.TabIndex = 6
+        Me.pbBebidas.TabStop = False
         '
-        'PictureBox5
+        'pbPostres
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Black
-        Me.PictureBox5.Location = New System.Drawing.Point(12, 392)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(271, 166)
-        Me.PictureBox5.TabIndex = 7
-        Me.PictureBox5.TabStop = False
+        Me.pbPostres.BackColor = System.Drawing.Color.Transparent
+        Me.pbPostres.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Postres
+        Me.pbPostres.Location = New System.Drawing.Point(12, 392)
+        Me.pbPostres.Name = "pbPostres"
+        Me.pbPostres.Size = New System.Drawing.Size(271, 166)
+        Me.pbPostres.TabIndex = 7
+        Me.pbPostres.TabStop = False
         '
-        'PictureBox6
+        'pbEspeciales
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Black
-        Me.PictureBox6.Location = New System.Drawing.Point(313, 392)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(271, 166)
-        Me.PictureBox6.TabIndex = 8
-        Me.PictureBox6.TabStop = False
+        Me.pbEspeciales.BackColor = System.Drawing.Color.Transparent
+        Me.pbEspeciales.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Especiales
+        Me.pbEspeciales.Location = New System.Drawing.Point(313, 392)
+        Me.pbEspeciales.Name = "pbEspeciales"
+        Me.pbEspeciales.Size = New System.Drawing.Size(271, 166)
+        Me.pbEspeciales.TabIndex = 8
+        Me.pbEspeciales.TabStop = False
         '
         'pbAyuda
         '
@@ -119,6 +129,28 @@ Partial Class FormListaCarta
         Me.pbAyuda.TabIndex = 9
         Me.pbAyuda.TabStop = False
         '
+        'pbComensalSeleccionado
+        '
+        Me.pbComensalSeleccionado.Location = New System.Drawing.Point(48, 39)
+        Me.pbComensalSeleccionado.Name = "pbComensalSeleccionado"
+        Me.pbComensalSeleccionado.Size = New System.Drawing.Size(100, 104)
+        Me.pbComensalSeleccionado.TabIndex = 10
+        Me.pbComensalSeleccionado.TabStop = False
+        '
+        'pbCambiarComensal
+        '
+        Me.pbCambiarComensal.Location = New System.Drawing.Point(183, 39)
+        Me.pbCambiarComensal.Name = "pbCambiarComensal"
+        Me.pbCambiarComensal.Size = New System.Drawing.Size(100, 104)
+        Me.pbCambiarComensal.TabIndex = 11
+        Me.pbCambiarComensal.TabStop = False
+        '
+        'ilIconosComensales
+        '
+        Me.ilIconosComensales.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ilIconosComensales.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ilIconosComensales.TransparentColor = System.Drawing.Color.Transparent
+        '
         'FormListaCarta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -126,16 +158,18 @@ Partial Class FormListaCarta
         Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Carta_fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.pbCambiarComensal)
+        Me.Controls.Add(Me.pbComensalSeleccionado)
         Me.Controls.Add(Me.pbCerrar)
         Me.Controls.Add(Me.pbAyuda)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.pbEspeciales)
+        Me.Controls.Add(Me.pbPostres)
+        Me.Controls.Add(Me.pbBebidas)
         Me.Controls.Add(Me.pbPlatos)
         Me.Controls.Add(Me.pbPublicidad)
         Me.Controls.Add(Me.pbCartel)
         Me.DoubleBuffered = True
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Location = New System.Drawing.Point(1, 1)
         Me.Name = "FormListaCarta"
         Me.Text = "FormListaCarta"
@@ -143,10 +177,12 @@ Partial Class FormListaCarta
         CType(Me.pbCartel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPublicidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPlatos, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbBebidas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPostres, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbEspeciales, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbAyuda, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComensalSeleccionado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbCambiarComensal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -154,8 +190,11 @@ Partial Class FormListaCarta
     Friend WithEvents pbCartel As System.Windows.Forms.PictureBox
     Friend WithEvents pbPublicidad As System.Windows.Forms.PictureBox
     Friend WithEvents pbPlatos As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbBebidas As System.Windows.Forms.PictureBox
+    Friend WithEvents pbPostres As System.Windows.Forms.PictureBox
+    Friend WithEvents pbEspeciales As System.Windows.Forms.PictureBox
     Friend WithEvents pbAyuda As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComensalSeleccionado As System.Windows.Forms.PictureBox
+    Friend WithEvents pbCambiarComensal As System.Windows.Forms.PictureBox
+    Friend WithEvents ilIconosComensales As System.Windows.Forms.ImageList
 End Class

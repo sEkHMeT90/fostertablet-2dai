@@ -28,7 +28,7 @@ Partial Class FormBienvenida
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbCartel = New System.Windows.Forms.PictureBox()
         Me.pbPublicidad = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.pbListo = New System.Windows.Forms.PictureBox()
         Me.pbBotonUp = New System.Windows.Forms.PictureBox()
         Me.pbBotonDown = New System.Windows.Forms.PictureBox()
         Me.pbContador = New System.Windows.Forms.PictureBox()
@@ -37,7 +37,7 @@ Partial Class FormBienvenida
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCartel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPublicidad, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbListo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbBotonUp, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbBotonDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbContador, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,7 +59,7 @@ Partial Class FormBienvenida
         Me.pbCerrar.BackColor = System.Drawing.Color.Transparent
         Me.pbCerrar.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Cerrar
         Me.pbCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbCerrar.Location = New System.Drawing.Point(12, 526)
+        Me.pbCerrar.Location = New System.Drawing.Point(12, 564)
         Me.pbCerrar.Name = "pbCerrar"
         Me.pbCerrar.Size = New System.Drawing.Size(23, 24)
         Me.pbCerrar.TabIndex = 1
@@ -80,25 +80,25 @@ Partial Class FormBienvenida
         Me.pbPublicidad.BackColor = System.Drawing.Color.White
         Me.pbPublicidad.Location = New System.Drawing.Point(600, 154)
         Me.pbPublicidad.Name = "pbPublicidad"
-        Me.pbPublicidad.Size = New System.Drawing.Size(172, 396)
+        Me.pbPublicidad.Size = New System.Drawing.Size(172, 403)
         Me.pbPublicidad.TabIndex = 3
         Me.pbPublicidad.TabStop = False
         '
-        'PictureBox5
+        'pbListo
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(395, 250)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(174, 174)
-        Me.PictureBox5.TabIndex = 4
-        Me.PictureBox5.TabStop = False
+        Me.pbListo.BackColor = System.Drawing.Color.Transparent
+        Me.pbListo.BackgroundImage = CType(resources.GetObject("pbListo.BackgroundImage"), System.Drawing.Image)
+        Me.pbListo.Location = New System.Drawing.Point(395, 275)
+        Me.pbListo.Name = "pbListo"
+        Me.pbListo.Size = New System.Drawing.Size(174, 174)
+        Me.pbListo.TabIndex = 4
+        Me.pbListo.TabStop = False
         '
         'pbBotonUp
         '
         Me.pbBotonUp.BackColor = System.Drawing.Color.Transparent
         Me.pbBotonUp.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Up
-        Me.pbBotonUp.Location = New System.Drawing.Point(254, 221)
+        Me.pbBotonUp.Location = New System.Drawing.Point(254, 246)
         Me.pbBotonUp.Name = "pbBotonUp"
         Me.pbBotonUp.Size = New System.Drawing.Size(116, 116)
         Me.pbBotonUp.TabIndex = 5
@@ -108,7 +108,7 @@ Partial Class FormBienvenida
         '
         Me.pbBotonDown.BackColor = System.Drawing.Color.Transparent
         Me.pbBotonDown.BackgroundImage = CType(resources.GetObject("pbBotonDown.BackgroundImage"), System.Drawing.Image)
-        Me.pbBotonDown.Location = New System.Drawing.Point(254, 343)
+        Me.pbBotonDown.Location = New System.Drawing.Point(254, 368)
         Me.pbBotonDown.Name = "pbBotonDown"
         Me.pbBotonDown.Size = New System.Drawing.Size(116, 116)
         Me.pbBotonDown.TabIndex = 6
@@ -117,7 +117,7 @@ Partial Class FormBienvenida
         'pbContador
         '
         Me.pbContador.BackColor = System.Drawing.Color.Transparent
-        Me.pbContador.Location = New System.Drawing.Point(56, 221)
+        Me.pbContador.Location = New System.Drawing.Point(56, 246)
         Me.pbContador.Name = "pbContador"
         Me.pbContador.Size = New System.Drawing.Size(178, 238)
         Me.pbContador.TabIndex = 7
@@ -138,19 +138,19 @@ Partial Class FormBienvenida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources._0002
+        Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.imgFondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.pbContador)
         Me.Controls.Add(Me.pbBotonDown)
         Me.Controls.Add(Me.pbBotonUp)
-        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.pbListo)
         Me.Controls.Add(Me.pbCerrar)
         Me.Controls.Add(Me.pbAyuda)
         Me.Controls.Add(Me.pbCartel)
         Me.Controls.Add(Me.pbPublicidad)
         Me.DoubleBuffered = True
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Location = New System.Drawing.Point(1, 1)
         Me.Name = "FormBienvenida"
         Me.Text = "Form1"
@@ -158,7 +158,7 @@ Partial Class FormBienvenida
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCartel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPublicidad, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbListo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbBotonUp, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbBotonDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbContador, System.ComponentModel.ISupportInitialize).EndInit()
@@ -169,7 +169,7 @@ Partial Class FormBienvenida
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
     Friend WithEvents pbCartel As System.Windows.Forms.PictureBox
     Friend WithEvents pbPublicidad As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbListo As System.Windows.Forms.PictureBox
     Friend WithEvents pbBotonUp As System.Windows.Forms.PictureBox
     Friend WithEvents pbBotonDown As System.Windows.Forms.PictureBox
     Friend WithEvents pbContador As System.Windows.Forms.PictureBox

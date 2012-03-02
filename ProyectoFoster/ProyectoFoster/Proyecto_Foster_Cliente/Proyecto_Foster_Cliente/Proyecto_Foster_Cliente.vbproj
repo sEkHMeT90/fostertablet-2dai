@@ -67,6 +67,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -118,10 +119,16 @@
     <Compile Include="FormListaCarta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormListaCataDetalle.Designer.vb">
-      <DependentUpon>FormListaCataDetalle.vb</DependentUpon>
+    <Compile Include="FormListaCartaDetallePlatos.Designer.vb">
+      <DependentUpon>FormListaCartaDetallePlatos.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormListaCataDetalle.vb">
+    <Compile Include="FormListaCartaDetallePlatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaSecciones.Designer.vb">
+      <DependentUpon>FormListaSecciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaSecciones.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSeleccionMesa.Designer.vb">
@@ -162,8 +169,11 @@
     <EmbeddedResource Include="FormListaCarta.resx">
       <DependentUpon>FormListaCarta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormListaCataDetalle.resx">
-      <DependentUpon>FormListaCataDetalle.vb</DependentUpon>
+    <EmbeddedResource Include="FormListaCartaDetallePlatos.resx">
+      <DependentUpon>FormListaCartaDetallePlatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaSecciones.resx">
+      <DependentUpon>FormListaSecciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSeleccionMesa.resx">
       <DependentUpon>FormSeleccionMesa.vb</DependentUpon>
@@ -215,9 +225,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fondo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cartel_bienvenida.png" />
   </ItemGroup>
   <ItemGroup>
@@ -243,6 +250,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\0002.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comensale_fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bebidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Especiales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Postres.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
