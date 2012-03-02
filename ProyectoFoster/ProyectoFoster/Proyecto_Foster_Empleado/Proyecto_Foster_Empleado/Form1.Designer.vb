@@ -32,9 +32,9 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(473, 10)
+        Me.GroupBox1.Location = New System.Drawing.Point(607, 10)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(515, 472)
+        Me.GroupBox1.Size = New System.Drawing.Size(381, 487)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mesas"
@@ -42,13 +42,14 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 10)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(455, 472)
+        Me.DataGridView1.Size = New System.Drawing.Size(389, 422)
         Me.DataGridView1.TabIndex = 2
         '
         'Button2
         '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button2.Location = New System.Drawing.Point(802, 503)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(186, 52)
@@ -58,25 +59,27 @@ Partial Class Form1
         '
         'Button6
         '
+        Me.Button6.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button6.AutoSize = True
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.ForeColor = System.Drawing.Color.Transparent
-        Me.Button6.Image = Global.Proyecto_Foster_Empleado.My.Resources.Resources._1330622334_Log_Out
-        Me.Button6.Location = New System.Drawing.Point(12, 501)
+        Me.Button6.Image = Global.Proyecto_Foster_Empleado.My.Resources.Resources._1330705942_bullet_deny
+        Me.Button6.Location = New System.Drawing.Point(12, 495)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 56)
+        Me.Button6.Size = New System.Drawing.Size(68, 69)
         Me.Button6.TabIndex = 8
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button1
         '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Proyecto_Foster_Empleado.My.Resources.Resources._1330625669_note_edit
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(473, 488)
+        Me.Button1.Location = New System.Drawing.Point(436, 495)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(95, 67)
         Me.Button1.TabIndex = 3
@@ -94,9 +97,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
