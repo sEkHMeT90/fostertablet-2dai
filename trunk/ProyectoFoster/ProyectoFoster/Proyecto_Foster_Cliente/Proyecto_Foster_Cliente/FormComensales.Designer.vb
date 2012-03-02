@@ -22,79 +22,84 @@ Partial Class FormComensales
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormComensales))
+        Me.pbComensal6 = New System.Windows.Forms.PictureBox()
+        Me.pbComensal1 = New System.Windows.Forms.PictureBox()
+        Me.pbComensal5 = New System.Windows.Forms.PictureBox()
+        Me.pbComensal2 = New System.Windows.Forms.PictureBox()
+        Me.pbComensal3 = New System.Windows.Forms.PictureBox()
+        Me.pbComensal4 = New System.Windows.Forms.PictureBox()
+        Me.pbComunComensales = New System.Windows.Forms.PictureBox()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pbAyuda = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        CType(Me.pbComensal6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbComensal1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbComensal5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbComensal2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbComensal3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbComensal4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbComunComensales, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbAyuda, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'pbComensal6
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(22, 230)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(142, 141)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.pbComensal6.Location = New System.Drawing.Point(22, 230)
+        Me.pbComensal6.Name = "pbComensal6"
+        Me.pbComensal6.Size = New System.Drawing.Size(142, 141)
+        Me.pbComensal6.TabIndex = 0
+        Me.pbComensal6.TabStop = False
         '
-        'PictureBox2
+        'pbComensal1
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(208, 29)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(142, 141)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.pbComensal1.Location = New System.Drawing.Point(208, 29)
+        Me.pbComensal1.Name = "pbComensal1"
+        Me.pbComensal1.Size = New System.Drawing.Size(142, 141)
+        Me.pbComensal1.TabIndex = 1
+        Me.pbComensal1.TabStop = False
         '
-        'PictureBox3
+        'pbComensal5
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(622, 230)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(142, 141)
-        Me.PictureBox3.TabIndex = 2
-        Me.PictureBox3.TabStop = False
+        Me.pbComensal5.Location = New System.Drawing.Point(622, 230)
+        Me.pbComensal5.Name = "pbComensal5"
+        Me.pbComensal5.Size = New System.Drawing.Size(142, 141)
+        Me.pbComensal5.TabIndex = 2
+        Me.pbComensal5.TabStop = False
         '
-        'PictureBox4
+        'pbComensal2
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(208, 430)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(142, 141)
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
+        Me.pbComensal2.Location = New System.Drawing.Point(208, 430)
+        Me.pbComensal2.Name = "pbComensal2"
+        Me.pbComensal2.Size = New System.Drawing.Size(142, 141)
+        Me.pbComensal2.TabIndex = 3
+        Me.pbComensal2.TabStop = False
         '
-        'PictureBox5
+        'pbComensal3
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(440, 29)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(142, 141)
-        Me.PictureBox5.TabIndex = 4
-        Me.PictureBox5.TabStop = False
+        Me.pbComensal3.Location = New System.Drawing.Point(440, 29)
+        Me.pbComensal3.Name = "pbComensal3"
+        Me.pbComensal3.Size = New System.Drawing.Size(142, 141)
+        Me.pbComensal3.TabIndex = 4
+        Me.pbComensal3.TabStop = False
         '
-        'PictureBox6
+        'pbComensal4
         '
-        Me.PictureBox6.Location = New System.Drawing.Point(440, 430)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(142, 141)
-        Me.PictureBox6.TabIndex = 5
-        Me.PictureBox6.TabStop = False
+        Me.pbComensal4.Location = New System.Drawing.Point(440, 430)
+        Me.pbComensal4.Name = "pbComensal4"
+        Me.pbComensal4.Size = New System.Drawing.Size(142, 141)
+        Me.pbComensal4.TabIndex = 5
+        Me.pbComensal4.TabStop = False
         '
-        'PictureBox7
+        'pbComunComensales
         '
-        Me.PictureBox7.Location = New System.Drawing.Point(184, 188)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(421, 223)
-        Me.PictureBox7.TabIndex = 6
-        Me.PictureBox7.TabStop = False
+        Me.pbComunComensales.Location = New System.Drawing.Point(184, 188)
+        Me.pbComunComensales.Name = "pbComunComensales"
+        Me.pbComunComensales.Size = New System.Drawing.Size(421, 223)
+        Me.pbComunComensales.TabIndex = 6
+        Me.pbComunComensales.TabStop = False
         '
         'pbCerrar
         '
@@ -107,41 +112,68 @@ Partial Class FormComensales
         Me.pbCerrar.TabIndex = 7
         Me.pbCerrar.TabStop = False
         '
+        'pbAyuda
+        '
+        Me.pbAyuda.BackColor = System.Drawing.Color.Transparent
+        Me.pbAyuda.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.ayuda
+        Me.pbAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbAyuda.Location = New System.Drawing.Point(725, 12)
+        Me.pbAyuda.Name = "pbAyuda"
+        Me.pbAyuda.Size = New System.Drawing.Size(63, 65)
+        Me.pbAyuda.TabIndex = 16
+        Me.pbAyuda.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(614, 414)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(174, 174)
+        Me.PictureBox5.TabIndex = 17
+        Me.PictureBox5.TabStop = False
+        '
         'FormComensales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.imgFondo
+        Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Comensale_fondo
         Me.ClientSize = New System.Drawing.Size(800, 600)
-        Me.Controls.Add(Me.pbCerrar)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Controls.Add(Me.pbAyuda)
+        Me.Controls.Add(Me.pbCerrar)
+        Me.Controls.Add(Me.pbComunComensales)
+        Me.Controls.Add(Me.pbComensal4)
+        Me.Controls.Add(Me.pbComensal3)
+        Me.Controls.Add(Me.pbComensal2)
+        Me.Controls.Add(Me.pbComensal5)
+        Me.Controls.Add(Me.pbComensal1)
+        Me.Controls.Add(Me.pbComensal6)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Location = New System.Drawing.Point(1, 1)
         Me.Name = "FormComensales"
         Me.Text = "Form2"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComensal6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComensal1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComensal5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComensal2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComensal3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComensal4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbComunComensales, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbAyuda, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComensal6 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComensal1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComensal5 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComensal2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComensal3 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComensal4 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbComunComensales As System.Windows.Forms.PictureBox
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
+    Friend WithEvents pbAyuda As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
 End Class

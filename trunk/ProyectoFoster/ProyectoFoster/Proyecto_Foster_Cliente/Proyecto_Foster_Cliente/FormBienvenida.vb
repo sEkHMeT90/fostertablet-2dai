@@ -23,7 +23,7 @@ Public Class FormBienvenida
         Application.Exit()
     End Sub
 
-    Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
+    Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbListo.Click
         FormComensales.ShowDialog()
     End Sub
 
