@@ -1,21 +1,24 @@
 
-    drop table productos_pedir;
-    drop table stock_minimo;
-    drop table comandas;
-    drop table lineas_comanda;
-    drop table estados_comanda;
-    drop table mesas;
-    drop table estados_mesa;
-    drop table lineas_factura;
-    drop table facturas;
-    drop table tipo_pago;
-    drop table guarniciones;
-    drop table lineas_pedido; 
-    drop table pedidos;
-    drop table productos; 
-    drop table proveedores;
-    drop table subcategorias;
-    drop table categorias;
+    --DROP TABLE productos_pedir;
+    --DROP TABLE stock_minimo;
+    DROP TABLE comandas;
+    DROP TABLE tickets;
+    DROP TABLE lineas_comanda;
+    DROP TABLE estados_comanda;
+    DROP TABLE mesas;
+    DROP TABLE estados_mesa;
+    DROP TABLE lineas_factura;
+    --DROP TABLE pagos_factura;
+    DROP TABLE facturas;
+    DROP TABLE tipo_pago;
+    DROP TABLE guarniciones;
+    DROP TABLE lineas_pedido; 
+    DROP TABLE pedidos;
+    DROP TABLE productos; 
+    DROP TABLE proveedores;
+    DROP TABLE tipos_iva;
+    DROP TABLE subcategorias;
+    DROP TABLE categorias;
     
     CREATE TABLE categorias
     (
@@ -34,6 +37,13 @@
         CONSTRAINT PK_SUBCATEGORIAS PRIMARY KEY (codigo, codigo_categoria),
         CONSTRAINT UK_SUBCATEGORIAS UNIQUE (nombre),
         CONSTRAINT FK_SUBCATEGORIAS FOREIGN KEY (codigo_categoria) REFERENCES categorias (codigo)
+    );
+
+    CREATE TABLE tipos_iva(
+        codigo number(3),
+        iva number(5,2) not null,
+        nombre varchar2(3) not null,
+        CONSTRAINT UK_TIPOS_IVA UNIQUE (nombre)
     );
 
     CREATE TABLE proveedores(
@@ -55,11 +65,15 @@
         calorias number(4) not null,
         codigo_subcategoria number(3) not null,
         codigo_categoria number(3) not null,
-        cantidad number(4) not null,    
+        stock number(4) not null,
+        stock_minimo number(3) not null,
+        cantidad_pedir number(4) not null,
+        codigo_tipo_iva number(3) not null,
         activo number(1) not null,
         CONSTRAINT PK_PRODUCTOS PRIMARY KEY (codigo),
         CONSTRAINT UK_PRODUCTOS UNIQUE (nombre),
-        CONSTRAINT FK_PRODUCTOS FOREIGN KEY (codigo_subcategoria, codigo_categoria) REFERENCES subcategorias (codigo, codigo_categoria)
+        CONSTRAINT FK_PRODUCTOS_1 FOREIGN KEY (codigo_subcategoria, codigo_categoria) REFERENCES subcategorias (codigo, codigo_categoria),
+        CONSTRAINT FK_PRODUCTOS_2 FOREIGN KEY (codigo_tipo_iva) REFERENCES tipos_iva (codigo)
     );
     
     CREATE TABLE pedidos(
@@ -99,27 +113,27 @@
     
     CREATE TABLE facturas(
         codigo number(8),
-        fecha  date not null,
+        fecha date not null,
         precio_total number(6,2) not null,
         CONSTRAINT PK_FACTURAS PRIMARY KEY (codigo),
     );
     
-    CREATE TABLE pagos_factura(
-		codigo_factura number(8),
-		codigo_tipo_pago number(2),
-		CONSTRAINT PK_PAGOS_FACTURA PRIMARY KEY (codigo_factura, codigo_tipo_pago),
-		CONSTRAINT FK_PAGOS_FACTURA_1 FOREIGN KEY (codigo_factura) REFERENCES facturas (codigo),
-		CONSTRAINT FK_PAGOS_FACTURA_2 FOREIGN KEY (codigo_tipo_pago) REFERENCES tipos_pago (codigo)
-    );
+    --CREATE TABLE pagos_factura(
+    --    codigo_factura number(8),
+    --    codigo_tipo_pago number(2),
+    --    CONSTRAINT PK_PAGOS_FACTURA PRIMARY KEY (codigo_factura, codigo_tipo_pago),
+    --    CONSTRAINT FK_PAGOS_FACTURA_1 FOREIGN KEY (codigo_factura) REFERENCES facturas (codigo),
+    --    CONSTRAINT FK_PAGOS_FACTURA_2 FOREIGN KEY (codigo_tipo_pago) REFERENCES tipos_pago (codigo)
+    --);
     
     CREATE TABLE lineas_factura(
-        codigo_factura number(8),
         numero number(3),
+        codigo_factura number(8),
         codigo_producto number(8) not null,
         cantidad number(2) not null,
         descuento number(3),
         CONSTRAINT PK_LINEAS_FACTURA PRIMARY KEY (numero, codigo_factura),
-        CONSTRAINT FK_LINEAS_FACTURA FOREIGN KEY (codigo_factura) REFERENCES facturas (codigo),
+        CONSTRAINT FK_LINEAS_FACTURA_1 FOREIGN KEY (codigo_factura) REFERENCES facturas (codigo),
         CONSTRAINT FK_LINEAS_FACTURA_2 FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
     );
     
@@ -148,9 +162,22 @@
         codigo number(8),
         codigo_estado number(3) not null,
         codigo_mesa number(3) not null,
+        --comun number(1) not null,
+        codigo_ticket number(8),
         CONSTRAINT PK_COMANDAS PRIMARY KEY (codigo),
-        CONSTRAINT FK_COMANDAS FOREIGN KEY (codigo_estado) REFERENCES estados_comanda (codigo),
-        CONSTRAINT FK_COMANDAS_2 FOREIGN KEY (codigo_mesa) REFERENCES estados_mesa (codigo)
+        CONSTRAINT FK_COMANDAS_1 FOREIGN KEY (codigo_estado) REFERENCES estados_comanda (codigo),
+        CONSTRAINT FK_COMANDAS_2 FOREIGN KEY (codigo_mesa) REFERENCES estados_mesa (codigo),
+        CONSTRAINT FK_COMANDAS_2 FOREIGN KEY (codigo_ticket) REFERENCES tickets (codigo)
+    );
+    
+    CREATE TABLE tickets(
+        codigo number(8),
+        codigo_factura number(8),
+        codigo_tipo_pago number(2) not null,
+        --codigo_comanda_comun number(8),
+        CONSTRAINT PK_TICKETS PRIMARY KEY (codigo),
+        CONSTRAINT FK_TICKETS FOREIGN KEY (codigo_tipo_pago) REFERENCES tipos_pago (codigo)
+        --CONSTRAINT FK_TICKETS_2 FOREIGN KEY (codigo_factura) REFERENCES facturas (codigo)
     );
     
     CREATE TABLE lineas_comanda(
@@ -162,19 +189,20 @@
         CONSTRAINT FK_LINEAS_COMANDA FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
     );
     
-    CREATE TABLE stock_minimo(
-        codigo_producto number(8),
-        minimo number(3) not null,
-        cantidad_pedir number(4) not null,
-        CONSTRAINT PK_STOCK_MINIMO PRIMARY KEY (codigo_producto),
-        CONSTRAINT FK_STOCK_MINIMO FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
-    );
+    --CREATE TABLE stock_minimo(
+    --    codigo_producto number(8),
+    --    minimo number(3) not null,
+    --    cantidad_pedir number(4) not null,
+    --    CONSTRAINT PK_STOCK_MINIMO PRIMARY KEY (codigo_producto),
+    --    CONSTRAINT FK_STOCK_MINIMO FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
+    --);
     
-    CREATE TABLE productos_pedir(
-        codigo_producto number(8),
-        CONSTRAINT PK_PRODUCTOS_PEDIR PRIMARY KEY (codigo_producto),
-        CONSTRAINT FK_PRODUCTOS_PEDIR FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
-    );
+    --CREATE TABLE productos_pedir(
+    --    codigo_producto number(8),
+    --    CONSTRAINT PK_PRODUCTOS_PEDIR PRIMARY KEY (codigo_producto),
+    --    CONSTRAINT FK_PRODUCTOS_PEDIR FOREIGN KEY (codigo_producto) REFERENCES productos (codigo)
+    --);
+
 
 
     commit;
