@@ -8,4 +8,5 @@ C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foste
 C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.exe
 C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.xml
 C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.pdb
-C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.Form1.resources
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.LineasDeComanda.resources
+C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.Principal.resources
