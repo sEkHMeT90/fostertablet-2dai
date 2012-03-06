@@ -6,7 +6,63 @@ Proyecto_Foster_Empleado
 </name>
 </assembly>
 <members>
-<member name="P:Proyecto_Foster_Empleado.My.Resources.Resources.ResourceManager">
+<member name="M:Proyecto_Foster_Empleado.LineasDeComanda.LineasDeComanda_Load(System.Object,System.EventArgs)">
+	<summary>
+ Evento load.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.LineasDeComanda.bt_atras_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botón que cierra el formulario LineasDeComanda
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="T:Proyecto_Foster_Empleado.LineasDeComanda">
+	<summary>
+ Formulario principal de la interfaz del empleado
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.Principal.Form1_Load(System.Object,System.EventArgs)">
+	<summary>
+ Evento load.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.Principal.bt_salir_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botón que finaliza la aplicación.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.Principal.Form1_Resize(System.Object,System.EventArgs)">
+	<summary>
+ Evento que redimensiona el contenido del formulario.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.Principal.dgv_Comandas_CellDoubleClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ Evento que muestra el formulario de LineasDeComanda con las líneas de la comanda 
+ sobre la que se ha hecho doble click.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.Principal.bt_aCocina_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botón que imprime la comanda seleccionada para mandarla a cocina.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.Principal.bt_Factura_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botón que imprime la factura de la comanda seleccionada.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="M:Proyecto_Foster_Empleado.Principal.bt_Ticket_Click(System.Object,System.EventArgs)">
+	<summary>
+ Botón que imprime el ticket seleccionado.
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="T:Proyecto_Foster_Empleado.Principal">
+	<summary>
+ Formulario principal de la interfaz del empleado
+ </summary>
+	<author> Raquel Lloréns Gambín, Alejandro Guijarro Terol</author>
+</member><member name="P:Proyecto_Foster_Empleado.My.Resources.Resources.ResourceManager">
 	<summary>
   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
 </summary>

@@ -80,5 +80,26 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        Friend ReadOnly Property _1331050608_cash_register() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("1331050608_cash_register", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property _1331051505_News() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("1331051505_News", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property cocina() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cocina", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace

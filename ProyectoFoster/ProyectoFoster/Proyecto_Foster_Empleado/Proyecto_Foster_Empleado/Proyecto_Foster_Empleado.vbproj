@@ -72,11 +72,17 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="LineasDeComanda.Designer.vb">
+      <DependentUpon>LineasDeComanda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LineasDeComanda.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +102,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="LineasDeComanda.resx">
+      <DependentUpon>LineasDeComanda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -125,6 +134,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="1330705942_bullet_deny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1331050608_cash_register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1331051505_News.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cocina.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
