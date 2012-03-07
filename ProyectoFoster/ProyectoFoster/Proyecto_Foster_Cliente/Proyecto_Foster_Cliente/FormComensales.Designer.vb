@@ -32,7 +32,9 @@ Partial Class FormComensales
         Me.pbComunComensales = New System.Windows.Forms.PictureBox()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbAyuda = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.pbPedirComida = New System.Windows.Forms.PictureBox()
+        Me.pbPedirCuenta = New System.Windows.Forms.PictureBox()
+        Me.pbLlamarCamarero = New System.Windows.Forms.PictureBox()
         CType(Me.pbComensal6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbComensal1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbComensal5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -42,7 +44,9 @@ Partial Class FormComensales
         CType(Me.pbComunComensales, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbAyuda, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPedirComida, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPedirCuenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbLlamarCamarero, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pbComensal6
@@ -95,6 +99,8 @@ Partial Class FormComensales
         '
         'pbComunComensales
         '
+        Me.pbComunComensales.BackColor = System.Drawing.Color.Transparent
+        Me.pbComunComensales.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.comun
         Me.pbComunComensales.Location = New System.Drawing.Point(184, 188)
         Me.pbComunComensales.Name = "pbComunComensales"
         Me.pbComunComensales.Size = New System.Drawing.Size(421, 223)
@@ -123,15 +129,37 @@ Partial Class FormComensales
         Me.pbAyuda.TabIndex = 16
         Me.pbAyuda.TabStop = False
         '
-        'PictureBox5
+        'pbPedirComida
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(614, 414)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(174, 174)
-        Me.PictureBox5.TabIndex = 17
-        Me.PictureBox5.TabStop = False
+        Me.pbPedirComida.BackColor = System.Drawing.Color.Transparent
+        Me.pbPedirComida.BackgroundImage = CType(resources.GetObject("pbPedirComida.BackgroundImage"), System.Drawing.Image)
+        Me.pbPedirComida.Location = New System.Drawing.Point(614, 414)
+        Me.pbPedirComida.Name = "pbPedirComida"
+        Me.pbPedirComida.Size = New System.Drawing.Size(174, 174)
+        Me.pbPedirComida.TabIndex = 17
+        Me.pbPedirComida.TabStop = False
+        '
+        'pbPedirCuenta
+        '
+        Me.pbPedirCuenta.BackColor = System.Drawing.Color.Transparent
+        Me.pbPedirCuenta.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Facturar
+        Me.pbPedirCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbPedirCuenta.Location = New System.Drawing.Point(101, 29)
+        Me.pbPedirCuenta.Name = "pbPedirCuenta"
+        Me.pbPedirCuenta.Size = New System.Drawing.Size(72, 75)
+        Me.pbPedirCuenta.TabIndex = 18
+        Me.pbPedirCuenta.TabStop = False
+        '
+        'pbLlamarCamarero
+        '
+        Me.pbLlamarCamarero.BackColor = System.Drawing.Color.Transparent
+        Me.pbLlamarCamarero.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.AñadirCita
+        Me.pbLlamarCamarero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbLlamarCamarero.Location = New System.Drawing.Point(22, 29)
+        Me.pbLlamarCamarero.Name = "pbLlamarCamarero"
+        Me.pbLlamarCamarero.Size = New System.Drawing.Size(73, 75)
+        Me.pbLlamarCamarero.TabIndex = 19
+        Me.pbLlamarCamarero.TabStop = False
         '
         'FormComensales
         '
@@ -139,7 +167,9 @@ Partial Class FormComensales
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Comensale_fondo
         Me.ClientSize = New System.Drawing.Size(800, 600)
-        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.pbLlamarCamarero)
+        Me.Controls.Add(Me.pbPedirCuenta)
+        Me.Controls.Add(Me.pbPedirComida)
         Me.Controls.Add(Me.pbAyuda)
         Me.Controls.Add(Me.pbCerrar)
         Me.Controls.Add(Me.pbComunComensales)
@@ -162,7 +192,9 @@ Partial Class FormComensales
         CType(Me.pbComunComensales, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbAyuda, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPedirComida, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPedirCuenta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbLlamarCamarero, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -175,5 +207,7 @@ Partial Class FormComensales
     Friend WithEvents pbComunComensales As System.Windows.Forms.PictureBox
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
     Friend WithEvents pbAyuda As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbPedirComida As System.Windows.Forms.PictureBox
+    Friend WithEvents pbPedirCuenta As System.Windows.Forms.PictureBox
+    Friend WithEvents pbLlamarCamarero As System.Windows.Forms.PictureBox
 End Class

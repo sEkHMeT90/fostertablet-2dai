@@ -32,6 +32,12 @@ Proyecto_Foster_Cliente
  
  </summary>
 	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="T:Proyecto_Foster_Cliente.FormListaCarta">
+	<summary>
+  Pantalla de Lista para la Carta.
+ Sera la primera pantalla que el cliente emezara a seleccionar lo que quiere pedir.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
 </member>
 </members>
 </doc>

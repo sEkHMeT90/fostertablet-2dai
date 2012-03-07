@@ -12,19 +12,19 @@
 ''' <autor>Julio L. Antoranz Ros</autor>
 Public Class FormBienvenida
     'Constantes
-    Const NumeroComensalesMaximo As Integer = 5
+    Const NumeroComensalesMaximo As Integer = 11
     Const NumeroComensalesMinimo As Integer = 0
     'Variables 
-    Private ContadorComensales As Integer
+    Public ContadorComensales As Integer
 
     '---------------------------------- EVENTOS -----------------------------
-
+#Region "EVENTOS"
     Private Sub pbCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCerrar.Click
         Application.Exit()
     End Sub
 
     Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbListo.Click
-        FormComensales.ShowDialog()
+        FormListaCarta.Show()
     End Sub
 
     Private Sub pbBotonUp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbBotonUp.Click
@@ -35,6 +35,10 @@ Public Class FormBienvenida
         DisminuirNumeroContador()
     End Sub
 
+    Private Sub pbAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAyuda.Click
+        'TODO: Seción ayuda
+    End Sub
+
     Private Sub FormBienvenida_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ContadorComensales = 0
         pbContador.Image = ilListaImgContador.Images(ContadorComensales)
@@ -42,25 +46,34 @@ Public Class FormBienvenida
         'TODO: Cargar datos ".ini"
         'TODO: Crear o cargar ".ini"
     End Sub
+#End Region
 
     '---------------------------------- FUNCIONES -------------------------
-
+#Region "FUNCIONES"
     Private Sub AumentarNumeroContador()
         If ContadorComensales < NumeroComensalesMaximo Then
             ContadorComensales += 1
-            pbContador.Image = ilListaImgContador.Images(ContadorComensales)
+            Try
+                pbContador.Image = ilListaImgContador.Images(ContadorComensales)
+            Catch ex As Exception
+                MessageBox.Show("ERROR: " & ex.Message.ToString)
+            End Try
+
         End If
     End Sub
 
     Private Sub DisminuirNumeroContador()
         If ContadorComensales > NumeroComensalesMinimo Then
             ContadorComensales -= 1
-            pbContador.Image = ilListaImgContador.Images(ContadorComensales)
+            Try
+                pbContador.Image = ilListaImgContador.Images(ContadorComensales)
+            Catch ex As Exception
+                MessageBox.Show("ERROR: " & ex.Message.ToString)
+            End Try
         End If
     End Sub
 
 
-    Private Sub pbAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAyuda.Click
-        'TODO: Seción ayuda
-    End Sub
+   
+#End Region
 End Class

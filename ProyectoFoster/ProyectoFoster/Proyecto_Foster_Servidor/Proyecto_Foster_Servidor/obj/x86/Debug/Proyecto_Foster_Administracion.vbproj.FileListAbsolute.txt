@@ -12,3 +12,6 @@ C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Fost
 C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.HacerCopiaSeguridad.resources
 C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.RestaurarCopiaSeguridad.resources
 C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.VerMesas.resources
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.exe
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.xml
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.pdb
