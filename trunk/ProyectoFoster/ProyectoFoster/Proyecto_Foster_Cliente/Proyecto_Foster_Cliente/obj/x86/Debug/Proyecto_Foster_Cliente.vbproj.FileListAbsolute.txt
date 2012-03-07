@@ -41,12 +41,33 @@ C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormAyuda.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormBienvenida.resources
-C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormComensales.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormDetallePlato.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCarta.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormSeleccionMesa.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.Resources.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaSecciones.resources
-C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaDetallePlatos.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.exe
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.xml
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.pdb
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\bin\Debug\Proyecto_Foster_Cliente.exe
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\bin\Debug\Proyecto_Foster_Cliente.pdb
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\bin\Debug\Proyecto_Foster_Cliente.xml
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormAyuda.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormBienvenida.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormComensales.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormDetallePlato.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormHacerPedido.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCarta.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaDetallePlatos.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaSecciones.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormSeleccionMesa.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormHacerPedido.resources
+C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaPlatos.resources
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.exe
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.xml
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.pdb

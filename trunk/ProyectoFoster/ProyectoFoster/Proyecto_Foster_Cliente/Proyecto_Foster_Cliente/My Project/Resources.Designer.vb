@@ -60,6 +60,13 @@ Namespace My.Resources
             End Set
         End Property
         
+        Friend ReadOnly Property AñadirCita() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("AñadirCita", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property ayuda() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("ayuda", resourceCulture)
@@ -123,6 +130,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property comun() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("comun", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property down() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("down", resourceCulture)
@@ -137,16 +151,9 @@ Namespace My.Resources
             End Get
         End Property
         
-        Friend ReadOnly Property fondo() As System.Drawing.Bitmap
+        Friend ReadOnly Property Facturar() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("fondo", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        Friend ReadOnly Property fondo2() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("fondo2", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Facturar", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

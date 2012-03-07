@@ -133,6 +133,12 @@ Partial Class FormBienvenida
         Me.ilListaImgContador.Images.SetKeyName(3, "Contador_4.png")
         Me.ilListaImgContador.Images.SetKeyName(4, "Contador_5.png")
         Me.ilListaImgContador.Images.SetKeyName(5, "Contador_6.png")
+        Me.ilListaImgContador.Images.SetKeyName(6, "Contador_7.png")
+        Me.ilListaImgContador.Images.SetKeyName(7, "Contador_8.png")
+        Me.ilListaImgContador.Images.SetKeyName(8, "Contador_9.png")
+        Me.ilListaImgContador.Images.SetKeyName(9, "Contador_10.png")
+        Me.ilListaImgContador.Images.SetKeyName(10, "Contador_11.png")
+        Me.ilListaImgContador.Images.SetKeyName(11, "Contador_12.png")
         '
         'FormBienvenida
         '

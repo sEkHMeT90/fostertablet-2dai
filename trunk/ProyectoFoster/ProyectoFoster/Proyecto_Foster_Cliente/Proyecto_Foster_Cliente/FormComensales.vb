@@ -31,4 +31,12 @@
     Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbComunComensales.Click
         FormListaCarta.ShowDialog()
     End Sub
+
+    Private Sub pbLlamarCamarero_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbLlamarCamarero.Click
+        MessageBox.Show("En unos instantes un camarero vendra para atenderle, espere por favor.")
+    End Sub
+
+    Private Sub pbPedirCuenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedirCuenta.Click
+        MessageBox.Show("En unos instantes un camarero vendra para darle la cuenta, espere por favor.")
+    End Sub
 End Class
