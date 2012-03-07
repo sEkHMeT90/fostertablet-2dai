@@ -9,3 +9,6 @@ C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Fost
 C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.exe
 C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.xml
 C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.pdb
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.HacerCopiaSeguridad.resources
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.RestaurarCopiaSeguridad.resources
+C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.VerMesas.resources

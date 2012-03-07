@@ -49,6 +49,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Oracle.DataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -73,6 +77,19 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarMesas.Designer.vb">
+      <DependentUpon>AgregarMesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarMesas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBDD.vb" />
+    <Compile Include="ModificarMesas.Designer.vb">
+      <DependentUpon>ModificarMesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMesas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AniadirPedidos.Designer.vb">
       <DependentUpon>AniadirPedidos.vb</DependentUpon>
     </Compile>
@@ -89,6 +106,12 @@
       <DependentUpon>ConsultarPedidos.vb</DependentUpon>
     </Compile>
     <Compile Include="ConsultarPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarMesas.Designer.vb">
+      <DependentUpon>EliminarMesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarMesas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EliminarPedidos.Designer.vb">
@@ -149,6 +172,12 @@
     <Compile Include="RestaurarCopiaSeguridad.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VerMesas.Designer.vb">
+      <DependentUpon>VerMesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerMesas.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormPrincipal.resx">
@@ -165,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RestaurarCopiaSeguridad.resx">
       <DependentUpon>RestaurarCopiaSeguridad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerMesas.resx">
+      <DependentUpon>VerMesas.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

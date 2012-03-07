@@ -6,7 +6,6 @@
     End Sub
 
     Private Sub btBuscarCopia_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btBuscarCopia.Click
-
     End Sub
 
     Private Sub btRestaurarCopia_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btRestaurarCopia.Click
