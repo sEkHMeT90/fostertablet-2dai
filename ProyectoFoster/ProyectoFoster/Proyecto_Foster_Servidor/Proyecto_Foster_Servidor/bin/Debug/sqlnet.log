@@ -1,0 +1,37 @@
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 07-MAR-2012 16:59:45
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: Message 12535 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Message 505 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: <unknown>
+
+
+***********************************************************************
+Fatal NI connect error 12569, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=84.120.90.221)(PORT=8080))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)(CID=(PROGRAM=C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\bin\Debug\Proyecto_Foster_Servidor.vshost.exe)(HOST=EIEN-PC)(USER=Eien))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 07-MAR-2012 17:22:30
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12569
+    TNS-12569: Message 12569 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
