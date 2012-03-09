@@ -118,8 +118,9 @@
     );
     
     CREATE TABLE lineas_ticket(
-        numero number(4),
         codigo_ticket number(8),
+        numero number(4),
+        nombre_producto varchar2(55) not null,
         cantidad number(2) not null,
         descuento number(3) not null,
         precio number(3,2) not null,
@@ -158,9 +159,9 @@
     
     CREATE TABLE comandas(
         codigo number(8),
+        codigo_ticket number(8),
         codigo_estado number(3) not null,
         codigo_mesa number(3) not null,
-        codigo_ticket number(8),
         CONSTRAINT PK_COMANDAS PRIMARY KEY (codigo),
         CONSTRAINT FK_COMANDAS_1 FOREIGN KEY (codigo_estado) REFERENCES estados_comanda (codigo),
         CONSTRAINT FK_COMANDAS_2 FOREIGN KEY (codigo_mesa) REFERENCES estados_mesa (codigo),
