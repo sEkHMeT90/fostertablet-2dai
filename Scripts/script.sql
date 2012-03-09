@@ -45,10 +45,10 @@
     );
     
     CREATE TABLE proveedores(
-        cif VARCHAR2(15) ,
-        nombre VARCHAR2(30) not null,
-        direccion VARCHAR2(200) not null, 
-        telefono VARCHAR2(20) not null,
+        cif varchar2(15) ,
+        nombre varchar2(30) not null,
+        direccion varchar2(200) not null, 
+        telefono varchar2(20) not null,
         activo number(1) not null,
         CONSTRAINT PK_PROVEEDORES PRIMARY KEY (cif),
         CONSTRAINT UK_PROVEEDORES UNIQUE (nombre)
@@ -75,8 +75,8 @@
     
     CREATE TABLE pedidos(
         codigo number(8),
-        fecha  DATE not null,
-        cif_proveedor  not null,
+        fecha  date not null,
+        cif_proveedor varchar2(15) not null,
         precio_total number(12,2) not null,
         recibido number(1) not null,
         CONSTRAINT PK_PEDIDOS PRIMARY KEY (codigo),
@@ -87,6 +87,7 @@
         codigo_pedido number(8),
         numero number(3),
         codigo_producto number(8) not null,
+	precio number(6,2) not null,
         cantidad number(4) not null,
         CONSTRAINT PK_LINEAS_PEDIDO PRIMARY KEY (numero, codigo_pedido),
         CONSTRAINT FK_LINEAS_PEDIDO FOREIGN KEY (codigo_pedido) REFERENCES pedidos (codigo),
