@@ -116,9 +116,23 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property CartelAtras() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CartelAtras", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property Cerrar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Cerrar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property clientes() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("clientes", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

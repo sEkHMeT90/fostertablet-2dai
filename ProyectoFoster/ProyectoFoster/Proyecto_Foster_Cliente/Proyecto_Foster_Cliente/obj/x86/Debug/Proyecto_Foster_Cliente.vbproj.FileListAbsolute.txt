@@ -68,6 +68,4 @@ C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFo
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormHacerPedido.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaPlatos.resources
-F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.exe
-F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.xml
-F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.pdb
+C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormPedirCuenta.resources

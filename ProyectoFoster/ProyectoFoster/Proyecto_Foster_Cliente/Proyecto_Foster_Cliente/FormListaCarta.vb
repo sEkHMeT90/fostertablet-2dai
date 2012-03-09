@@ -6,27 +6,66 @@
 Public Class FormListaCarta
     'Constantes
     'Variables
-    Public ComensalSeleccionado As Integer
+    Public ListaComensales As New List(Of String)
+    Public ComensalSeleccionado As Integer = 0
+
 
     '---------------------------------- EVENTOS -----------------------------
 #Region "EVENTOS"
     Private Sub pbCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCerrar.Click
         Application.Exit()
     End Sub
-
+#Region "CARTA"
     Private Sub pbEntrantes_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbEntrantes.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
+    End Sub
+    Private Sub pbHamburguesas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbHamburguesas.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
         FormListaCartaPlatos.Show()
     End Sub
 
-    Private Sub pbAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAyuda.Click
-        'TODO: Seción ayuda
+    Private Sub pbCostillas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCostillas.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
     End Sub
 
-    Private Sub FormListaCarta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        ComensalSeleccionado = 0
-        MostrarComensales()
+    Private Sub pbTexMex_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbTexMex.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
     End Sub
 
+    Private Sub pbSandwich_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbSandwich.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbPolloPescado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPolloPescado.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbParrilla_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbParrilla.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbEspeciales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbEspeciales.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbPostres_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPostres.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbBebidas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbBebidas.Click
+        Dim Ventana As New FormListaCartaPlatos(0)
+        FormListaCartaPlatos.Show()
+    End Sub
+#End Region
+#Region "COMENSALES"
     Private Sub pbComensal1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbComensal1.Click
         ComensalSeleccionado = 0
         CambiarComensalSeleccionado()
@@ -92,6 +131,35 @@ Public Class FormListaCarta
         CambiarComensalSeleccionado()
     End Sub
 #End Region
+    Private Sub pbAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAyuda.Click
+        'TODO: Seción ayuda
+    End Sub
+
+    Private Sub FormListaCarta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        FormBienvenida.Visible = False
+
+
+        MostrarComensales()
+    End Sub
+
+    Private Sub pbPedirCuenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedirCuenta.Click
+        FormPedirCuenta.Show()
+    End Sub
+
+    Private Sub pbPedir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedir.Click
+        FormHacerPedido.Show()
+    End Sub
+
+    Private Sub pbLlamarCamarero_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbLlamarCamarero.Click
+        MessageBox.Show("En unos instantes vendrá un camarero a atenderle, por favor espere.")
+    End Sub
+    Private Sub pbAtras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAtras.Click
+        Me.Close()
+    End Sub
+    Private Sub FormListaCarta_FormClosing(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+        FormBienvenida.Visible = True
+    End Sub
+#End Region
     '---------------------------------- FUNCIONES -------------------------
 #Region "FUNCIONES"
     Private Sub MostrarComensales()
@@ -103,27 +171,27 @@ Public Class FormListaCarta
 
         'Cambiar Icono Seleccionado
         'TODO: Demomento esta solo el clor de fondo, pero debera ser la imagen la que cambie
-        Me.pbComun.BackColor = Color.Silver
-        Me.FindForm.Controls("pbComensal" & (ComensalSeleccionado + 1)).BackColor = Color.Aqua
+        Me.pbComun.BackColor = Color.SlateGray
+        Me.FindForm.Controls("pbComensal" & (ComensalSeleccionado + 1)).BackColor = Color.White
     End Sub
 
     Private Sub CambiarComensalSeleccionado()
         Dim NumeroComensales As Integer = FormBienvenida.ContadorComensales
+
         'Resetear todos los iconos de los comensales
-        Me.pbComun.BackColor = Color.Silver
+        Me.pbComun.BackColor = Color.SlateGray
         For i As Integer = 0 To NumeroComensales
-            Me.FindForm.Controls("pbComensal" & (i + 1)).BackColor = Color.Silver
+            Me.FindForm.Controls("pbComensal" & (i + 1)).BackColor = Color.SlateGray
         Next
+
         'Cambiar Icono Seleccionado
-        'TODO: Demomento esta solo el clor de fondo, pero debera ser la imagen la que cambie
         If ComensalSeleccionado = -1 Then
-            pbComun.BackColor = Color.Aqua
+            pbComun.BackColor = Color.White
         Else
-            Me.FindForm.Controls("pbComensal" & (ComensalSeleccionado + 1)).BackColor = Color.Aqua
+            Me.FindForm.Controls("pbComensal" & (ComensalSeleccionado + 1)).BackColor = Color.White
         End If
 
     End Sub
 #End Region
-
 
 End Class
