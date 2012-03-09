@@ -54,6 +54,7 @@ Partial Class FormListaCarta
         Me.pbComensal2 = New System.Windows.Forms.PictureBox()
         Me.pbLlamarCamarero = New System.Windows.Forms.PictureBox()
         Me.pbComensal1 = New System.Windows.Forms.PictureBox()
+        Me.pbAtras = New System.Windows.Forms.PictureBox()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCartel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbEntrantes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,6 +84,7 @@ Partial Class FormListaCarta
         CType(Me.pbComensal2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbLlamarCamarero, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbComensal1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbAtras, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pbCerrar
@@ -101,7 +103,7 @@ Partial Class FormListaCarta
         Me.pbCartel.BackColor = System.Drawing.Color.Transparent
         Me.pbCartel.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.cartel_carta2
         Me.pbCartel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.pbCartel.Location = New System.Drawing.Point(2, -2)
+        Me.pbCartel.Location = New System.Drawing.Point(0, 0)
         Me.pbCartel.Name = "pbCartel"
         Me.pbCartel.Size = New System.Drawing.Size(795, 202)
         Me.pbCartel.TabIndex = 3
@@ -111,7 +113,7 @@ Partial Class FormListaCarta
         '
         Me.pbEntrantes.BackColor = System.Drawing.Color.Transparent
         Me.pbEntrantes.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
-        Me.pbEntrantes.Location = New System.Drawing.Point(6, 206)
+        Me.pbEntrantes.Location = New System.Drawing.Point(6, 217)
         Me.pbEntrantes.Name = "pbEntrantes"
         Me.pbEntrantes.Size = New System.Drawing.Size(239, 67)
         Me.pbEntrantes.TabIndex = 5
@@ -121,7 +123,7 @@ Partial Class FormListaCarta
         '
         Me.pbBebidas.BackColor = System.Drawing.Color.Transparent
         Me.pbBebidas.BackgroundImage = CType(resources.GetObject("pbBebidas.BackgroundImage"), System.Drawing.Image)
-        Me.pbBebidas.Location = New System.Drawing.Point(273, 508)
+        Me.pbBebidas.Location = New System.Drawing.Point(273, 519)
         Me.pbBebidas.Name = "pbBebidas"
         Me.pbBebidas.Size = New System.Drawing.Size(239, 67)
         Me.pbBebidas.TabIndex = 6
@@ -131,7 +133,7 @@ Partial Class FormListaCarta
         '
         Me.pbPostres.BackColor = System.Drawing.Color.Transparent
         Me.pbPostres.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Postres
-        Me.pbPostres.Location = New System.Drawing.Point(537, 407)
+        Me.pbPostres.Location = New System.Drawing.Point(537, 418)
         Me.pbPostres.Name = "pbPostres"
         Me.pbPostres.Size = New System.Drawing.Size(239, 67)
         Me.pbPostres.TabIndex = 7
@@ -141,7 +143,7 @@ Partial Class FormListaCarta
         '
         Me.pbEspeciales.BackColor = System.Drawing.Color.Transparent
         Me.pbEspeciales.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Especiales
-        Me.pbEspeciales.Location = New System.Drawing.Point(273, 407)
+        Me.pbEspeciales.Location = New System.Drawing.Point(273, 418)
         Me.pbEspeciales.Name = "pbEspeciales"
         Me.pbEspeciales.Size = New System.Drawing.Size(239, 67)
         Me.pbEspeciales.TabIndex = 8
@@ -152,7 +154,7 @@ Partial Class FormListaCarta
         Me.pbAyuda.BackColor = System.Drawing.Color.Transparent
         Me.pbAyuda.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.ayuda
         Me.pbAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbAyuda.Location = New System.Drawing.Point(709, 12)
+        Me.pbAyuda.Location = New System.Drawing.Point(699, 25)
         Me.pbAyuda.Name = "pbAyuda"
         Me.pbAyuda.Size = New System.Drawing.Size(63, 65)
         Me.pbAyuda.TabIndex = 9
@@ -168,7 +170,7 @@ Partial Class FormListaCarta
         '
         Me.pbHamburguesas.BackColor = System.Drawing.Color.Transparent
         Me.pbHamburguesas.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
-        Me.pbHamburguesas.Location = New System.Drawing.Point(273, 206)
+        Me.pbHamburguesas.Location = New System.Drawing.Point(273, 217)
         Me.pbHamburguesas.Name = "pbHamburguesas"
         Me.pbHamburguesas.Size = New System.Drawing.Size(239, 67)
         Me.pbHamburguesas.TabIndex = 25
@@ -178,7 +180,7 @@ Partial Class FormListaCarta
         '
         Me.pbTexMex.BackColor = System.Drawing.Color.Transparent
         Me.pbTexMex.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
-        Me.pbTexMex.Location = New System.Drawing.Point(6, 306)
+        Me.pbTexMex.Location = New System.Drawing.Point(6, 317)
         Me.pbTexMex.Name = "pbTexMex"
         Me.pbTexMex.Size = New System.Drawing.Size(239, 67)
         Me.pbTexMex.TabIndex = 26
@@ -188,7 +190,7 @@ Partial Class FormListaCarta
         '
         Me.pbSandwich.BackColor = System.Drawing.Color.Transparent
         Me.pbSandwich.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
-        Me.pbSandwich.Location = New System.Drawing.Point(273, 306)
+        Me.pbSandwich.Location = New System.Drawing.Point(273, 317)
         Me.pbSandwich.Name = "pbSandwich"
         Me.pbSandwich.Size = New System.Drawing.Size(239, 67)
         Me.pbSandwich.TabIndex = 27
@@ -198,7 +200,7 @@ Partial Class FormListaCarta
         '
         Me.pbCostillas.BackColor = System.Drawing.Color.Transparent
         Me.pbCostillas.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
-        Me.pbCostillas.Location = New System.Drawing.Point(537, 206)
+        Me.pbCostillas.Location = New System.Drawing.Point(537, 217)
         Me.pbCostillas.Name = "pbCostillas"
         Me.pbCostillas.Size = New System.Drawing.Size(239, 67)
         Me.pbCostillas.TabIndex = 28
@@ -208,7 +210,7 @@ Partial Class FormListaCarta
         '
         Me.pbPolloPescado.BackColor = System.Drawing.Color.Transparent
         Me.pbPolloPescado.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
-        Me.pbPolloPescado.Location = New System.Drawing.Point(537, 306)
+        Me.pbPolloPescado.Location = New System.Drawing.Point(537, 317)
         Me.pbPolloPescado.Name = "pbPolloPescado"
         Me.pbPolloPescado.Size = New System.Drawing.Size(239, 67)
         Me.pbPolloPescado.TabIndex = 29
@@ -218,7 +220,7 @@ Partial Class FormListaCarta
         '
         Me.pbParrilla.BackColor = System.Drawing.Color.Transparent
         Me.pbParrilla.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
-        Me.pbParrilla.Location = New System.Drawing.Point(6, 407)
+        Me.pbParrilla.Location = New System.Drawing.Point(6, 418)
         Me.pbParrilla.Name = "pbParrilla"
         Me.pbParrilla.Size = New System.Drawing.Size(239, 67)
         Me.pbParrilla.TabIndex = 30
@@ -226,7 +228,7 @@ Partial Class FormListaCarta
         '
         'pbComun
         '
-        Me.pbComun.BackColor = System.Drawing.Color.Silver
+        Me.pbComun.BackColor = System.Drawing.Color.SlateGray
         Me.pbComun.Location = New System.Drawing.Point(21, 12)
         Me.pbComun.Name = "pbComun"
         Me.pbComun.Size = New System.Drawing.Size(48, 92)
@@ -253,7 +255,9 @@ Partial Class FormListaCarta
         '
         'pbComensal12
         '
-        Me.pbComensal12.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal12.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal12.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal12.Location = New System.Drawing.Point(310, 60)
         Me.pbComensal12.Name = "pbComensal12"
         Me.pbComensal12.Size = New System.Drawing.Size(41, 44)
@@ -263,7 +267,9 @@ Partial Class FormListaCarta
         '
         'pbComensal11
         '
-        Me.pbComensal11.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal11.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal11.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal11.Location = New System.Drawing.Point(263, 60)
         Me.pbComensal11.Name = "pbComensal11"
         Me.pbComensal11.Size = New System.Drawing.Size(41, 44)
@@ -273,7 +279,9 @@ Partial Class FormListaCarta
         '
         'pbComensal10
         '
-        Me.pbComensal10.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal10.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal10.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal10.Location = New System.Drawing.Point(216, 60)
         Me.pbComensal10.Name = "pbComensal10"
         Me.pbComensal10.Size = New System.Drawing.Size(41, 44)
@@ -283,7 +291,9 @@ Partial Class FormListaCarta
         '
         'pbComensal9
         '
-        Me.pbComensal9.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal9.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal9.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal9.Location = New System.Drawing.Point(169, 60)
         Me.pbComensal9.Name = "pbComensal9"
         Me.pbComensal9.Size = New System.Drawing.Size(41, 44)
@@ -293,7 +303,9 @@ Partial Class FormListaCarta
         '
         'pbComensal8
         '
-        Me.pbComensal8.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal8.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal8.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal8.Location = New System.Drawing.Point(122, 60)
         Me.pbComensal8.Name = "pbComensal8"
         Me.pbComensal8.Size = New System.Drawing.Size(41, 44)
@@ -303,7 +315,9 @@ Partial Class FormListaCarta
         '
         'pbComensal7
         '
-        Me.pbComensal7.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal7.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal7.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal7.Location = New System.Drawing.Point(75, 60)
         Me.pbComensal7.Name = "pbComensal7"
         Me.pbComensal7.Size = New System.Drawing.Size(41, 44)
@@ -313,7 +327,9 @@ Partial Class FormListaCarta
         '
         'pbComensal6
         '
-        Me.pbComensal6.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal6.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal6.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal6.Location = New System.Drawing.Point(310, 11)
         Me.pbComensal6.Name = "pbComensal6"
         Me.pbComensal6.Size = New System.Drawing.Size(41, 44)
@@ -323,7 +339,9 @@ Partial Class FormListaCarta
         '
         'pbComensal5
         '
-        Me.pbComensal5.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal5.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal5.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal5.Location = New System.Drawing.Point(263, 11)
         Me.pbComensal5.Name = "pbComensal5"
         Me.pbComensal5.Size = New System.Drawing.Size(41, 44)
@@ -333,7 +351,9 @@ Partial Class FormListaCarta
         '
         'pbComensal4
         '
-        Me.pbComensal4.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal4.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal4.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal4.Location = New System.Drawing.Point(216, 11)
         Me.pbComensal4.Name = "pbComensal4"
         Me.pbComensal4.Size = New System.Drawing.Size(41, 44)
@@ -343,7 +363,9 @@ Partial Class FormListaCarta
         '
         'pbComensal3
         '
-        Me.pbComensal3.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal3.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal3.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal3.Location = New System.Drawing.Point(169, 11)
         Me.pbComensal3.Name = "pbComensal3"
         Me.pbComensal3.Size = New System.Drawing.Size(41, 44)
@@ -353,7 +375,9 @@ Partial Class FormListaCarta
         '
         'pbComensal2
         '
-        Me.pbComensal2.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal2.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal2.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.clientes
+        Me.pbComensal2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal2.Location = New System.Drawing.Point(122, 11)
         Me.pbComensal2.Name = "pbComensal2"
         Me.pbComensal2.Size = New System.Drawing.Size(41, 44)
@@ -372,13 +396,25 @@ Partial Class FormListaCarta
         '
         'pbComensal1
         '
-        Me.pbComensal1.BackColor = System.Drawing.Color.Silver
+        Me.pbComensal1.BackColor = System.Drawing.Color.SlateGray
+        Me.pbComensal1.BackgroundImage = CType(resources.GetObject("pbComensal1.BackgroundImage"), System.Drawing.Image)
+        Me.pbComensal1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.pbComensal1.Location = New System.Drawing.Point(75, 12)
         Me.pbComensal1.Name = "pbComensal1"
         Me.pbComensal1.Size = New System.Drawing.Size(41, 44)
         Me.pbComensal1.TabIndex = 41
         Me.pbComensal1.TabStop = False
         Me.pbComensal1.Visible = False
+        '
+        'pbAtras
+        '
+        Me.pbAtras.BackColor = System.Drawing.Color.Transparent
+        Me.pbAtras.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.CartelAtras
+        Me.pbAtras.Location = New System.Drawing.Point(706, 115)
+        Me.pbAtras.Name = "pbAtras"
+        Me.pbAtras.Size = New System.Drawing.Size(88, 86)
+        Me.pbAtras.TabIndex = 57
+        Me.pbAtras.TabStop = False
         '
         'FormListaCarta
         '
@@ -387,6 +423,7 @@ Partial Class FormListaCarta
         Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Carta_fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.pbAtras)
         Me.Controls.Add(Me.pbComun)
         Me.Controls.Add(Me.pbPedir)
         Me.Controls.Add(Me.pbPedirCuenta)
@@ -417,8 +454,7 @@ Partial Class FormListaCarta
         Me.Controls.Add(Me.pbEntrantes)
         Me.Controls.Add(Me.pbCartel)
         Me.DoubleBuffered = True
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Location = New System.Drawing.Point(1, 1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormListaCarta"
         Me.Text = "FormListaCarta"
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -450,6 +486,7 @@ Partial Class FormListaCarta
         CType(Me.pbComensal2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbLlamarCamarero, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbComensal1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbAtras, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -483,4 +520,5 @@ Partial Class FormListaCarta
     Friend WithEvents pbComensal2 As System.Windows.Forms.PictureBox
     Friend WithEvents pbLlamarCamarero As System.Windows.Forms.PictureBox
     Friend WithEvents pbComensal1 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbAtras As System.Windows.Forms.PictureBox
 End Class

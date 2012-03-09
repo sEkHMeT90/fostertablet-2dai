@@ -47,7 +47,6 @@ Public Class FormBienvenida
         'TODO: Crear o cargar ".ini"
     End Sub
 #End Region
-
     '---------------------------------- FUNCIONES -------------------------
 #Region "FUNCIONES"
     Private Sub AumentarNumeroContador()
@@ -72,8 +71,5 @@ Public Class FormBienvenida
             End Try
         End If
     End Sub
-
-
-   
 #End Region
 End Class

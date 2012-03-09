@@ -48,7 +48,7 @@ Partial Class FormBienvenida
         Me.pbAyuda.BackColor = System.Drawing.Color.Transparent
         Me.pbAyuda.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.ayuda
         Me.pbAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbAyuda.Location = New System.Drawing.Point(681, 38)
+        Me.pbAyuda.Location = New System.Drawing.Point(699, 25)
         Me.pbAyuda.Name = "pbAyuda"
         Me.pbAyuda.Size = New System.Drawing.Size(63, 65)
         Me.pbAyuda.TabIndex = 0
@@ -69,7 +69,7 @@ Partial Class FormBienvenida
         '
         Me.pbCartel.BackColor = System.Drawing.Color.Transparent
         Me.pbCartel.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.cartel_bienvenida
-        Me.pbCartel.Location = New System.Drawing.Point(12, 12)
+        Me.pbCartel.Location = New System.Drawing.Point(19, 12)
         Me.pbCartel.Name = "pbCartel"
         Me.pbCartel.Size = New System.Drawing.Size(760, 122)
         Me.pbCartel.TabIndex = 2
@@ -78,7 +78,7 @@ Partial Class FormBienvenida
         'pbPublicidad
         '
         Me.pbPublicidad.BackColor = System.Drawing.Color.White
-        Me.pbPublicidad.Location = New System.Drawing.Point(600, 154)
+        Me.pbPublicidad.Location = New System.Drawing.Point(607, 149)
         Me.pbPublicidad.Name = "pbPublicidad"
         Me.pbPublicidad.Size = New System.Drawing.Size(172, 403)
         Me.pbPublicidad.TabIndex = 3
@@ -156,7 +156,7 @@ Partial Class FormBienvenida
         Me.Controls.Add(Me.pbCartel)
         Me.Controls.Add(Me.pbPublicidad)
         Me.DoubleBuffered = True
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Location = New System.Drawing.Point(1, 1)
         Me.Name = "FormBienvenida"
         Me.Text = "Form1"
