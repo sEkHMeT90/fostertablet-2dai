@@ -19,6 +19,18 @@ Proyecto_Foster_Cliente
  
  </summary>
 	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="T:Proyecto_Foster_Cliente.FormListaCartaPlatos">
+	<summary>
+  Pantalla de Lista para la Carta de platos.
+ Sera la primera pantalla que el cliente emezara a seleccionar lo que quiere pedir.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="T:Proyecto_Foster_Cliente.FormDetallePlato">
+	<summary>
+  Pantalla de Detalle de Plato.
+ Sera la primera pantalla que el cliente emezara a seleccionar lo que quiere pedir.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
 </member><member name="P:Proyecto_Foster_Cliente.My.Resources.Resources.ResourceManager">
 	<summary>
   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
