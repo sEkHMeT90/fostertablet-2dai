@@ -92,11 +92,14 @@ Partial Class FormHacerPedido
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Carta_fondo
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(784, 562)
         Me.Controls.Add(Me.pbContinuar)
         Me.Controls.Add(Me.pbVolver)
         Me.Controls.Add(Me.pbDescartar)
         Me.Controls.Add(Me.dgvPedidos)
+        Me.DoubleBuffered = True
         Me.Name = "FormHacerPedido"
         Me.Text = "FormHacerPedido"
         CType(Me.dgvPedidos, System.ComponentModel.ISupportInitialize).EndInit()

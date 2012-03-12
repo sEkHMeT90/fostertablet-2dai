@@ -24,10 +24,8 @@ C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cl
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormAyuda.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormBienvenida.resources
-C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormComensales.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormDetallePlato.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCarta.resources
-C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCataDetalle.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormSeleccionMesa.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.Resources.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.read.1.tlog
@@ -56,12 +54,9 @@ C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFo
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormAyuda.resources
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormBienvenida.resources
-C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormComensales.resources
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormDetallePlato.resources
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormHacerPedido.resources
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCarta.resources
-C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaDetallePlatos.resources
-C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaSecciones.resources
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormSeleccionMesa.resources
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.Resources.resources
 C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.read.1.tlog
@@ -69,3 +64,8 @@ C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFo
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormHacerPedido.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaPlatos.resources
 C:\Users\Lince\Desktop\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormPedirCuenta.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaPlatos.resources
+C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormPedirCuenta.resources
+C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormHacerPedido.resources
+C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaPlatos.resources
+C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormPedirCuenta.resources

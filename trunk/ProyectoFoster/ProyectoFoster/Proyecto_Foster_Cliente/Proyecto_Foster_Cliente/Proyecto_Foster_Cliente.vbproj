@@ -255,13 +255,7 @@
     <None Include="Resources\Comensale_fondo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Bebidas.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Especiales.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Postres.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\comun.png" />
@@ -277,6 +271,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburguesas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bebidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infantiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opcion1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opcion2_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opcion3_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregunta1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

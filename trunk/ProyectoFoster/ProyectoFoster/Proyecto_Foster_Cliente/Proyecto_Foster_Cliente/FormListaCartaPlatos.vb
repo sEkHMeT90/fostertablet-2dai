@@ -1,19 +1,26 @@
-﻿Public Class FormListaCartaPlatos
+﻿''' <summary>
+'''  Pantalla de Lista para la Carta de platos.
+''' Sera la primera pantalla que el cliente emezara a seleccionar lo que quiere pedir.
+''' </summary>
+''' <autor>Julio L. Antoranz Ros</autor>
+Public Class FormListaCartaPlatos
     'Variables
-    Private MenuSeleccionado As Integer
+    Private Categoria As Integer
+    Private SubCategoria As Integer
 #Region "CONSTRUCTOR"
     Public Sub New()
         ' Llamada necesaria para el diseñador.
         InitializeComponent()
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
     End Sub
-    Public Sub New(ByVal MenuSeleccionado As Integer)
+    Public Sub New(ByVal Categoria As Integer, ByVal SubCategoria As Integer)
 
         ' Llamada necesaria para el diseñador.
         InitializeComponent()
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
- 
-        Me.MenuSeleccionado = MenuSeleccionado
+
+        Me.Categoria = Categoria
+        Me.SubCategoria = SubCategoria
     End Sub
 #End Region
     '---------------------------------- EVENTOS -----------------------------
@@ -83,7 +90,9 @@
         FormListaCarta.ComensalSeleccionado = -1
         CambiarComensalSeleccionado()
     End Sub
+
 #End Region
+#Region "PLATOS"
     Private Sub pbImegenPlato_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbImegenPlato.Click
         FormDetallePlato.Show()
     End Sub
@@ -107,7 +116,7 @@
     Private Sub pbImegenPlato6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbImegenPlato6.Click
         FormDetallePlato.Show()
     End Sub
-
+#End Region
     Private Sub pbCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbCerrar.Click
         Application.Exit()
     End Sub
@@ -116,6 +125,11 @@
         FormListaCarta.Visible = False
         MostrarComensales()
     End Sub
+
+    Private Sub FormListaCartaPlatos_VisibleChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.VisibleChanged
+        CambiarComensalSeleccionado()
+    End Sub
+
     Private Sub pbAtras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAtras.Click
         Me.Close()
     End Sub
@@ -123,6 +137,14 @@
     Private Sub FormListaCartaPlatos_FormClosing(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         FormListaCarta.Visible = True
 
+    End Sub
+
+    Private Sub pbAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAyuda.Click
+        FormAyuda.Show()
+    End Sub
+
+    Private Sub pbPedirCuenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedirCuenta.Click
+        FormPedirCuenta.Show()
     End Sub
 #End Region
 
@@ -160,6 +182,5 @@
     End Sub
 #End Region
 
-
-
+    
 End Class
