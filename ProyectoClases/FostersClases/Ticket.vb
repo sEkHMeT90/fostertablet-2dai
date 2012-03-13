@@ -325,7 +325,7 @@ Public Class Ticket
         comando = New OracleCommand(_ESTADO_MESA, OrigenDatos.Conexion)
         comando.Parameters.Add("Resultado", OracleDbType.Int16, 1)
         comando.Parameters.Add("Codigo_mesa", OracleDbType.Int32, 8).Value = codigoMesa
-        comando.Parameters.Add("Estado_mesa", OracleDbType.Int16, 3).Value = 4
+        comando.Parameters.Add("Estado_mesa", OracleDbType.Int16, 3).Value = 5
 
         comando.CommandType = CommandType.StoredProcedure
         If OrigenDatos.Modificar(comando) = 0 Then

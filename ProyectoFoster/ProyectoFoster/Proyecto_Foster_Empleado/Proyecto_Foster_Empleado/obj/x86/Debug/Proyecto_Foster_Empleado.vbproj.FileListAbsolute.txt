@@ -13,3 +13,4 @@ C:\Users\Alumno\Documents\proyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foste
 F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.exe
 F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.xml
 F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\obj\x86\Debug\Proyecto_Foster_Empleado.pdb
+C:\Users\Alumno\Documents\ProyectoF\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Empleado\Proyecto_Foster_Empleado\bin\Debug\Oracle.DataAccess.dll
