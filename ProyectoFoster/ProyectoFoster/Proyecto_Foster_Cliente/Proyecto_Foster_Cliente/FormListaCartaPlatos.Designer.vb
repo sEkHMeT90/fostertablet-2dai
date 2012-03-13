@@ -22,12 +22,10 @@ Partial Class FormListaCartaPlatos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormListaCartaPlatos))
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbAyuda = New System.Windows.Forms.PictureBox()
         Me.pbCartel = New System.Windows.Forms.PictureBox()
-        Me.ilIconosComensales = New System.Windows.Forms.ImageList(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pbImegenPlato = New System.Windows.Forms.PictureBox()
         Me.lbNombrePlato = New System.Windows.Forms.Label()
@@ -133,12 +131,6 @@ Partial Class FormListaCartaPlatos
         Me.pbCartel.Size = New System.Drawing.Size(795, 202)
         Me.pbCartel.TabIndex = 13
         Me.pbCartel.TabStop = False
-        '
-        'ilIconosComensales
-        '
-        Me.ilIconosComensales.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ilIconosComensales.ImageSize = New System.Drawing.Size(16, 16)
-        Me.ilIconosComensales.TransparentColor = System.Drawing.Color.Transparent
         '
         'Panel1
         '
@@ -328,19 +320,21 @@ Partial Class FormListaCartaPlatos
         '
         'pbPrevious
         '
-        Me.pbPrevious.BackColor = System.Drawing.Color.BlueViolet
+        Me.pbPrevious.BackColor = System.Drawing.Color.Transparent
+        Me.pbPrevious.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.previous
         Me.pbPrevious.Location = New System.Drawing.Point(12, 333)
         Me.pbPrevious.Name = "pbPrevious"
-        Me.pbPrevious.Size = New System.Drawing.Size(46, 121)
+        Me.pbPrevious.Size = New System.Drawing.Size(60, 120)
         Me.pbPrevious.TabIndex = 22
         Me.pbPrevious.TabStop = False
         '
         'pbNext
         '
-        Me.pbNext.BackColor = System.Drawing.Color.BlueViolet
-        Me.pbNext.Location = New System.Drawing.Point(722, 333)
+        Me.pbNext.BackColor = System.Drawing.Color.Transparent
+        Me.pbNext.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources._next
+        Me.pbNext.Location = New System.Drawing.Point(717, 333)
         Me.pbNext.Name = "pbNext"
-        Me.pbNext.Size = New System.Drawing.Size(46, 121)
+        Me.pbNext.Size = New System.Drawing.Size(60, 120)
         Me.pbNext.TabIndex = 23
         Me.pbNext.TabStop = False
         '
@@ -615,7 +609,6 @@ Partial Class FormListaCartaPlatos
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
     Friend WithEvents pbAyuda As System.Windows.Forms.PictureBox
     Friend WithEvents pbCartel As System.Windows.Forms.PictureBox
-    Friend WithEvents ilIconosComensales As System.Windows.Forms.ImageList
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents pbImegenPlato As System.Windows.Forms.PictureBox
     Friend WithEvents lbNombrePlato As System.Windows.Forms.Label

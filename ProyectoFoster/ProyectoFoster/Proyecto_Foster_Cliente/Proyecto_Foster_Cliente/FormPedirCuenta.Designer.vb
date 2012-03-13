@@ -56,7 +56,7 @@ Partial Class FormPedirCuenta
         Me.GroupBox3.Controls.Add(Me.RadioButton8)
         Me.GroupBox3.Controls.Add(Me.RadioButton6)
         Me.GroupBox3.Controls.Add(Me.RadioButton7)
-        Me.GroupBox3.Location = New System.Drawing.Point(56, 457)
+        Me.GroupBox3.Location = New System.Drawing.Point(56, 464)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(114, 93)
         Me.GroupBox3.TabIndex = 5
@@ -113,10 +113,10 @@ Partial Class FormPedirCuenta
         'pbContinuar
         '
         Me.pbContinuar.BackColor = System.Drawing.Color.Transparent
-        Me.pbContinuar.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.boton
-        Me.pbContinuar.Location = New System.Drawing.Point(641, 492)
+        Me.pbContinuar.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Aceptar
+        Me.pbContinuar.Location = New System.Drawing.Point(647, 486)
         Me.pbContinuar.Name = "pbContinuar"
-        Me.pbContinuar.Size = New System.Drawing.Size(105, 58)
+        Me.pbContinuar.Size = New System.Drawing.Size(105, 60)
         Me.pbContinuar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbContinuar.TabIndex = 14
         Me.pbContinuar.TabStop = False
@@ -154,10 +154,10 @@ Partial Class FormPedirCuenta
         'pbAtras
         '
         Me.pbAtras.BackColor = System.Drawing.Color.Transparent
-        Me.pbAtras.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.CartelAtras
-        Me.pbAtras.Location = New System.Drawing.Point(506, 492)
+        Me.pbAtras.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Cancelar
+        Me.pbAtras.Location = New System.Drawing.Point(517, 486)
         Me.pbAtras.Name = "pbAtras"
-        Me.pbAtras.Size = New System.Drawing.Size(105, 58)
+        Me.pbAtras.Size = New System.Drawing.Size(105, 60)
         Me.pbAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbAtras.TabIndex = 10
         Me.pbAtras.TabStop = False
@@ -186,7 +186,7 @@ Partial Class FormPedirCuenta
         Me.pbPreguntas.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Pregunta1
         Me.pbPreguntas.Location = New System.Drawing.Point(45, 15)
         Me.pbPreguntas.Name = "pbPreguntas"
-        Me.pbPreguntas.Size = New System.Drawing.Size(700, 125)
+        Me.pbPreguntas.Size = New System.Drawing.Size(707, 125)
         Me.pbPreguntas.TabIndex = 7
         Me.pbPreguntas.TabStop = False
         '
@@ -203,7 +203,9 @@ Partial Class FormPedirCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 562)
+        Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Carta_fondo
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.pbContinuar)
         Me.Controls.Add(Me.pbOpcion3)
         Me.Controls.Add(Me.pbOpcion2)
@@ -214,6 +216,8 @@ Partial Class FormPedirCuenta
         Me.Controls.Add(Me.pbPreguntas)
         Me.Controls.Add(Me.pbChecket1)
         Me.Controls.Add(Me.GroupBox3)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormPedirCuenta"
         Me.Text = "Cobrar"
         Me.GroupBox3.ResumeLayout(False)

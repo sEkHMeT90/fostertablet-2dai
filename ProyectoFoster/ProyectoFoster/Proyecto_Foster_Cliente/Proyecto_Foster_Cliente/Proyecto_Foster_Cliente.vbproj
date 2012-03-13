@@ -299,6 +299,54 @@
   <ItemGroup>
     <None Include="Resources\Pregunta1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ensalada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniEnsalada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patatas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandwich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BebidasAlcoholicas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refrescos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CafeInfusiones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Costillas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entrantes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parrilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

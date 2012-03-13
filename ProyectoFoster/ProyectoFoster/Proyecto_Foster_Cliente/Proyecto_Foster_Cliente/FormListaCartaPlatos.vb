@@ -1,6 +1,6 @@
 ﻿''' <summary>
 '''  Pantalla de Lista para la Carta de platos.
-''' Sera la primera pantalla que el cliente emezara a seleccionar lo que quiere pedir.
+''' Sera la segunda pantalla que el cliente emezara a seleccionar lo que quiere pedir.
 ''' </summary>
 ''' <autor>Julio L. Antoranz Ros</autor>
 Public Class FormListaCartaPlatos
@@ -160,7 +160,11 @@ Public Class FormListaCartaPlatos
         'Cambiar Icono Seleccionado
         'TODO: Demomento esta solo el clor de fondo, pero debera ser la imagen la que cambie
         Me.pbComun.BackColor = Color.SlateGray
-        Me.FindForm.Controls("pbComensal" & (FormListaCarta.ComensalSeleccionado + 1)).BackColor = Color.White
+        If FormListaCarta.ComensalSeleccionado = -1 Then
+            pbComun.BackColor = Color.White
+        Else
+            Me.FindForm.Controls("pbComensal" & (FormListaCarta.ComensalSeleccionado + 1)).BackColor = Color.White
+        End If
 
     End Sub
 
