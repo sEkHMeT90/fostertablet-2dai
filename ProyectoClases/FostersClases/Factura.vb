@@ -12,6 +12,11 @@ Imports System.Drawing.Printing
 ''' <author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
 Public Class Factura
 
+#Region "Constantes"
+
+  Private Const _BORRAR As String = "GestionFacturas.Borrar"
+#End Region
+
 #Region "Variables"
   Private _Codigo As Integer
   Private _Ticket As Ticket
@@ -113,6 +118,38 @@ Public Class Factura
 
     Return Facturas
   End Function
+
+  ''' <summary>
+  ''' Borra una factura de la base de datos
+  ''' </summary>
+  ''' <param name="factura">Factura que se va a borrar</param>
+  ''' <returns>Un boolean indicando si la operación se realizó con éxito</returns>
+  ''' <author>David Martínez Pérez</author>
+  Public Shared Function Borrar(ByVal factura As Factura) As Boolean
+    Dim ok As Boolean
+
+    Dim OrigenDatos As New BBDD
+    Dim Comando As OracleCommand
+
+    If OrigenDatos.Conectar() Then
+      Comando = New OracleCommand(_BORRAR, OrigenDatos.Conexion)
+      Comando.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
+      Comando.Parameters.Add("ticket", OracleDbType.Int32, 2).Value = Me._Codigo
+      Comando.CommandType = CommandType.StoredProcedure
+
+      If OrigenDatos.Modificar(Comando) = 0 Then
+        ok = False
+      Else
+        ok = True
+      End If
+
+      OrigenDatos.Desconectar()
+      OrigenDatos.Dispose()
+    End If
+
+    Return ok
+  End Function
+
 
   ''' <summary>
   ''' Imprime la factura

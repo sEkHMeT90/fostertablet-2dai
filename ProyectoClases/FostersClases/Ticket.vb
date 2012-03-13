@@ -276,7 +276,7 @@ Public Class Ticket
     Dim Comando As OracleCommand
 
     If OrigenDatos.Conectar() Then
-      Comando = New OracleCommand(_INSERT, OrigenDatos.Conexion)
+      Comando = New OracleCommand(_FACTURAR, OrigenDatos.Conexion)
       Comando.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
       Comando.Parameters.Add("ticket", OracleDbType.Int32, 2).Value = Me._Codigo
       Comando.CommandType = CommandType.StoredProcedure
