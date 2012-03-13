@@ -1,103 +1,205 @@
 ﻿
 ''' <summary>
-''' 
+''' Módulo de validaciones
 ''' </summary>
-''' <author></author>
+''' <author>Alejandro Guijarro Terol</author>
 Module Validacion
 
+
+
+
   ''' <summary>
-  ''' 
+  ''' Comprueba que el objeto se puede convertir a string
   ''' </summary>
-  ''' <param name="cadena"></param>
-  ''' <returns></returns>
-  ''' <author></author>
-  Public Function ValidarTexto(ByVal cadena As String) As Boolean
-    If cadena.Length = 0 Then
+  ''' <author>Alejandro Guijarro Terol</author>
+  Public Function EsTexto(ByVal objeto As Object) As Boolean
+    Dim Res As Boolean
 
-      Return False
+    Try
+      convert.ToString(objeto)
+      Res = True
+    Catch ex As Exception
+      Res = False
+    End Try
 
-    Else
-      'Quito los espacios de principio y fin
-      If cadena(0) = " " Or cadena(cadena.Length - 1) = " " Then
-        cadena = cadena.Trim()
-      End If
-      'Quito los espacios repetidos (mas de un espacio seguido)
-      Do
-        cadena = cadena.Replace("  ", " ")
-      Loop While cadena.IndexOf("  ") >= 0
-      'Compruebo que el contenido de la cadena sea número o letra
-      For i As Integer = 0 To cadena.Length - 1
-        If cadena(i) < "a" Or cadena(i) > "z" Then
-          If cadena(i) < "A" Or cadena(i) > "Z" Then
-            If cadena(i) < "0" Or cadena(i) > "9" Then
-              Return False
-            End If
-          End If
-        End If
-      Next
-
-      Return True
-
-    End If
+    Return Res
   End Function
 
   ''' <summary>
   ''' 
   ''' </summary>
-  ''' <param name="cadena"></param>
-  ''' <returns></returns>
-  ''' <author></author>
-  Public Function ValidarNumero(ByVal cadena As String) As Boolean
-    If cadena.Length = 0 Then
+  ''' <param name="objeto"></param>
+  ''' <returns>Un booleano que indica si lo introducido es correcto o no</returns>
+  ''' <author>Alejandro Guijarro Terol</author>
+  Public Function ValidarTexto(ByVal objeto As Object, ByVal minimo As Integer, ByVal maximo As Integer) As Boolean
+    Dim resultado As Boolean
+    Dim valido As Boolean
+    Dim Cadena As String
 
-      Return False
 
-    Else
-      'Quito los espacios de principio y fin
-      If cadena(0) = " " Or cadena(cadena.Length - 1) = " " Then
-        cadena = cadena.Trim()
-      End If
-      'Quito los espacios repetidos (mas de un espacio seguido)
-      Do
-        cadena = cadena.Replace("  ", " ")
-      Loop While cadena.IndexOf("  ") >= 0
-      'Compruebo que el contenido de la cadena sea número.
 
-      For i As Integer = 0 To cadena.Length - 1
-        If cadena(i) < "0" Or cadena(i) > "9" Then
-          Return False
+    Try
+
+      Cadena = CStr(objeto)
+      valido = True
+
+      For i = 0 To Cadena.Length - 1
+        If (Cadena(i) < "a" Or Cadena(i) > "z") And (Cadena(i) < "A" Or Cadena(i) > "Z") And _
+           (Cadena(i) < "0" Or Cadena(i) > "9") And (Cadena(i) <> " ") Then
+          valido = False
         End If
       Next
-    End If
-    Return True
+
+      If valido Then
+        If Cadena.Length < minimo Or Cadena.Length > maximo Then
+          resultado = False
+        Else
+          resultado = True
+        End If
+      Else
+        resultado = False
+      End If
+
+    Catch ex As Exception
+      resultado = False
+
+    End Try
+
+    Return resultado
+
   End Function
 
   ''' <summary>
-  ''' 
+  ''' Comprueba que el valor del olbeto es un entero
   ''' </summary>
-  ''' <param name="cadena"></param>
-  ''' <returns></returns>
-  ''' <author></author>
-  Public Function ValidarTelefono(ByVal cadena As String) As Boolean
-    If cadena.Length = 0 Or cadena.Length > 9 Then
-      Return False
-    Else
-      'Quito los espacios de principio y fin
-      If cadena(0) = " " Or cadena(cadena.Length - 1) = " " Then
-        cadena = cadena.Trim()
-      End If
-      'Quito los espacios repetidos (mas de un espacio seguido)
-      Do
-        cadena = cadena.Replace("  ", " ")
-      Loop While cadena.IndexOf("  ") >= 0
-      'Compruebo que el contenido de la cadena sea número.
+  ''' <param name="objeto"></param>
+  ''' <returns>Un booleano que indica si lo introducido es correcto o no</returns>
+  ''' <author>Alejandro Guijarro Terol</author>
+  Public Function ValidarNumeroEntero(ByVal objeto As Object, ByVal minimo As Integer, ByVal maximo As Integer) As Boolean
+    Dim Resultado As Boolean
+    Dim numero As Integer
 
-      For i As Integer = 0 To cadena.Length - 1
-        If cadena(i) < "0" Or cadena(i) > "9" Then
-          Return False
+    Try
+      numero = CInt(objeto)
+      If (CStr(numero).Length < minimo Or CStr(numero).Length > maximo) _
+        Or (CStr(objeto).IndexOf(".") >= 0 Or CStr(objeto).IndexOf(",") >= 0) Then
+        Resultado = False
+      Else
+        Resultado = True
+      End If
+    Catch ex As Exception
+      Resultado = False
+    End Try
+
+    Return Resultado
+  End Function
+
+  ''' <summary>
+  ''' Comprueba que el valor del olbeto es un número decimal (Acepta entero, claro)
+  ''' </summary>
+  ''' <param name="objeto"></param>
+  ''' <returns>Un booleano que indica si lo introducido es correcto o no</returns>
+  ''' <author>Alejandro Guijarro Terol</author>
+  Public Function ValidarNumeroDecimal(ByVal objeto As Object, ByVal minimo As Integer, ByVal maximo As Integer) As Boolean
+    Dim Resultado As Boolean
+    Dim numero As Single
+
+    Try
+      numero = CSng(objeto)
+      If (CStr(numero).Length < minimo Or CStr(numero).Length > maximo) Or _
+        CStr(objeto).IndexOf(".") >= 0 Then
+        Resultado = False
+      Else
+        Resultado = True
+      End If
+    Catch ex As Exception
+      Resultado = False
+    End Try
+
+    Return Resultado
+  End Function
+
+  ''' <summary>
+  ''' Valida números de teléfono
+  ''' </summary>
+  ''' <param name="objeto"></param>
+  ''' <returns>Un booleano que indica si lo introducido es correcto o no</returns>
+  ''' <author>Alejandro Guijarro Terol</author>
+  Public Function ValidarTelefono(ByVal objeto As Object, ByVal minimo As Integer, ByVal maximo As Integer) As Boolean
+    Dim resultado As Boolean
+    Dim valido As Boolean
+    Dim Cadena As String
+
+
+    Try
+
+      Cadena = CStr(objeto)
+      valido = True
+
+      For i = 0 To Cadena.Length - 1
+        If (Cadena(i) < "0" Or Cadena(i) > "9") And _
+          (Cadena(i) <> "+") And (Cadena(i) <> "-") And _
+          (Cadena(i) <> "(") And (Cadena(i) <> ")") And _
+          (Cadena(i) <> ".") And (Cadena(i) <> " ") Then
+
+          valido = False
         End If
       Next
-    End If
-    Return True
+
+      If valido Then
+        If Cadena.Length < minimo Or Cadena.Length > maximo Then
+          resultado = False
+        Else
+          resultado = True
+        End If
+      Else
+        resultado = False
+      End If
+
+    Catch ex As Exception
+      resultado = False
+
+    End Try
+
+    Return resultado
   End Function
+
+  ''' <summary>
+  ''' Comprueba que es una fecha
+  ''' </summary>
+  ''' <param name="objeto"></param>
+  ''' <returns>Un booleano que indica si lo introducido es correcto o no</returns>
+  ''' <author>Alejandro Guijarro Terol</author>
+  Public Function ValidarFecha(ByVal objeto As Object, ByVal minimo As Integer, ByVal maximo As Integer) As Boolean
+    Dim resultado As Boolean
+    Dim valido As Boolean
+    Dim fecha As Date
+
+
+    Try
+      fecha = CDate(objeto)
+
+      valido = True
+
+
+      If (CStr(objeto).IndexOf(",") >= 0) Or (CStr(objeto).IndexOf(".") >= 0) Then
+        valido = False
+      End If
+
+
+      If valido Then
+        resultado = True
+      Else
+        resultado = False
+      End If
+
+    Catch ex As Exception
+      resultado = False
+    End Try
+
+    Return resultado
+  End Function
+
+
+
 End Module
