@@ -18,6 +18,105 @@
     DROP TABLE subcategorias;
     DROP TABLE categorias;
     
+	DROP SEQUENCE SecCategorias;
+	DROP SEQUENCE SecTiposIVA;
+	DROP SEQUENCE SecProveedores;
+	DROP SEQUENCE SecProductos;
+	DROP SEQUENCE SecPedidos;
+	DROP SEQUENCE SecTiposPago;
+    DROP SEQUENCE SecTickets;
+    DROP SEQUENCE SecFacturas;
+    DROP SEQUENCE SecEstadosMesa;
+    DROP SEQUENCE SecMesas;
+    DROP SEQUENCE SecEstadosComanda;
+    DROP SEQUENCE SecComandas;
+    
+    COMMIT;
+    
+    CREATE SEQUENCE SecCategorias
+    INCREMENT BY 1
+    START WITH 0 
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecTiposIVA
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecProveedores
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecProductos
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecPedidos
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecTiposPago
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecTickets
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecFacturas
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecEstadosMesa
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecMesas
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecEstadosComanda
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
+    CREATE SEQUENCE SecComandas
+    INCREMENT BY 1
+    START WITH 0
+    NOMAXVALUE
+    MINVALUE 0
+    CACHE 20;
+    
     CREATE TABLE categorias(
         codigo number(3),
         nombre varchar2(30) not null,
@@ -84,10 +183,10 @@
     );
     
     CREATE TABLE lineas_pedido(
-        codigo_pedido number(8),
         numero number(3),
+        codigo_pedido number(8),
         codigo_producto number(8) not null,
-	precio number(6,2) not null,
+        precio number(6,2) not null,
         cantidad number(4) not null,
         CONSTRAINT PK_LINEAS_PEDIDO PRIMARY KEY (numero, codigo_pedido),
         CONSTRAINT FK_LINEAS_PEDIDO FOREIGN KEY (codigo_pedido) REFERENCES pedidos (codigo),
@@ -119,8 +218,8 @@
     );
     
     CREATE TABLE lineas_ticket(
-        codigo_ticket number(8),
         numero number(4),
+        codigo_ticket number(8),
         nombre_producto varchar2(55) not null,
         cantidad number(2) not null,
         descuento number(3) not null,
@@ -170,8 +269,8 @@
     );
     
     CREATE TABLE lineas_comanda(
-        codigo_comanda number(8),
         numero number(3),
+        codigo_comanda number(8),
         codigo_producto number(8) not null,
         entregada number(1) not null,
         CONSTRAINT PK_LINEAS_COMANDA PRIMARY KEY (numero, codigo_comanda),
