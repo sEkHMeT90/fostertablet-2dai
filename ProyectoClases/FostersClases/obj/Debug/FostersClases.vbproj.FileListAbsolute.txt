@@ -1,0 +1,39 @@
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\bin\Debug\FostersClases.dll
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\bin\Debug\FostersClases.pdb
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\bin\Debug\FostersClases.xml
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\bin\Debug\Oracle.DataAccess.dll
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\obj\Debug\ResolveAssemblyReference.cache
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\obj\Debug\ClassLibrary1.Resources.resources
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\obj\Debug\GenerateResource.read.1.tlog
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\obj\Debug\GenerateResource.write.1.tlog
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\obj\Debug\FostersClases.dll
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\obj\Debug\FostersClases.xml
+F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\FostersClases\FostersClases\obj\Debug\FostersClases.pdb
+C:\Documents and Settings\Usuario\Escritorio\FostersClases\FostersClases\FostersClases\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Usuario\Escritorio\FostersClases\FostersClases\FostersClases\obj\Debug\ClassLibrary1.Resources.resources
+C:\Documents and Settings\Usuario\Escritorio\FostersClases\FostersClases\FostersClases\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Usuario\Escritorio\FostersClases\FostersClases\FostersClases\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Usuario\Escritorio\FostersClases\FostersClases\FostersClases\obj\Debug\FostersClases.dll
+C:\Documents and Settings\Usuario\Escritorio\FostersClases\FostersClases\FostersClases\obj\Debug\FostersClases.xml
+C:\Documents and Settings\Usuario\Escritorio\FostersClases\FostersClases\FostersClases\obj\Debug\FostersClases.pdb
+E:\final\12-3\FostersClases\FostersClases\bin\Debug\FostersClases.dll
+E:\final\12-3\FostersClases\FostersClases\bin\Debug\FostersClases.pdb
+E:\final\12-3\FostersClases\FostersClases\bin\Debug\FostersClases.xml
+E:\final\12-3\FostersClases\FostersClases\obj\Debug\ResolveAssemblyReference.cache
+E:\final\12-3\FostersClases\FostersClases\obj\Debug\ClassLibrary1.Resources.resources
+E:\final\12-3\FostersClases\FostersClases\obj\Debug\GenerateResource.read.1.tlog
+E:\final\12-3\FostersClases\FostersClases\obj\Debug\GenerateResource.write.1.tlog
+E:\final\12-3\FostersClases\FostersClases\obj\Debug\FostersClases.dll
+E:\final\12-3\FostersClases\FostersClases\obj\Debug\FostersClases.xml
+E:\final\12-3\FostersClases\FostersClases\obj\Debug\FostersClases.pdb
+E:\final\13-3\FostersClases\FostersClases\bin\Debug\FostersClases.dll
+E:\final\13-3\FostersClases\FostersClases\bin\Debug\FostersClases.pdb
+E:\final\13-3\FostersClases\FostersClases\bin\Debug\FostersClases.xml
+E:\final\13-3\FostersClases\FostersClases\bin\Debug\Oracle.DataAccess.dll
+E:\final\13-3\FostersClases\FostersClases\obj\Debug\ResolveAssemblyReference.cache
+E:\final\13-3\FostersClases\FostersClases\obj\Debug\FostersClases.Resources.resources
+E:\final\13-3\FostersClases\FostersClases\obj\Debug\GenerateResource.read.1.tlog
+E:\final\13-3\FostersClases\FostersClases\obj\Debug\GenerateResource.write.1.tlog
+E:\final\13-3\FostersClases\FostersClases\obj\Debug\FostersClases.dll
+E:\final\13-3\FostersClases\FostersClases\obj\Debug\FostersClases.xml
+E:\final\13-3\FostersClases\FostersClases\obj\Debug\FostersClases.pdb
