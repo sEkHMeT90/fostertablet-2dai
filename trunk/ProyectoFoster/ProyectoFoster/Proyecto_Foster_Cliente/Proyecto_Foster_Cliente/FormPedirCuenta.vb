@@ -26,46 +26,25 @@ Public Class FormPedirCuenta
 
     Private Sub FormPedirCuenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         pagina = 0
-        check1 = False
-        check2 = False
-        check3 = False
         InicializarCheckets()
 
     End Sub
     Private Sub pbChecket1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbChecket1.Click
-        If (Not check2) And (Not check3) Then
-            If (check1) Then
-                pbChecket1.Image = ilChecket.Images(0)
-                check1 = False
-            Else
-                pbChecket1.Image = ilChecket.Images(1)
-                check1 = True
-            End If
-        End If
+        InicializarCheckets()
+        pbChecket1.Image = ilChecket.Images(1)
+        check1 = True
     End Sub
 
     Private Sub pbChecket2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbChecket2.Click
-        If (Not check1) And (Not check3) Then
-            If (check2) Then
-                pbChecket2.Image = ilChecket.Images(0)
-                check2 = False
-            Else
-                pbChecket2.Image = ilChecket.Images(1)
-                check2 = True
-            End If
-        End If
+        InicializarCheckets()
+        pbChecket2.Image = ilChecket.Images(1)
+        check2 = True
     End Sub
 
     Private Sub pbChecket3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbChecket3.Click
-        If (Not check2) And (Not check1) Then
-            If (check3) Then
-                pbChecket3.Image = ilChecket.Images(0)
-                check3 = False
-            Else
-                pbChecket3.Image = ilChecket.Images(1)
-                check3 = True
-            End If
-        End If
+        InicializarCheckets()
+        pbChecket3.Image = ilChecket.Images(1)
+        check3 = True
     End Sub
 
     Private Sub pbContinuar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbContinuar.Click
@@ -80,6 +59,9 @@ Public Class FormPedirCuenta
     '---------------------------------- FUNCIONES -----------------------------
 #Region "FUNCIONES"
     Private Sub InicializarCheckets()
+        check1 = False
+        check2 = False
+        check3 = False
         pbChecket1.Image = ilChecket.Images(0)
         pbChecket2.Image = ilChecket.Images(0)
         pbChecket3.Image = ilChecket.Images(0)

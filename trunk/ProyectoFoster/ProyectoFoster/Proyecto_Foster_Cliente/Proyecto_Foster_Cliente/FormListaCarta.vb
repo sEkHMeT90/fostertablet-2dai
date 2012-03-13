@@ -50,7 +50,7 @@ Public Class FormListaCarta
         FormListaCartaPlatos.Show()
     End Sub
 
-    Private Sub pbEspeciales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbEspeciales.Click
+    Private Sub pbInfantiles_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbInfantiles.Click
         Dim Ventana As New FormListaCartaPlatos(3, 9)
         FormListaCartaPlatos.Show()
     End Sub
@@ -60,8 +60,8 @@ Public Class FormListaCarta
         FormListaCartaPlatos.Show()
     End Sub
 
-    Private Sub pbBebidas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbBebidas.Click
-        Dim Ventana As New FormListaCartaPlatos(2, 2)
+    Private Sub pbAgua_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAgua.Click
+        Dim Ventana As New FormListaCartaPlatos(2, 1)
         FormListaCartaPlatos.Show()
     End Sub
 
@@ -74,7 +74,30 @@ Public Class FormListaCarta
         Dim Ventana As New FormListaCartaPlatos(2, 4)
         FormListaCartaPlatos.Show()
     End Sub
+    Private Sub pbMiniEnsaladas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbMiniEnsaladas.Click
+        Dim Ventana As New FormListaCartaPlatos(1, 1)
+        FormListaCartaPlatos.Show()
+    End Sub
 
+    Private Sub pbPan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPan.Click
+        Dim Ventana As New FormListaCartaPlatos(1, 3)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbPatatas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPatatas.Click
+        Dim Ventana As New FormListaCartaPlatos(1, 2)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbBebidasAlcoholicas_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbBebidasAlcoholicas.Click
+        Dim Ventana As New FormListaCartaPlatos(2, 2)
+        FormListaCartaPlatos.Show()
+    End Sub
+
+    Private Sub pbRefrescos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbRefrescos.Click
+        Dim Ventana As New FormListaCartaPlatos(2, 1)
+        FormListaCartaPlatos.Show()
+    End Sub
 #End Region
 #Region "COMENSALES"
     Private Sub pbComensal1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbComensal1.Click
@@ -205,4 +228,5 @@ Public Class FormListaCarta
 
 
    
+    
 End Class

@@ -22,7 +22,7 @@ Proyecto_Foster_Cliente
 </member><member name="T:Proyecto_Foster_Cliente.FormListaCartaPlatos">
 	<summary>
   Pantalla de Lista para la Carta de platos.
- Sera la primera pantalla que el cliente emezara a seleccionar lo que quiere pedir.
+ Sera la segunda pantalla que el cliente emezara a seleccionar lo que quiere pedir.
  </summary>
 	<autor>Julio L. Antoranz Ros</autor>
 </member><member name="T:Proyecto_Foster_Cliente.FormDetallePlato">

@@ -22,7 +22,6 @@ Partial Class FormDetallePlato
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormDetallePlato))
         Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nodo1")
         Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nodo2")
         Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nodo3")
@@ -117,19 +116,21 @@ Partial Class FormDetallePlato
         'pbPedir
         '
         Me.pbPedir.BackColor = System.Drawing.Color.Transparent
-        Me.pbPedir.BackgroundImage = CType(resources.GetObject("pbPedir.BackgroundImage"), System.Drawing.Image)
         Me.pbPedir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbPedir.Location = New System.Drawing.Point(690, 508)
+        Me.pbPedir.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Aceptar
+        Me.pbPedir.Location = New System.Drawing.Point(658, 524)
         Me.pbPedir.Name = "pbPedir"
-        Me.pbPedir.Size = New System.Drawing.Size(73, 76)
+        Me.pbPedir.Size = New System.Drawing.Size(105, 60)
         Me.pbPedir.TabIndex = 23
         Me.pbPedir.TabStop = False
         '
         'pbVolver
         '
-        Me.pbVolver.Location = New System.Drawing.Point(581, 508)
+        Me.pbVolver.BackColor = System.Drawing.Color.Transparent
+        Me.pbVolver.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Cancelar
+        Me.pbVolver.Location = New System.Drawing.Point(538, 524)
         Me.pbVolver.Name = "pbVolver"
-        Me.pbVolver.Size = New System.Drawing.Size(74, 76)
+        Me.pbVolver.Size = New System.Drawing.Size(105, 60)
         Me.pbVolver.TabIndex = 25
         Me.pbVolver.TabStop = False
         '

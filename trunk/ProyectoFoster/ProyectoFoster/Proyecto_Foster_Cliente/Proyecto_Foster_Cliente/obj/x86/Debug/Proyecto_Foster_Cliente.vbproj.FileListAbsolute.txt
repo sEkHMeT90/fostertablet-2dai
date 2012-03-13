@@ -69,3 +69,6 @@ C:\Documents and Settings\Administrador\Escritorio\ProyectoFoster (2)\ProyectoFo
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormHacerPedido.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormListaCartaPlatos.resources
 C:\Users\Lince\Desktop\ProyectoFoster\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormPedirCuenta.resources
+C:\Documents and Settings\Administrador\Escritorio\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.exe
+C:\Documents and Settings\Administrador\Escritorio\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.xml
+C:\Documents and Settings\Administrador\Escritorio\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.pdb
