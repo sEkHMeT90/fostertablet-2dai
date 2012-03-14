@@ -223,7 +223,7 @@
         nombre_producto varchar2(55) not null,
         cantidad number(2) not null,
         descuento number(3) not null,
-        precio number(3,2) not null,
+        precio number(6,2) not null,
         iva number(3) not null,
         CONSTRAINT PK_LINEAS_TICKET PRIMARY KEY (numero, codigo_ticket),
         CONSTRAINT FK_LINEAS_TICKET FOREIGN KEY (codigo_ticket) REFERENCES tickets (codigo)

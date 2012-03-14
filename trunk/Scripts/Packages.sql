@@ -401,6 +401,182 @@ AS
     END ModificarLinea;
 END;
 
+-- GESTIÓN DE FACTURAS
+CREATE OR REPLACE PACKAGE GestionFacturas
+AS
+	FUNCTION Insertar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER;
+	FUNCTION Borrar(factura FACTURAS.CODIGO%TYPE) RETURN NUMBER;
+END;
+
+CREATE OR REPLACE PACKAGE BODY GestionFacturas
+AS
+	-- INSERTAR FACTURAS 
+	FUNCTION Insertar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER
+    IS
+		codigo FACTURAS.CODIGO%TYPE;
+    BEGIN
+        codigo := SecFacturas.NextVal;
+        
+        INSERT INTO FACTURAS VALUES(codigo, ticket);
+		RETURN 1;
+		
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+    
+    END Insertar;
+
+	-- BORRAR FACTURAS
+	FUNCTION Borrar(factura FACTURAS.CODIGO%TYPE) RETURN NUMBER
+    IS
+    BEGIN
+        DELETE FROM FACTURAS WHERE codigo = factura;
+		RETURN 1;
+		
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+			
+    END Borrar;
+END;
+
+-- GESTIÓN DE TICKETS
+CREATE OR REPLACE PACKAGE GestionTickets
+AS
+	FUNCTION Insertar RETURN NUMBER;
+	FUNCTION Borrar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER;
+	FUNCTION Modificar(ticket TICKETS.CODIGO%TYPE, tipo_pago TIPOS_PAGO.CODIGO%TYPE, fecha_nueva TICKETS.FECHA%TYPE, total_nuevo TICKETS.TOTAL%TYPE) RETURN NUMBER;
+	FUNCTION InsertarLinea(ticket TICKETS.CODIGO%TYPE, producto VARCHAR2, pvp PRODUCTOS.PVP%TYPE, tipo_iva TIPOS_IVA.CODIGO%TYPE) RETURN NUMBER;
+	FUNCTION BorrarLinea(ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER;
+	FUNCTION ModificarLinea(nombre_nuevo VARCHAR2, cantidad_nueva LINEAS_TICKET.CANTIDAD%TYPE, descuento_nuevo LINEAS_TICKET.DESCUENTO%TYPE, precio_nuevo LINEAS_TICKET.PRECIO%TYPE, iva_nuevo LINEAS_TICKET.IVA%TYPE, ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER;
+	FUNCTION Facturar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER;
+END;
+
+CREATE OR REPLACE PACKAGE BODY GestionTickets
+AS
+	-- INSERTAR TICKETS 
+	FUNCTION Insertar RETURN NUMBER
+    IS
+		codigo_ticket TICKETS.CODIGO%TYPE;
+    BEGIN
+		codigo_ticket := SecTickets.NextVal;
+        INSERT INTO TICKETS(codigo, fecha, total) VALUES(codigo_ticket, SYSDATE, 0);
+		RETURN codigo_ticket;
+		
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+    
+    END Insertar;
+
+	-- BORRAR TICKETS
+	FUNCTION Borrar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER
+    IS
+    BEGIN
+        DELETE FROM TICKETS WHERE codigo = ticket;
+		RETURN 1;
+		
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+			
+    END Borrar;
+	
+	-- MODIFICAR TICKETS
+	FUNCTION Modificar(ticket TICKETS.CODIGO%TYPE, tipo_pago TIPOS_PAGO.CODIGO%TYPE, fecha_nueva TICKETS.FECHA%TYPE, total_nuevo TICKETS.TOTAL%TYPE) RETURN NUMBER
+    IS
+    BEGIN
+        UPDATE TICKETS
+        SET codigo_tipo_pago = tipo_pago, fecha = fecha_nueva, total = total_nuevo
+        WHERE codigo = ticket;
+
+		RETURN 1;
+		
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+    
+    END Modificar;
+	
+	-- INSERTAR LINEAS DE TICKETS 
+	FUNCTION InsertarLinea(ticket TICKETS.CODIGO%TYPE, producto VARCHAR2, pvp PRODUCTOS.PVP%TYPE, tipo_iva TIPOS_IVA.CODIGO%TYPE) RETURN NUMBER
+    IS
+		numero LINEAS_TICKET.NUMERO%TYPE;
+        cantidad_producto NUMBER(2);
+        iva NUMBER(3);
+    BEGIN
+        SELECT COUNT(*) INTO cantidad_producto
+        FROM LINEAS_TICKET
+        WHERE codigo_ticket = ticket AND nombre_producto = producto;
+        
+        IF cantidad_producto > 0 THEN
+            UPDATE LINEAS_TICKET
+            SET cantidad = cantidad + 1, precio = precio + pvp
+            WHERE nombre_producto = producto;
+        ELSE
+            SELECT MAX(numero) INTO numero
+            FROM LINEAS_TICKET
+            WHERE codigo_ticket = ticket;
+        
+            numero := nvl(numero,0) + 1;
+            
+            SELECT porcentaje INTO iva
+            FROM TIPOS_IVA
+            WHERE codigo = tipo_iva;
+            
+            INSERT INTO LINEAS_TICKET VALUES(numero, ticket, producto, 1, 0, pvp, iva);
+        END IF;
+        
+		RETURN 1;
+        
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+    
+    END InsertarLinea;
+    
+	-- BORRAR LINEAS DE TICKETS
+	FUNCTION BorrarLinea(ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER
+    IS
+    BEGIN
+        DELETE FROM LINEAS_TICKET
+        WHERE codigo_ticket = ticket AND numero = linea;
+        
+		RETURN 1;
+		
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+			
+    END BorrarLinea;
+    
+	-- MODIFICAR LINEAS DE TICKETS
+	FUNCTION ModificarLinea(nombre_nuevo VARCHAR2, cantidad_nueva LINEAS_TICKET.CANTIDAD%TYPE, descuento_nuevo LINEAS_TICKET.DESCUENTO%TYPE, precio_nuevo LINEAS_TICKET.PRECIO%TYPE, iva_nuevo LINEAS_TICKET.IVA%TYPE, ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER
+    IS
+    BEGIN
+        UPDATE LINEAS_TICKET
+        SET nombre_producto = nombre_nuevo, cantidad = cantidad_nueva, descuento = descuento_nuevo, precio = precio_nuevo, iva  = iva_nuevo
+        WHERE codigo_ticket = ticket AND numero = linea;
+
+		RETURN 1;
+		
+    EXCEPTION
+		WHEN OTHERS THEN
+			RETURN 0;
+    
+    END ModificarLinea;	
+    
+    -- FACTURAR TICKET
+    FUNCTION Facturar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER
+    IS
+    BEGIN
+        RETURN GestionFacturas.Insertar(ticket);
+    EXCEPTION
+        WHEN OTHERS THEN
+			RETURN 0;
+    END;
+END;
+
 -- GESTION DE COMANDAS
 CREATE OR REPLACE PACKAGE GestionComandas
 AS
@@ -510,13 +686,14 @@ AS
     IS
         CURSOR lineas_comanda IS SELECT * FROM LINEAS_COMANDA WHERE codigo_comanda = comanda;
         producto PRODUCTOS%ROWTYPE;
+		dummy NUMBER(1);
     BEGIN
         FOR linea IN lineas_comanda LOOP
             SELECT * INTO producto
             FROM PRODUCTOS
             WHERE codigo = linea.codigo_producto;
             
-            GestionTickets.InsertarLinea(ticket, producto.nombre, producto.pvp, producto.codigo_tipo_iva);
+            dummy := GestionTickets.InsertarLinea(ticket, producto.nombre, producto.pvp, producto.codigo_tipo_iva);
         END LOOP;
         
         UPDATE COMANDAS SET codigo_estado = 4
@@ -599,182 +776,6 @@ AS
     
     END Modificar;
     
-END;
-
--- GESTIÓN DE TICKETS
-CREATE OR REPLACE PACKAGE GestionTickets
-AS
-	FUNCTION Insertar RETURN NUMBER;
-	FUNCTION Borrar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER;
-	FUNCTION Modificar(ticket TICKETS.CODIGO%TYPE, tipo_pago TIPOS_PAGO.CODIGO%TYPE, fecha_nueva TICKETS.FECHA%TYPE, total_nuevo TICKETS.TOTAL%TYPE) RETURN NUMBER;
-	FUNCTION InsertarLinea(ticket TICKETS.CODIGO%TYPE, producto VARCHAR2(55), pvp PRODUCTOS.PVP%TYPE, tipo_iva TIPOS_IVA.CODIGO%TYPE) RETURN NUMBER;
-	FUNCTION BorrarLinea(ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER;
-	FUNCTION ModificarLinea(nombre_nuevo VARCHAR2(55), cantidad_nueva LINEAS_TICKET.CANTIDAD%TYPE, descuento_nuevo LINEAS_TICKET.DESCUENTO%TYPE, precio_nuevo LINEAS_TICKET.PRECIO%TYPE, iva_nuevo LINEAS_TICKET.IVA%TYPE, ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER;
-	FUNCTION Facturar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER;
-END;
-
-CREATE OR REPLACE PACKAGE BODY GestionTickets
-AS
-	-- INSERTAR TICKETS 
-	FUNCTION Insertar RETURN NUMBER;
-    IS
-		codigo_ticket TICKETS.CODIGO%TYPE;
-    BEGIN
-		codigo_ticket := SecTickets.NextVal;
-        INSERT INTO TICKETS(codigo, fecha, total) VALUES(codigo_ticket, SYSDATE, 0);
-		RETURN codigo_ticket;
-		
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-    
-    END Insertar;
-
-	-- BORRAR TICKETS
-	FUNCTION Borrar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER
-    IS
-    BEGIN
-        DELETE FROM TICKETS WHERE codigo = ticket;
-		RETURN 1;
-		
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-			
-    END Borrar;
-	
-	-- MODIFICAR TICKETS
-	FUNCTION Modificar(ticket TICKETS.CODIGO%TYPE, tipo_pago TIPOS_PAGO.CODIGO%TYPE, fecha_nueva TICKETS.FECHA%TYPE, total_nuevo TICKETS.TOTAL%TYPE) RETURN NUMBER
-    IS
-    BEGIN
-        UPDATE TICKETS
-        SET codigo_tipo_pago = tipo_pago, fecha = fecha_nueva, total = total_nuevo
-        WHERE codigo = ticket;
-
-		RETURN 1;
-		
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-    
-    END Modificar;
-	
-	-- INSERTAR LINEAS DE TICKETS 
-	FUNCTION InsertarLinea(ticket TICKETS.CODIGO%TYPE, producto VARCHAR2(55), pvp PRODUCTOS.PVP%TYPE, tipo_iva TIPOS_IVA.CODIGO%TYPE) RETURN NUMBER;
-    IS
-		numero LINEAS_TICKET.NUMERO%TYPE;
-        cantidad_producto NUMBER(2);
-        iva NUMBER(3);
-    BEGIN
-        SELECT COUNT(*) INTO cantidad_producto
-        FROM LINEAS_TICKET
-        WHERE codigo_ticket = ticket AND nombre_producto = producto;
-        
-        IF cantidad_producto > 0 THEN
-            UPDATE LINEAS_TICKET
-            SET cantidad = cantidad + 1, precio = precio + pvp
-            WHERE nombre_producto = producto;
-        ELSE
-            SELECT MAX(numero) INTO numero
-            FROM LINEAS_TICKET
-            WHERE codigo_ticket = ticket;
-        
-            numero := nvl(numero,0) + 1;
-            
-            SELECT porcentaje INTO iva
-            FROM TIPOS_IVA
-            WHERE codigo = tipo_iva;
-            
-            INSERT INTO LINEAS_TICKET VALUES(numero, ticket, producto, 1, 0, pvp, iva);
-        END IF;
-        
-		RETURN 1;
-        
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-    
-    END InsertarLinea;
-    
-	-- BORRAR LINEAS DE TICKETS
-	FUNCTION BorrarLinea(ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER;
-    IS
-    BEGIN
-        DELETE FROM LINEAS_TICKET
-        WHERE codigo_ticket = ticket AND numero = linea;
-        
-		RETURN 1;
-		
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-			
-    END BorrarLinea;
-    
-	-- MODIFICAR LINEAS DE TICKETS
-	FUNCTION ModificarLinea(nombre_nuevo VARCHAR2(55), cantidad_nueva LINEAS_TICKET.CANTIDAD%TYPE, descuento_nuevo LINEAS_TICKET.DESCUENTO%TYPE, precio_nuevo LINEAS_TICKET.PRECIO%TYPE, iva_nuevo LINEAS_TICKET.IVA%TYPE, ticket TICKETS.CODIGO%TYPE, linea LINEAS_TICKET.NUMERO%TYPE) RETURN NUMBER
-    IS
-    BEGIN
-        UPDATE LINEAS_TICKET
-        SET nombre_producto = nombre_nuevo, cantidad = cantidad_nueva, descuento = descuento_nuevo, precio = precio_nuevo, iva  = iva_nuevo
-        WHERE codigo_ticket = ticket AND numero = linea;
-
-		RETURN 1;
-		
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-    
-    END ModificarLinea;	
-    
-    -- FACTURAR TICKET
-    FUNCTION Facturar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER
-    IS
-    BEGIN
-        RETURN GestionFacturas.Insertar(ticket);
-    EXCEPTION
-        WHEN OTHERS THEN
-			RETURN 0;
-    END;
-END;
-
--- GESTIÓN DE FACTURAS
-CREATE OR REPLACE PACKAGE GestionFacturas
-AS
-	FUNCTION Insertar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER;
-	FUNCTION Borrar(factura FACTURAS.CODIGO%TYPE) RETURN NUMBER;
-END;
-
-CREATE OR REPLACE PACKAGE BODY GestionFacturas
-AS
-	-- INSERTAR FACTURAS 
-	FUNCTION Insertar(ticket TICKETS.CODIGO%TYPE) RETURN NUMBER
-    IS
-		codigo FACTURAS.CODIGO%TYPE;
-    BEGIN
-        codigo := SecFacturas.NextVal;
-        
-        INSERT INTO FACTURAS VALUES(codigo, ticket);
-		RETURN 1;
-		
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-    
-    END Insertar;
-
-	-- BORRAR FACTURAS
-	FUNCTION Borrar(factura FACTURAS.CODIGO%TYPE) RETURN NUMBER
-    IS
-    BEGIN
-        DELETE FROM FACTURAS WHERE codigo = factura;
-		RETURN 1;
-		
-    EXCEPTION
-		WHEN OTHERS THEN
-			RETURN 0;
-			
-    END Borrar;
 END;
 
 -- GESTIÓN DE TIPOS DE IVA
