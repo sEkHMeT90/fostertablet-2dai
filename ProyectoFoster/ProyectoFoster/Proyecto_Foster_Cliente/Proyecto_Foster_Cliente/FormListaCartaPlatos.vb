@@ -144,39 +144,41 @@ Public Class FormListaCartaPlatos
     End Sub
 
     Private Sub pbPedirCuenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedirCuenta.Click
-        FormPedirCuenta.Show()
+        FormPedirCuenta.ShowDialog()
     End Sub
 #End Region
 
     '---------------------------------- FUNCIONES -------------------------
 #Region "FUNCIONES"
+
+    ''' <summary>
+    '''  Muestra los iconos de los comensales segun un numero de comensales.
+    ''' </summary>
+    ''' <autor>Julio L. Antoranz Ros</autor>
     Private Sub MostrarComensales()
         Dim NumeroComensales As Integer = FormBienvenida.ContadorComensales
         'Mostrar Todos
         For i As Integer = 0 To NumeroComensales
             Me.FindForm.Controls("pbComensal" & (i + 1)).Visible = True
         Next
-
-        'Cambiar Icono Seleccionado
-        'TODO: Demomento esta solo el clor de fondo, pero debera ser la imagen la que cambie
-        Me.pbComun.BackColor = Color.SlateGray
-        If FormListaCarta.ComensalSeleccionado = -1 Then
-            pbComun.BackColor = Color.White
-        Else
-            Me.FindForm.Controls("pbComensal" & (FormListaCarta.ComensalSeleccionado + 1)).BackColor = Color.White
-        End If
+        CambiarComensalSeleccionado()
 
     End Sub
 
+    ''' <summary>
+    '''  Cambia el fondo del icono del comensal seleccionado.
+    ''' </summary>
+    ''' <autor>Julio L. Antoranz Ros</autor>
     Private Sub CambiarComensalSeleccionado()
         Dim NumeroComensales As Integer = FormBienvenida.ContadorComensales
+
         'Resetear todos los iconos de los comensales
         Me.pbComun.BackColor = Color.SlateGray
         For i As Integer = 0 To NumeroComensales
             Me.FindForm.Controls("pbComensal" & (i + 1)).BackColor = Color.SlateGray
         Next
+
         'Cambiar Icono Seleccionado
-        'TODO: Demomento esta solo el clor de fondo, pero debera ser la imagen la que cambie
         If FormListaCarta.ComensalSeleccionado = -1 Then
             pbComun.BackColor = Color.White
         Else

@@ -33,6 +33,7 @@ Partial Class FormAyuda
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(784, 562)
         Me.WebBrowser1.TabIndex = 0
+        Me.WebBrowser1.Url = New System.Uri("http://nyan.cat", System.UriKind.Absolute)
         '
         'FormAyuda
         '
@@ -41,7 +42,7 @@ Partial Class FormAyuda
         Me.ClientSize = New System.Drawing.Size(784, 562)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Name = "FormAyuda"
-        Me.Text = "FormAyuda"
+        Me.ShowIcon = False
         Me.ResumeLayout(False)
 
     End Sub

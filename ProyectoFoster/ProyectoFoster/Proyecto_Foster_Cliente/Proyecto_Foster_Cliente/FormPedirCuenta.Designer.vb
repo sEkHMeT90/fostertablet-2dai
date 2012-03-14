@@ -29,7 +29,6 @@ Partial Class FormPedirCuenta
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.ilChecket = New System.Windows.Forms.ImageList(Me.components)
-        Me.ilPreguntas = New System.Windows.Forms.ImageList(Me.components)
         Me.pbContinuar = New System.Windows.Forms.PictureBox()
         Me.pbOpcion3 = New System.Windows.Forms.PictureBox()
         Me.pbOpcion2 = New System.Windows.Forms.PictureBox()
@@ -103,12 +102,6 @@ Partial Class FormPedirCuenta
         Me.ilChecket.TransparentColor = System.Drawing.Color.Transparent
         Me.ilChecket.Images.SetKeyName(0, "check0.jpg")
         Me.ilChecket.Images.SetKeyName(1, "check1.jpg")
-        '
-        'ilPreguntas
-        '
-        Me.ilPreguntas.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ilPreguntas.ImageSize = New System.Drawing.Size(16, 16)
-        Me.ilPreguntas.TransparentColor = System.Drawing.Color.Transparent
         '
         'pbContinuar
         '
@@ -247,6 +240,5 @@ Partial Class FormPedirCuenta
     Friend WithEvents pbOpcion2 As System.Windows.Forms.PictureBox
     Friend WithEvents pbOpcion3 As System.Windows.Forms.PictureBox
     Friend WithEvents ilChecket As System.Windows.Forms.ImageList
-    Friend WithEvents ilPreguntas As System.Windows.Forms.ImageList
     Friend WithEvents pbContinuar As System.Windows.Forms.PictureBox
 End Class

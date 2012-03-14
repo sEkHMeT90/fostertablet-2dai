@@ -1,31 +1,21 @@
 ﻿''' <summary>
-'''  Pantalla de Bienvenida.
-''' Sera la primera pantalla que vera el cliente al entregarle la tablet o 
-''' sentarse en la mesa.
-''' 
-''' La aplicacion dispone de un ".ini" donde se guardara entre otros datos 
-''' el numero de mesa asignado a la tablet. En caso de no disponer de 
-''' ese dato se abrira una pantalla para seleccionar la mesa y se creara 
-''' o actualizara el fichero ".ini".
-''' 
+'''  Pantalla Cobro
+'''  Aqui el cliente podra seleccionar como desea pagar.
 ''' </summary>
 ''' <autor>Julio L. Antoranz Ros</autor>
 Public Class FormPedirCuenta
 
     'Variables 
-    Private pagina As Short
+
     Private check1 As Boolean
     Private check2 As Boolean
     Private check3 As Boolean
-    Private RespuestaPregunta1 As String
-    Private RespuestaPregunta2 As String
-
-
+   
     '---------------------------------- EVENTOS -----------------------------
 #Region "EVENTOS"
 
     Private Sub FormPedirCuenta_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        pagina = 0
+
         InicializarCheckets()
 
     End Sub
@@ -58,6 +48,10 @@ Public Class FormPedirCuenta
 #End Region
     '---------------------------------- FUNCIONES -----------------------------
 #Region "FUNCIONES"
+    ''' <summary>
+    '''  Inicializa los checkets a false todos
+    ''' </summary>
+    ''' <autor>Julio L. Antoranz Ros</autor>
     Private Sub InicializarCheckets()
         check1 = False
         check2 = False

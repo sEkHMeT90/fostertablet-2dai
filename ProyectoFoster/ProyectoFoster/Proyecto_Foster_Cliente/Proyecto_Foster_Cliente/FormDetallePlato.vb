@@ -32,11 +32,26 @@ Public Class FormDetallePlato
     End Sub
 
     Private Sub FormDetallePlato_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        FormListaCartaPlatos.Visible = False
     End Sub
+
+    Private Sub FormDetallePlato_FormClosing(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+        FormListaCartaPlatos.Visible = True
+    End Sub
+
     Private Sub pbAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAyuda.Click
         FormAyuda.Show()
     End Sub
+
+    Private Sub pbPedir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedir.Click
+        'TODO: Guardar pedido en BBDD
+        Me.Close()
+    End Sub
+
+    Private Sub pbVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbVolver.Click
+        Me.Close()
+    End Sub
+
 #End Region
 
     '---------------------------------- FUNCIONES -------------------------
@@ -45,12 +60,9 @@ Public Class FormDetallePlato
 #End Region
 
    
-    Private Sub pbPedir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedir.Click
-        'TODO: Guardar pedido en BBDD
-        Me.Close()
-    End Sub
-
-    Private Sub pbVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbVolver.Click
-        Me.Close()
+   
+    
+    Private Sub pbSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbSeleccionar.Click
+        FormSeleccionarGuarnicion.Show()
     End Sub
 End Class
