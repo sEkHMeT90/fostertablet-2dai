@@ -319,6 +319,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property PolloPescado() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("PolloPescado", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property Postres() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Postres", resourceCulture)
@@ -350,6 +357,13 @@ Namespace My.Resources
         Friend ReadOnly Property Sandwich() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Sandwich", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property TexMex() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TexMex", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
