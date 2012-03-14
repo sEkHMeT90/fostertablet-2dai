@@ -184,7 +184,8 @@ Public Class Comanda
     Try
       Adaptador.Update(comandas, "Comandas")
 
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value) > 0 Or CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value) > 0 Then
+      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
+         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
         Ok = True
       Else
         Ok = False

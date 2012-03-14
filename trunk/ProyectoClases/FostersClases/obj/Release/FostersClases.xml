@@ -6,77 +6,63 @@ FostersClases
 </name>
 </assembly>
 <members>
-<member name="M:FostersClases.Factura.#ctor">
+<member name="P:FostersClases.My.Resources.Resources.ResourceManager">
 	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Factura.#ctor(System.Int32,FostersClases.Ticket)">
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:FostersClases.My.Resources.Resources.Culture">
 	<summary>
- Constructor por parámetros
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Factura.Codigo">
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member><member name="T:FostersClases.My.Resources.Resources">
 	<summary>
- Propiedad del atributo "_Codigo"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Factura.Ticket">
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:FostersClases.Validacion.EsTexto(System.Object)">
 	<summary>
- Propiedad del atributo "_Ticket"
+ Comprueba que el objeto se puede convertir a string
  </summary>
-	<value>Un ticket con el valor que se le asignará al atributo</value>
-	<returns>Un ticket con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Factura.Cargar(System.Int32)">
+	<author>Alejandro Guijarro Terol</author>
+</member><member name="M:FostersClases.Validacion.ValidarTexto(System.Object,System.Int32,System.Int32)">
 	<summary>
- Carga una factura dado un código
- </summary>
-	<param name="codigo">Código de la factura a buscar</param>
-	<returns>La factura encontrada</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Factura.CargarDatos">
+	</summary>
+	<param name="objeto"></param>
+	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
+	<author>Alejandro Guijarro Terol</author>
+</member><member name="M:FostersClases.Validacion.ValidarNumeroEntero(System.Object,System.Int32,System.Int32)">
 	<summary>
- Carga todas las facturas almacenadas
+ Comprueba que el valor del olbeto es un entero
  </summary>
-	<returns>Un DataSet con todas las facturas</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Factura.Borrar(FostersClases.Factura)">
+	<param name="objeto"></param>
+	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
+	<author>Alejandro Guijarro Terol</author>
+</member><member name="M:FostersClases.Validacion.ValidarNumeroDecimal(System.Object,System.Int32,System.Int32)">
 	<summary>
- Borra una factura de la base de datos
+ Comprueba que el valor del olbeto es un número decimal (Acepta entero, claro)
  </summary>
-	<param name="factura">Factura que se va a borrar</param>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>David Martínez Pérez</author>
-</member><member name="M:FostersClases.Factura.Imprimir">
+	<param name="objeto"></param>
+	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
+	<author>Alejandro Guijarro Terol</author>
+</member><member name="M:FostersClases.Validacion.ValidarTelefono(System.Object,System.Int32,System.Int32)">
 	<summary>
- Imprime la factura
+ Valida números de teléfono
  </summary>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Factura.printpage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+	<param name="objeto"></param>
+	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
+	<author>Alejandro Guijarro Terol</author>
+</member><member name="M:FostersClases.Validacion.ValidarFecha(System.Object,System.Int32,System.Int32)">
 	<summary>
- Evento de impresión de los tickets
+ Comprueba que es una fecha
  </summary>
-	<param name="sender">PrintPage que se va a imprimir</param>
-	<param name="e">Papel donde escribimos el ticket</param>
-	<author>David Martínez Pérez</author>
-</member><member name="M:FostersClases.Factura.Dispose">
+	<param name="objeto"></param>
+	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
+	<author>Alejandro Guijarro Terol</author>
+</member><member name="T:FostersClases.Validacion">
 	<summary>
- Destructor manual
+ Módulo de validaciones
  </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Factura.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.Factura">
-	<summary>
- Clase Factura
- </summary>
-	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
+	<author>Alejandro Guijarro Terol</author>
 </member><member name="M:FostersClases.LineaTicket.#ctor">
 	<summary>
  Constructor por defecto
@@ -172,290 +158,175 @@ FostersClases
  Clase LineaTicket
  </summary>
 	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Producto.#ctor">
+</member><member name="M:FostersClases.BBDD.#ctor">
 	<summary>
  Constructor por defecto
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Producto.#ctor(System.Int32,System.String,System.String,System.Single,System.Single,System.Int32,System.Int32,System.Int32,System.Boolean,System.Collections.Generic.List{FostersClases.Producto},FostersClases.SubCategoria,FostersClases.TipoIVA)">
+</member><member name="P:FostersClases.BBDD.Conexion">
+	<summary>
+ Propiedad de sólo lectura del atributo "_Conexion"
+ </summary>
+	<returns>Un OracleConnection con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.Conectar">
+	<summary>
+ Abre la conexión con la base de datos
+ </summary>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.CargarDatos(System.String)">
+	<summary>
+ Carga todos los datos de una tabla dada
+ </summary>
+	<param name="tabla">Nombre de la tabla a consultar</param>
+	<returns>Un DataSet con los datos de la tabla consultada</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.CargarDatos(System.String,System.String)">
+	<summary>
+ Carga todos los datos de una tabla dada, con una condición dada
+ </summary>
+	<param name="tabla">Nombre de la tabla a consultar</param>
+	<param name="condicion">Condición de la consulta</param>
+	<returns>Un DataSet con los datos de la tabla consultada</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.Consultar(System.String)">
+	<summary>
+ Ejecuta una sentencia SELECT y devuelve las filas resultantes 
+ </summary>
+	<param name="comando">Sentencia SELECT a ejecutar</param>
+	<returns>Un OracleDataReader con el resultado de la ejecución</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.Modificar(Oracle.DataAccess.Client.OracleCommand)">
+	<summary>
+ Ejecuta el comando recibido y devuelve el resultado 
+ </summary>
+	<param name="comando">Sentencia SQL a ejecutar</param>
+	<returns>Un entero con el número de columnas afectadas</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.Desconectar">
+	<summary>
+ Cierra la conexión con la base de datos
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.BBDD.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:FostersClases.BBDD">
+	<summary>
+ Clase BBDD
+ </summary>
+	<author>Andrés Marotta, David Guerra</author>
+</member><member name="M:FostersClases.Ticket.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Ticket.#ctor(System.Int32,FostersClases.TipoPago,System.DateTime,System.Collections.Generic.List{FostersClases.LineaTicket},System.Single)">
 	<summary>
  Constructor por parámetros
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.Codigo">
+</member><member name="P:FostersClases.Ticket.Codigo">
 	<summary>
  Propiedad del atributo "_Codigo"
  </summary>
 	<value>Un entero con el valor que se le asignará al atributo</value>
 	<returns>Un entero con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.Nombre">
+</member><member name="P:FostersClases.Ticket.TipoDePago">
 	<summary>
- Propiedad del atributo "_Nombre"
+ Propiedad del atributo "_TipoDePago"
  </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
+	<value>Un tipo de pago con el valor que se le asignará al atributo</value>
+	<returns>Un tipo de pago con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.Descripcion">
+</member><member name="P:FostersClases.Ticket.Fecha">
 	<summary>
- Propiedad del atributo "_Descripcion"
+ Propiedad del atributo "_Fecha"
  </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
+	<value>Una fecha con el valor que se le asignará al atributo</value>
+	<returns>Una fecha con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.PrecioCoste">
+</member><member name="P:FostersClases.Ticket.Lineas">
 	<summary>
- Propiedad del atributo "_PrecioCoste"
+ Propiedad del atributo "_Lineas"
+ </summary>
+	<value>Una lista de líneas de ticket con el valor que se le asignará al atributo</value>
+	<returns>Una lista de líneas de ticket con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Ticket.Total">
+	<summary>
+ Propiedad del atributo "_Total"
  </summary>
 	<value>Un single con el valor que se le asignará al atributo</value>
 	<returns>Un single con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.PVP">
+</member><member name="M:FostersClases.Ticket.Cargar(FostersClases.Comanda)">
 	<summary>
- Propiedad del atributo "_PVP"
+ Carga el ticket de una comanda dada
  </summary>
-	<value>Un single con el valor que se le asignará al atributo</value>
-	<returns>Un single con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.Calorias">
-	<summary>
- Propiedad del atributo "_Calorias"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.Stock">
-	<summary>
- Propiedad del atributo "_Stock"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.StockMinimo">
-	<summary>
- Propiedad del atributo "_StockMinimo"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.Activo">
-	<summary>
- Propiedad del atributo "_Activo"
- </summary>
-	<value>Un boolean con el valor que se le asignará al atributo</value>
-	<returns>Un boolean con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.Guarniciones">
-	<summary>
- Propiedad del atributo "_Guarniciones"
- </summary>
-	<value>Una lista de productos con el valor que se le asignará al atributo</value>
-	<returns>Una lista de productos con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.SubCategoria">
-	<summary>
- Propiedad del atributo "_SubCategoria"
- </summary>
-	<value>Una sub categoria con el valor que se le asignará al atributo</value>
-	<returns>Una sub categoria con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Producto.IVA">
-	<summary>
- Propiedad del atributo "_IVA"
- </summary>
-	<value>Un tipo de IVA con el valor que se le asignará al atributo</value>
-	<returns>Un tipo de IVA con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Producto.Cargar">
-	<summary>
- Carga todos los productos almacenados
- </summary>
-	<returns>Una lista de productos</returns>
+	<param name="comanda">Comanda a buscar</param>
+	<returns>Ticket de la comanda encontrada</returns>
 	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Producto.Cargar(FostersClases.SubCategoria)">
+</member><member name="M:FostersClases.Ticket.Cargar(System.Int32)">
 	<summary>
- Carga todos los productos almacenados
+ Carga el ticket dado un código
  </summary>
-	<returns>Una lista de productos</returns>
+	<param name="codigo">Código a buscar</param>
+	<returns>Ticket encontrado</returns>
 	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Producto.Cargar(System.Int32)">
+</member><member name="M:FostersClases.Ticket.CargarDatos">
 	<summary>
- Carga un producto dado un código
+ Carga todos los tickets almacenados
  </summary>
-	<param name="codigo">Código del producto a buscar</param>
-	<returns>El producto encontrado</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Producto.CargarDatos">
-	<summary>
- Carga todos los productos almacenados
- </summary>
-	<returns>Un DataSet con todos los productos</returns>
+	<returns>Un DataSet con todos los tickets</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Producto.Actualizar(System.Data.DataSet)">
+</member><member name="M:FostersClases.Ticket.Insertar">
 	<summary>
- Actualiza los datos de la tabla Productos con los cambios de un DataSet dado
+ Inserta el ticket en la base de datos
  </summary>
-	<param name="productos">DataSet con los cambios de la tabla</param>
+	<returns>Un entero indicando el código del ticket insertado</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Ticket.Facturar">
+	<summary>
+ Crea la factura del ticket
+ </summary>
+	<returns>Un entero con el código de factura insertada</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Ticket.Imprimir">
+	<summary>
+ Imprime el ticket
+ </summary>
 	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
 	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Producto.Insertar">
+</member><member name="M:FostersClases.Ticket.printpage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
 	<summary>
- Inserta el Producto en la base de datos
+ Evento de impresión de los tickets
  </summary>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Producto.Dispose">
+	<param name="sender">PrintPage que se va a imprimir</param>
+	<param name="e">Papel donde escribimos el ticket</param>
+	<author>David Martínez Pérez</author>
+</member><member name="M:FostersClases.Ticket.Dispose">
 	<summary>
  Destructor manual
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Producto.Finalize">
+</member><member name="M:FostersClases.Ticket.Finalize">
 	<summary>
  Destructor automático
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.Producto">
+</member><member name="T:FostersClases.Ticket">
 	<summary>
- Clase Producto
- </summary>
-	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Proveedor.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Proveedor.#ctor(System.String,System.String,System.String,System.String,System.Boolean)">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Proveedor.CIF">
-	<summary>
- Propiedad del atributo "_CIF"
- </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Proveedor.Nombre">
-	<summary>
- Propiedad del atributo "_Nombre"
- </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Proveedor.Direccion">
-	<summary>
- Propiedad del atributo "_Direccion"
- </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Proveedor.Telefono">
-	<summary>
- Propiedad del atributo "_Telefono"
- </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Proveedor.Activo">
-	<summary>
- Propiedad del atributo "_Activo"
- </summary>
-	<value>Un boolean con el valor que se le asignará al atributo</value>
-	<returns>Un boolean con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Proveedor.Cargar(System.String)">
-	<summary>
- Carga un proveedor dado un CIF
- </summary>
-	<param name="cif">CIF del proveedor a buscar</param>
-	<returns>El proveedor encontrado</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Proveedor.CargarDatos">
-	<summary>
- Carga todos los proveedores almacenados
- </summary>
-	<returns>Un DataSet con todos los proveedores</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Proveedor.Actualizar(System.Data.DataSet)">
-	<summary>
- Actualiza los datos de la tabla Proveedores con los cambios de un DataSet dado
- </summary>
-	<param name="proveedores">DataSet con los cambios de la tabla</param>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Proveedor.Dispose">
-	<summary>
- Destructor manual
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Proveedor.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.Proveedor">
-	<summary>
- Clase Proveedor
- </summary>
-	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.EstadoComanda.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoComanda.#ctor(System.Int32,System.String)">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.EstadoComanda.Codigo">
-	<summary>
- Propiedad del atributo "_Codigo"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.EstadoComanda.Nombre">
-	<summary>
- Propiedad del atributo "_Nombre"
- </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoComanda.Cargar(System.Int32)">
-	<summary>
- Carga un estado de comanda dado un código
- </summary>
-	<param name="codigo">Código del estado a buscar</param>
-	<returns>El estado de comanda encontrado</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.EstadoComanda.CargarDatos">
-	<summary>
- Carga todos los estados de comanda almacenados
- </summary>
-	<returns>Una DataSet con los estados de comanda</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoComanda.Actualizar(System.Data.DataSet)">
-	<summary>
- Actualiza los datos de la tabla Estados_Comanda con los cambios de un DataSet dado
- </summary>
-	<param name="estados">DataSet con los cambios de la tabla</param>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.EstadoComanda.Dispose">
-	<summary>
- Destructor manual
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoComanda.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.EstadoComanda">
-	<summary>
- Clase EstadoComanda
+ Clase Ticket
  </summary>
 	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
 </member><member name="M:FostersClases.LineaComanda.#ctor">
@@ -532,142 +403,223 @@ FostersClases
  Clase LineaComanda
  </summary>
 	<author>Andrés Marotta, David Guerra Abad</author>
-</member><member name="M:FostersClases.TipoPago.#ctor">
+</member><member name="M:FostersClases.EstadoMesa.#ctor">
 	<summary>
  Constructor por defecto
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoPago.#ctor(System.Int32,System.String)">
+</member><member name="M:FostersClases.EstadoMesa.#ctor(System.Int32,System.String)">
 	<summary>
  Constructor por parámetros
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.TipoPago.Codigo">
+</member><member name="P:FostersClases.EstadoMesa.Codigo">
 	<summary>
  Propiedad del atributo "_Codigo"
  </summary>
 	<value>Un entero con el valor que se le asignará al atributo</value>
 	<returns>Un entero con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.TipoPago.Nombre">
+</member><member name="P:FostersClases.EstadoMesa.Nombre">
 	<summary>
  Propiedad del atributo "_Nombre"
  </summary>
 	<value>Una cadena con el valor que se le asignará al atributo</value>
 	<returns>Una cadena con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoPago.Cargar(System.Int32)">
+</member><member name="M:FostersClases.EstadoMesa.Cargar(System.Int32)">
 	<summary>
- Carga un tipo de pago dado un código
+ Carga un estado de mesa dado un código
  </summary>
-	<param name="codigo">Código del tipo de pago a buscar</param>
-	<returns>El tipo de pago encontrado</returns>
+	<param name="codigo">Código del estado a buscar</param>
+	<returns>El estado de mesa encontrado</returns>
 	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.TipoPago.CargarDatos">
+</member><member name="M:FostersClases.EstadoMesa.CargarDatos">
 	<summary>
- Carga todos los tipos de pago almacenados
+ Carga todos los estados de mesa almacenados
  </summary>
-	<returns>Un DataSet con los tipos de pago</returns>
+	<returns>Un DataSet con todos los estados de mesa</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoPago.Actualizar(System.Data.DataSet)">
+</member><member name="M:FostersClases.EstadoMesa.Actualizar(System.Data.DataSet)">
 	<summary>
- Actualiza los datos de la tabla Tipos_Pago con los cambios de un DataSet dado
+ Actualiza los datos de la tabla Estados_Mesa con los cambios de un DataSet dado
  </summary>
-	<param name="tipos">DataSet con los cambios de la tabla</param>
+	<param name="estados">DataSet con los cambios de la tabla</param>
 	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
 	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.TipoPago.Dispose">
+</member><member name="M:FostersClases.EstadoMesa.Dispose">
 	<summary>
  Destructor manual
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoPago.Finalize">
+</member><member name="M:FostersClases.EstadoMesa.Finalize">
 	<summary>
  Destructor automático
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.TipoPago">
+</member><member name="T:FostersClases.EstadoMesa">
 	<summary>
- Clase TipoPago
+ Clase EstadoMesa
  </summary>
 	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="P:FostersClases.My.Resources.Resources.ResourceManager">
-	<summary>
-  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
-</summary>
-</member><member name="P:FostersClases.My.Resources.Resources.Culture">
-	<summary>
-  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
-  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
-</summary>
-</member><member name="T:FostersClases.My.Resources.Resources">
-	<summary>
-  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
-</summary>
-</member><member name="M:FostersClases.TipoIVA.#ctor">
+</member><member name="M:FostersClases.LineaPedido.#ctor">
 	<summary>
  Constructor por defecto
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoIVA.#ctor(System.Int32,System.String,System.Int32)">
+</member><member name="M:FostersClases.LineaPedido.#ctor(System.Int32,FostersClases.Producto,System.Int32)">
 	<summary>
  Constructor por parámetros
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.TipoIVA.Codigo">
+</member><member name="P:FostersClases.LineaPedido.Numero">
+	<summary>
+ Propiedad del atributo "_Numero"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.LineaPedido.Producto">
+	<summary>
+ Propiedad del atributo "_Producto"
+ </summary>
+	<value>Un producto con el valor que se le asignará al atributo</value>
+	<returns>Un producto con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.LineaPedido.Cantidad">
+	<summary>
+ Propiedad del atributo "_Cantidad"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.LineaPedido.Precio">
+	<summary>
+ Propiedad del atributo "_Precio"
+ </summary>
+	<value>Un single con el valor que se le asignará al atributo</value>
+	<returns>Un single con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.LineaPedido.Cargar(FostersClases.Pedido)">
+	<summary>
+ Carga todas las líneas de pedido almacenadas dado un pedido
+ </summary>
+	<param name="pedido">Pedido a buscar</param>
+	<returns>Un DataSet con todas las líneas</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.LineaPedido.Actualizar(System.Data.DataSet)">
+	<summary>
+ Actualiza los datos de la tabla Lineas_Pedido con los cambios de un DataSet dado
+ </summary>
+	<param name="lineas">DataSet con los cambios de la tabla</param>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.LineaPedido.Insertar(FostersClases.Pedido)">
+	<summary>
+ Inserta la línea de pedido en la base de datos
+ </summary>
+	<param name="pedido">Pedido al que pertenece la línea</param>
+	<returns>Un boleean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.LineaPedido.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.LineaPedido.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:FostersClases.LineaPedido">
+	<summary>
+ Clase LineaPedido
+ </summary>
+	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Pedido.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Pedido.#ctor(System.Int32,System.DateTime,FostersClases.Proveedor,System.Single,System.Boolean,System.Collections.Generic.List{FostersClases.LineaPedido})">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Pedido.Codigo">
 	<summary>
  Propiedad del atributo "_Codigo"
  </summary>
 	<value>Un entero con el valor que se le asignará al atributo</value>
 	<returns>Un entero con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.TipoIVA.Porcentaje">
+</member><member name="P:FostersClases.Pedido.Fecha">
 	<summary>
- Propiedad el atributo "_Porcentaje"
+ Propiedad del atributo "_Fecha"
  </summary>
-	<value>Una entero con el valor que se le asignará al atributo</value>
-	<returns>Una entero con el valor del atributo</returns>
+	<value>Una fecha con el valor que se le asignará al atributo</value>
+	<returns>Una fecha con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.TipoIVA.Nombre">
+</member><member name="P:FostersClases.Pedido.Proveedor">
 	<summary>
- Propiedad el atributo "_Nombre"
+ Propiedad del atributo "_Proveedor"
  </summary>
-	<value>Una cadena con el valor que se le asignará al atributo</value>
-	<returns>Una cadena con el valor del atributo</returns>
+	<value>Un proveedor con el valor que se le asignará al atributo</value>
+	<returns>Un proveedor con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoIVA.Cargar(System.Int32)">
+</member><member name="P:FostersClases.Pedido.PrecioTotal">
 	<summary>
- Carga un tipo de IVA dado un código
+ Propiedad del atributo "_PrecioTotal"
  </summary>
-	<param name="codigo">Código del tipo de IVA a buscar</param>
-	<returns>El tipo de IVA encontrado</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.TipoIVA.CargarDatos">
-	<summary>
- Carga todos los tipos de IVA almacenados
- </summary>
-	<returns>Un DataSet con todos los tipos de IVA</returns>
+	<value>Un single con el valor que se le asignará al atributo</value>
+	<returns>Un single con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoIVA.Actualizar(System.Data.DataSet)">
+</member><member name="P:FostersClases.Pedido.Recibido">
 	<summary>
- Actualiza los datos de la tabla Tipos_IVA con los cambios de un DataSet dado
+ Propiedad del atributo "_Recibido"
  </summary>
-	<param name="tipos">DataSet con los cambios de la tabla</param>
+	<value>Un boolean con el valor que se le asignará al atributo</value>
+	<returns>Un boolean con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Pedido.Lineas">
+	<summary>
+ Propiedad del atributo "_Lineas"
+ </summary>
+	<value>La lista con las líneas del pedido</value>
+	<returns>Una lista de lineas con el valor del atributo</returns>
+	<author>David Martínez Pérez</author>
+</member><member name="M:FostersClases.Pedido.CargarDatos">
+	<summary>
+ Carga todos los pedidos almacenados
+ </summary>
+	<returns>Un DataSet con todos los pedidos</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Pedido.Actualizar(System.Data.DataSet)">
+	<summary>
+ Actualiza los datos de la tabla Pedidos con los cambios de un DataSet dado
+ </summary>
+	<param name="pedidos">DataSet con los cambios de la tabla</param>
 	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
 	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.TipoIVA.Dispose">
+</member><member name="M:FostersClases.Pedido.Insertar">
+	<summary>
+ Inserta el pedido en la base de datos
+ </summary>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Pedido.Dispose">
 	<summary>
  Destructor manual
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.TipoIVA.Finalize">
+</member><member name="M:FostersClases.Pedido.Finalize">
 	<summary>
  Destructor automático
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.TipoIVA">
+</member><member name="T:FostersClases.Pedido">
 	<summary>
- Clase TipoIVA
+ Clase Pedido
  </summary>
 	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
 </member><member name="M:FostersClases.SubCategoria.#ctor">
@@ -750,146 +702,282 @@ FostersClases
  Clase SubCategoria
  </summary>
 	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.LineaPedido.#ctor">
+</member><member name="M:FostersClases.Factura.#ctor">
 	<summary>
  Constructor por defecto
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.LineaPedido.#ctor(System.Int32,FostersClases.Producto,System.Int32)">
+</member><member name="M:FostersClases.Factura.#ctor(System.Int32,FostersClases.Ticket)">
 	<summary>
  Constructor por parámetros
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.LineaPedido.Numero">
-	<summary>
- Propiedad del atributo "_Numero"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.LineaPedido.Producto">
-	<summary>
- Propiedad del atributo "_Producto"
- </summary>
-	<value>Un producto con el valor que se le asignará al atributo</value>
-	<returns>Un producto con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.LineaPedido.Cantidad">
-	<summary>
- Propiedad del atributo "_Cantidad"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.LineaPedido.Precio">
-	<summary>
- Propiedad del atributo "_Precio"
- </summary>
-	<value>Un single con el valor que se le asignará al atributo</value>
-	<returns>Un single con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.LineaPedido.Cargar(FostersClases.Pedido)">
-	<summary>
- Carga todas las líneas de pedido almacenadas dado un pedido
- </summary>
-	<param name="pedido">Pedido a buscar</param>
-	<returns>Un DataSet con todas las líneas</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.LineaPedido.Actualizar(System.Data.DataSet)">
-	<summary>
- Actualiza los datos de la tabla Lineas_Pedido con los cambios de un DataSet dado
- </summary>
-	<param name="lineas">DataSet con los cambios de la tabla</param>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.LineaPedido.Insertar(FostersClases.Pedido)">
-	<summary>
- Inserta la línea de pedido en la base de datos
- </summary>
-	<param name="pedido">Pedido al que pertenece la línea</param>
-	<returns>Un boleean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.LineaPedido.Dispose">
-	<summary>
- Destructor manual
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.LineaPedido.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.LineaPedido">
-	<summary>
- Clase LineaPedido
- </summary>
-	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Categoria.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Categoria.#ctor(System.Int32,System.String,System.Boolean)">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Categoria.Codigo">
+</member><member name="P:FostersClases.Factura.Codigo">
 	<summary>
  Propiedad del atributo "_Codigo"
  </summary>
 	<value>Un entero con el valor que se le asignará al atributo</value>
 	<returns>Un entero con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Categoria.Nombre">
+</member><member name="P:FostersClases.Factura.Ticket">
+	<summary>
+ Propiedad del atributo "_Ticket"
+ </summary>
+	<value>Un ticket con el valor que se le asignará al atributo</value>
+	<returns>Un ticket con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Factura.Cargar(System.Int32)">
+	<summary>
+ Carga una factura dado un código
+ </summary>
+	<param name="codigo">Código de la factura a buscar</param>
+	<returns>La factura encontrada</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Factura.CargarDatos">
+	<summary>
+ Carga todas las facturas almacenadas
+ </summary>
+	<returns>Un DataSet con todas las facturas</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Factura.Borrar(FostersClases.Factura)">
+	<summary>
+ Borra una factura de la base de datos
+ </summary>
+	<param name="factura">Factura que se va a borrar</param>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>David Martínez Pérez</author>
+</member><member name="M:FostersClases.Factura.Imprimir">
+	<summary>
+ Imprime la factura
+ </summary>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Factura.printpage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+	<summary>
+ Evento de impresión de los tickets
+ </summary>
+	<param name="sender">PrintPage que se va a imprimir</param>
+	<param name="e">Papel donde escribimos el ticket</param>
+	<author>David Martínez Pérez</author>
+</member><member name="M:FostersClases.Factura.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Factura.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:FostersClases.Factura">
+	<summary>
+ Clase Factura
+ </summary>
+	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
+</member><member name="M:FostersClases.EstadoComanda.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.EstadoComanda.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.EstadoComanda.Codigo">
+	<summary>
+ Propiedad del atributo "_Codigo"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.EstadoComanda.Nombre">
+	<summary>
+ Propiedad del atributo "_Nombre"
+ </summary>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.EstadoComanda.Cargar(System.Int32)">
+	<summary>
+ Carga un estado de comanda dado un código
+ </summary>
+	<param name="codigo">Código del estado a buscar</param>
+	<returns>El estado de comanda encontrado</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.EstadoComanda.CargarDatos">
+	<summary>
+ Carga todos los estados de comanda almacenados
+ </summary>
+	<returns>Una DataSet con los estados de comanda</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.EstadoComanda.Actualizar(System.Data.DataSet)">
+	<summary>
+ Actualiza los datos de la tabla Estados_Comanda con los cambios de un DataSet dado
+ </summary>
+	<param name="estados">DataSet con los cambios de la tabla</param>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.EstadoComanda.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.EstadoComanda.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:FostersClases.EstadoComanda">
+	<summary>
+ Clase EstadoComanda
+ </summary>
+	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Proveedor.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Proveedor.#ctor(System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Proveedor.CIF">
+	<summary>
+ Propiedad del atributo "_CIF"
+ </summary>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Proveedor.Nombre">
+	<summary>
+ Propiedad del atributo "_Nombre"
+ </summary>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Proveedor.Direccion">
+	<summary>
+ Propiedad del atributo "_Direccion"
+ </summary>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Proveedor.Telefono">
+	<summary>
+ Propiedad del atributo "_Telefono"
+ </summary>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Proveedor.Activo">
+	<summary>
+ Propiedad del atributo "_Activo"
+ </summary>
+	<value>Un boolean con el valor que se le asignará al atributo</value>
+	<returns>Un boolean con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Proveedor.Cargar(System.String)">
+	<summary>
+ Carga un proveedor dado un CIF
+ </summary>
+	<param name="cif">CIF del proveedor a buscar</param>
+	<returns>El proveedor encontrado</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Proveedor.CargarDatos">
+	<summary>
+ Carga todos los proveedores almacenados
+ </summary>
+	<returns>Un DataSet con todos los proveedores</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Proveedor.Actualizar(System.Data.DataSet)">
+	<summary>
+ Actualiza los datos de la tabla Proveedores con los cambios de un DataSet dado
+ </summary>
+	<param name="proveedores">DataSet con los cambios de la tabla</param>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Proveedor.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Proveedor.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:FostersClases.Proveedor">
+	<summary>
+ Clase Proveedor
+ </summary>
+	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
+</member><member name="M:FostersClases.TipoIVA.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.TipoIVA.#ctor(System.Int32,System.String,System.Int32)">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.TipoIVA.Codigo">
+	<summary>
+ Propiedad del atributo "_Codigo"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.TipoIVA.Porcentaje">
+	<summary>
+ Propiedad el atributo "_Porcentaje"
+ </summary>
+	<value>Una entero con el valor que se le asignará al atributo</value>
+	<returns>Una entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.TipoIVA.Nombre">
 	<summary>
  Propiedad el atributo "_Nombre"
  </summary>
 	<value>Una cadena con el valor que se le asignará al atributo</value>
 	<returns>Una cadena con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Categoria.Estado">
+</member><member name="M:FostersClases.TipoIVA.Cargar(System.Int32)">
 	<summary>
- Propiedad el atributo "_Activa"
+ Carga un tipo de IVA dado un código
  </summary>
-	<value>Una boolean con el valor que se le asignará al atributo</value>
-	<returns>Una boolean con el valor del atributo</returns>
+	<param name="codigo">Código del tipo de IVA a buscar</param>
+	<returns>El tipo de IVA encontrado</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.TipoIVA.CargarDatos">
+	<summary>
+ Carga todos los tipos de IVA almacenados
+ </summary>
+	<returns>Un DataSet con todos los tipos de IVA</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Categoria.Cargar(System.Int32)">
+</member><member name="M:FostersClases.TipoIVA.Actualizar(System.Data.DataSet)">
 	<summary>
- Carga una categoría dado un código
+ Actualiza los datos de la tabla Tipos_IVA con los cambios de un DataSet dado
  </summary>
-	<param name="codigo">Código de la categoría a buscar</param>
-	<returns>La categoría encontrada</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Categoria.CargarDatos">
-	<summary>
- Carga todas las categorías almacenadas
- </summary>
-	<returns>Un DataSet con todas las categorías</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Categoria.Actualizar(System.Data.DataSet)">
-	<summary>
- Actualiza los datos de la tabla Categorías con los cambios de un DataSet dado
- </summary>
-	<param name="categorias">DataSet con los cambios de la tabla</param>
+	<param name="tipos">DataSet con los cambios de la tabla</param>
 	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Categoria.Dispose">
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.TipoIVA.Dispose">
 	<summary>
  Destructor manual
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Categoria.Finalize">
+</member><member name="M:FostersClases.TipoIVA.Finalize">
 	<summary>
  Destructor automático
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.Categoria">
+</member><member name="T:FostersClases.TipoIVA">
 	<summary>
- Clase Categoria
+ Clase TipoIVA
  </summary>
-	<author>Andrés Marotta, David Guerra Abad</author>
+	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
 </member><member name="M:FostersClases.Comanda.#ctor">
 	<summary>
  Constructor por defecto
@@ -1073,364 +1161,276 @@ FostersClases
  Clase Mesa
  </summary>
 	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.EstadoMesa.#ctor">
+</member><member name="M:FostersClases.Producto.#ctor">
 	<summary>
  Constructor por defecto
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoMesa.#ctor(System.Int32,System.String)">
+</member><member name="M:FostersClases.Producto.#ctor(System.Int32,System.String,System.String,System.Single,System.Single,System.Int32,System.Int32,System.Int32,System.Boolean,System.Collections.Generic.List{FostersClases.Producto},FostersClases.SubCategoria,FostersClases.TipoIVA)">
 	<summary>
  Constructor por parámetros
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.EstadoMesa.Codigo">
+</member><member name="P:FostersClases.Producto.Codigo">
 	<summary>
  Propiedad del atributo "_Codigo"
  </summary>
 	<value>Un entero con el valor que se le asignará al atributo</value>
 	<returns>Un entero con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.EstadoMesa.Nombre">
+</member><member name="P:FostersClases.Producto.Nombre">
 	<summary>
  Propiedad del atributo "_Nombre"
  </summary>
 	<value>Una cadena con el valor que se le asignará al atributo</value>
 	<returns>Una cadena con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoMesa.Cargar(System.Int32)">
+</member><member name="P:FostersClases.Producto.Descripcion">
 	<summary>
- Carga un estado de mesa dado un código
+ Propiedad del atributo "_Descripcion"
  </summary>
-	<param name="codigo">Código del estado a buscar</param>
-	<returns>El estado de mesa encontrado</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.EstadoMesa.CargarDatos">
-	<summary>
- Carga todos los estados de mesa almacenados
- </summary>
-	<returns>Un DataSet con todos los estados de mesa</returns>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoMesa.Actualizar(System.Data.DataSet)">
+</member><member name="P:FostersClases.Producto.PrecioCoste">
 	<summary>
- Actualiza los datos de la tabla Estados_Mesa con los cambios de un DataSet dado
- </summary>
-	<param name="estados">DataSet con los cambios de la tabla</param>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.EstadoMesa.Dispose">
-	<summary>
- Destructor manual
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.EstadoMesa.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.EstadoMesa">
-	<summary>
- Clase EstadoMesa
- </summary>
-	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Ticket.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Ticket.#ctor(System.Int32,FostersClases.TipoPago,System.DateTime,System.Collections.Generic.List{FostersClases.LineaTicket},System.Single)">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Ticket.Codigo">
-	<summary>
- Propiedad del atributo "_Codigo"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Ticket.TipoDePago">
-	<summary>
- Propiedad del atributo "_TipoDePago"
- </summary>
-	<value>Un tipo de pago con el valor que se le asignará al atributo</value>
-	<returns>Un tipo de pago con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Ticket.Fecha">
-	<summary>
- Propiedad del atributo "_Fecha"
- </summary>
-	<value>Una fecha con el valor que se le asignará al atributo</value>
-	<returns>Una fecha con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Ticket.Lineas">
-	<summary>
- Propiedad del atributo "_Lineas"
- </summary>
-	<value>Una lista de líneas de ticket con el valor que se le asignará al atributo</value>
-	<returns>Una lista de líneas de ticket con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Ticket.Total">
-	<summary>
- Propiedad del atributo "_Total"
+ Propiedad del atributo "_PrecioCoste"
  </summary>
 	<value>Un single con el valor que se le asignará al atributo</value>
 	<returns>Un single con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Ticket.Cargar(FostersClases.Comanda)">
+</member><member name="P:FostersClases.Producto.PVP">
 	<summary>
- Carga el ticket de una comanda dada
- </summary>
-	<param name="comanda">Comanda a buscar</param>
-	<returns>Ticket de la comanda encontrada</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Ticket.Cargar(System.Int32)">
-	<summary>
- Carga el ticket dado un código
- </summary>
-	<param name="codigo">Código a buscar</param>
-	<returns>Ticket encontrado</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Ticket.CargarDatos">
-	<summary>
- Carga todos los tickets almacenados
- </summary>
-	<returns>Un DataSet con todos los tickets</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Ticket.Insertar">
-	<summary>
- Inserta el ticket en la base de datos
- </summary>
-	<returns>Un entero indicando el código del ticket insertado</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Ticket.Facturar">
-	<summary>
- Crea la factura del ticket
- </summary>
-	<returns>Un entero con el código de factura insertada</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Ticket.Imprimir">
-	<summary>
- Imprime el ticket
- </summary>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Ticket.printpage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
-	<summary>
- Evento de impresión de los tickets
- </summary>
-	<param name="sender">PrintPage que se va a imprimir</param>
-	<param name="e">Papel donde escribimos el ticket</param>
-	<author>David Martínez Pérez</author>
-</member><member name="M:FostersClases.Ticket.Dispose">
-	<summary>
- Destructor manual
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Ticket.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.Ticket">
-	<summary>
- Clase Ticket
- </summary>
-	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Validacion.EsTexto(System.Object)">
-	<summary>
- Comprueba que el objeto se puede convertir a string
- </summary>
-	<author>Alejandro Guijarro Terol</author>
-</member><member name="M:FostersClases.Validacion.ValidarTexto(System.Object,System.Int32,System.Int32)">
-	<summary>
-	</summary>
-	<param name="objeto"></param>
-	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
-	<author>Alejandro Guijarro Terol</author>
-</member><member name="M:FostersClases.Validacion.ValidarNumeroEntero(System.Object,System.Int32,System.Int32)">
-	<summary>
- Comprueba que el valor del olbeto es un entero
- </summary>
-	<param name="objeto"></param>
-	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
-	<author>Alejandro Guijarro Terol</author>
-</member><member name="M:FostersClases.Validacion.ValidarNumeroDecimal(System.Object,System.Int32,System.Int32)">
-	<summary>
- Comprueba que el valor del olbeto es un número decimal (Acepta entero, claro)
- </summary>
-	<param name="objeto"></param>
-	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
-	<author>Alejandro Guijarro Terol</author>
-</member><member name="M:FostersClases.Validacion.ValidarTelefono(System.Object,System.Int32,System.Int32)">
-	<summary>
- Valida números de teléfono
- </summary>
-	<param name="objeto"></param>
-	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
-	<author>Alejandro Guijarro Terol</author>
-</member><member name="M:FostersClases.Validacion.ValidarFecha(System.Object,System.Int32,System.Int32)">
-	<summary>
- Comprueba que es una fecha
- </summary>
-	<param name="objeto"></param>
-	<returns>Un booleano que indica si lo introducido es correcto o no</returns>
-	<author>Alejandro Guijarro Terol</author>
-</member><member name="T:FostersClases.Validacion">
-	<summary>
- Módulo de validaciones
- </summary>
-	<author>Alejandro Guijarro Terol</author>
-</member><member name="M:FostersClases.BBDD.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.BBDD.Conexion">
-	<summary>
- Propiedad de sólo lectura del atributo "_Conexion"
- </summary>
-	<returns>Un OracleConnection con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.Conectar">
-	<summary>
- Abre la conexión con la base de datos
- </summary>
-	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.CargarDatos(System.String)">
-	<summary>
- Carga todos los datos de una tabla dada
- </summary>
-	<param name="tabla">Nombre de la tabla a consultar</param>
-	<returns>Un DataSet con los datos de la tabla consultada</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.CargarDatos(System.String,System.String)">
-	<summary>
- Carga todos los datos de una tabla dada, con una condición dada
- </summary>
-	<param name="tabla">Nombre de la tabla a consultar</param>
-	<param name="condicion">Condición de la consulta</param>
-	<returns>Un DataSet con los datos de la tabla consultada</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.Consultar(System.String)">
-	<summary>
- Ejecuta una sentencia SELECT y devuelve las filas resultantes 
- </summary>
-	<param name="comando">Sentencia SELECT a ejecutar</param>
-	<returns>Un OracleDataReader con el resultado de la ejecución</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.Modificar(Oracle.DataAccess.Client.OracleCommand)">
-	<summary>
- Ejecuta el comando recibido y devuelve el resultado 
- </summary>
-	<param name="comando">Sentencia SQL a ejecutar</param>
-	<returns>Un entero con el número de columnas afectadas</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.Desconectar">
-	<summary>
- Cierra la conexión con la base de datos
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.Dispose">
-	<summary>
- Destructor manual
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.BBDD.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.BBDD">
-	<summary>
- Clase BBDD
- </summary>
-	<author>Andrés Marotta, David Guerra</author>
-</member><member name="M:FostersClases.Pedido.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Pedido.#ctor(System.Int32,System.DateTime,FostersClases.Proveedor,System.Single,System.Boolean,System.Collections.Generic.List{FostersClases.LineaPedido})">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Pedido.Codigo">
-	<summary>
- Propiedad del atributo "_Codigo"
- </summary>
-	<value>Un entero con el valor que se le asignará al atributo</value>
-	<returns>Un entero con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Pedido.Fecha">
-	<summary>
- Propiedad del atributo "_Fecha"
- </summary>
-	<value>Una fecha con el valor que se le asignará al atributo</value>
-	<returns>Una fecha con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Pedido.Proveedor">
-	<summary>
- Propiedad del atributo "_Proveedor"
- </summary>
-	<value>Un proveedor con el valor que se le asignará al atributo</value>
-	<returns>Un proveedor con el valor del atributo</returns>
-	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Pedido.PrecioTotal">
-	<summary>
- Propiedad del atributo "_PrecioTotal"
+ Propiedad del atributo "_PVP"
  </summary>
 	<value>Un single con el valor que se le asignará al atributo</value>
 	<returns>Un single con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Pedido.Recibido">
+</member><member name="P:FostersClases.Producto.Calorias">
 	<summary>
- Propiedad del atributo "_Recibido"
+ Propiedad del atributo "_Calorias"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Producto.Stock">
+	<summary>
+ Propiedad del atributo "_Stock"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Producto.StockMinimo">
+	<summary>
+ Propiedad del atributo "_StockMinimo"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Producto.Activo">
+	<summary>
+ Propiedad del atributo "_Activo"
  </summary>
 	<value>Un boolean con el valor que se le asignará al atributo</value>
 	<returns>Un boolean con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="P:FostersClases.Pedido.Lineas">
+</member><member name="P:FostersClases.Producto.Guarniciones">
 	<summary>
- Propiedad del atributo "_Lineas"
+ Propiedad del atributo "_Guarniciones"
  </summary>
-	<value>La lista con las líneas del pedido</value>
-	<returns>Una lista de lineas con el valor del atributo</returns>
-	<author>David Martínez Pérez</author>
-</member><member name="M:FostersClases.Pedido.CargarDatos">
-	<summary>
- Carga todos los pedidos almacenados
- </summary>
-	<returns>Un DataSet con todos los pedidos</returns>
+	<value>Una lista de productos con el valor que se le asignará al atributo</value>
+	<returns>Una lista de productos con el valor del atributo</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Pedido.Actualizar(System.Data.DataSet)">
+</member><member name="P:FostersClases.Producto.SubCategoria">
 	<summary>
- Actualiza los datos de la tabla Pedidos con los cambios de un DataSet dado
+ Propiedad del atributo "_SubCategoria"
  </summary>
-	<param name="pedidos">DataSet con los cambios de la tabla</param>
+	<value>Una sub categoria con el valor que se le asignará al atributo</value>
+	<returns>Una sub categoria con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Producto.IVA">
+	<summary>
+ Propiedad del atributo "_IVA"
+ </summary>
+	<value>Un tipo de IVA con el valor que se le asignará al atributo</value>
+	<returns>Un tipo de IVA con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Producto.Cargar">
+	<summary>
+ Carga todos los productos almacenados
+ </summary>
+	<returns>Una lista de productos</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Producto.Cargar(FostersClases.SubCategoria)">
+	<summary>
+ Carga todos los productos almacenados
+ </summary>
+	<returns>Una lista de productos</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Producto.Cargar(System.Int32)">
+	<summary>
+ Carga un producto dado un código
+ </summary>
+	<param name="codigo">Código del producto a buscar</param>
+	<returns>El producto encontrado</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Producto.CargarDatos">
+	<summary>
+ Carga todos los productos almacenados
+ </summary>
+	<returns>Un DataSet con todos los productos</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Producto.Actualizar(System.Data.DataSet)">
+	<summary>
+ Actualiza los datos de la tabla Productos con los cambios de un DataSet dado
+ </summary>
+	<param name="productos">DataSet con los cambios de la tabla</param>
 	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
 	<author>Andrés Marotta, David Martínez Pérez</author>
-</member><member name="M:FostersClases.Pedido.Insertar">
+</member><member name="M:FostersClases.Producto.Insertar">
 	<summary>
- Inserta el pedido en la base de datos
+ Inserta el Producto en la base de datos
  </summary>
 	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Pedido.Dispose">
+</member><member name="M:FostersClases.Producto.Dispose">
 	<summary>
  Destructor manual
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:FostersClases.Pedido.Finalize">
+</member><member name="M:FostersClases.Producto.Finalize">
 	<summary>
  Destructor automático
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="T:FostersClases.Pedido">
+</member><member name="T:FostersClases.Producto">
 	<summary>
- Clase Pedido
+ Clase Producto
+ </summary>
+	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
+</member><member name="M:FostersClases.Categoria.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Categoria.#ctor(System.Int32,System.String,System.Boolean)">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Categoria.Codigo">
+	<summary>
+ Propiedad del atributo "_Codigo"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Categoria.Nombre">
+	<summary>
+ Propiedad el atributo "_Nombre"
+ </summary>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.Categoria.Estado">
+	<summary>
+ Propiedad el atributo "_Activa"
+ </summary>
+	<value>Una boolean con el valor que se le asignará al atributo</value>
+	<returns>Una boolean con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Categoria.Cargar(System.Int32)">
+	<summary>
+ Carga una categoría dado un código
+ </summary>
+	<param name="codigo">Código de la categoría a buscar</param>
+	<returns>La categoría encontrada</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Categoria.CargarDatos">
+	<summary>
+ Carga todas las categorías almacenadas
+ </summary>
+	<returns>Un DataSet con todas las categorías</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Categoria.Actualizar(System.Data.DataSet)">
+	<summary>
+ Actualiza los datos de la tabla Categorías con los cambios de un DataSet dado
+ </summary>
+	<param name="categorias">DataSet con los cambios de la tabla</param>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Categoria.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.Categoria.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:FostersClases.Categoria">
+	<summary>
+ Clase Categoria
+ </summary>
+	<author>Andrés Marotta, David Guerra Abad</author>
+</member><member name="M:FostersClases.TipoPago.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.TipoPago.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.TipoPago.Codigo">
+	<summary>
+ Propiedad del atributo "_Codigo"
+ </summary>
+	<value>Un entero con el valor que se le asignará al atributo</value>
+	<returns>Un entero con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="P:FostersClases.TipoPago.Nombre">
+	<summary>
+ Propiedad del atributo "_Nombre"
+ </summary>
+	<value>Una cadena con el valor que se le asignará al atributo</value>
+	<returns>Una cadena con el valor del atributo</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.TipoPago.Cargar(System.Int32)">
+	<summary>
+ Carga un tipo de pago dado un código
+ </summary>
+	<param name="codigo">Código del tipo de pago a buscar</param>
+	<returns>El tipo de pago encontrado</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.TipoPago.CargarDatos">
+	<summary>
+ Carga todos los tipos de pago almacenados
+ </summary>
+	<returns>Un DataSet con los tipos de pago</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.TipoPago.Actualizar(System.Data.DataSet)">
+	<summary>
+ Actualiza los datos de la tabla Tipos_Pago con los cambios de un DataSet dado
+ </summary>
+	<param name="tipos">DataSet con los cambios de la tabla</param>
+	<returns>Un boolean indicando si la operación se realizó con éxito</returns>
+	<author>Andrés Marotta, David Martínez Pérez</author>
+</member><member name="M:FostersClases.TipoPago.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:FostersClases.TipoPago.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:FostersClases.TipoPago">
+	<summary>
+ Clase TipoPago
  </summary>
 	<author>Andrés Marotta, David Guerra Abad, David Martínez Pérez</author>
 </member>
