@@ -185,7 +185,7 @@ Partial Class FormListaCarta
         'pbTexMex
         '
         Me.pbTexMex.BackColor = System.Drawing.Color.Transparent
-        Me.pbTexMex.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
+        Me.pbTexMex.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.TexMex
         Me.pbTexMex.Location = New System.Drawing.Point(12, 330)
         Me.pbTexMex.Name = "pbTexMex"
         Me.pbTexMex.Size = New System.Drawing.Size(239, 52)
@@ -215,7 +215,7 @@ Partial Class FormListaCarta
         'pbPolloPescado
         '
         Me.pbPolloPescado.BackColor = System.Drawing.Color.Transparent
-        Me.pbPolloPescado.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Platos
+        Me.pbPolloPescado.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.PolloPescado
         Me.pbPolloPescado.Location = New System.Drawing.Point(537, 330)
         Me.pbPolloPescado.Name = "pbPolloPescado"
         Me.pbPolloPescado.Size = New System.Drawing.Size(239, 52)
