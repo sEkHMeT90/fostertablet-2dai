@@ -23,20 +23,20 @@ Partial Class FormDetallePlato
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.pbSeleccionarGuarniciones = New System.Windows.Forms.RichTextBox()
         Me.pbCerrar = New System.Windows.Forms.PictureBox()
         Me.pbAyuda = New System.Windows.Forms.PictureBox()
         Me.pbCartel = New System.Windows.Forms.PictureBox()
         Me.pbPedir = New System.Windows.Forms.PictureBox()
         Me.pbVolver = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.pbSeleccionar = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbAyuda, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCartel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPedir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbVolver, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbSeleccionar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -51,15 +51,15 @@ Partial Class FormDetallePlato
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'RichTextBox1
+        'pbSeleccionarGuarniciones
         '
-        Me.RichTextBox1.BackColor = System.Drawing.Color.Linen
-        Me.RichTextBox1.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(340, 208)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(412, 296)
-        Me.RichTextBox1.TabIndex = 1
-        Me.RichTextBox1.Text = "Producto:" & Global.Microsoft.VisualBasic.ChrW(10) & "asldaslkdjalsd" & Global.Microsoft.VisualBasic.ChrW(10) & "asdfñjkashdf" & Global.Microsoft.VisualBasic.ChrW(10) & "asodhf" & Global.Microsoft.VisualBasic.ChrW(10) & "ADSHF" & Global.Microsoft.VisualBasic.ChrW(10) & "ASODHGASD" & Global.Microsoft.VisualBasic.ChrW(10) & "GASHF" & Global.Microsoft.VisualBasic.ChrW(10) & "DK" & Global.Microsoft.VisualBasic.ChrW(10) & "DA"
+        Me.pbSeleccionarGuarniciones.BackColor = System.Drawing.Color.Linen
+        Me.pbSeleccionarGuarniciones.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pbSeleccionarGuarniciones.Location = New System.Drawing.Point(340, 208)
+        Me.pbSeleccionarGuarniciones.Name = "pbSeleccionarGuarniciones"
+        Me.pbSeleccionarGuarniciones.Size = New System.Drawing.Size(412, 296)
+        Me.pbSeleccionarGuarniciones.TabIndex = 1
+        Me.pbSeleccionarGuarniciones.Text = "Producto:" & Global.Microsoft.VisualBasic.ChrW(10) & "asldaslkdjalsd" & Global.Microsoft.VisualBasic.ChrW(10) & "asdfñjkashdf" & Global.Microsoft.VisualBasic.ChrW(10) & "asodhf" & Global.Microsoft.VisualBasic.ChrW(10) & "ADSHF" & Global.Microsoft.VisualBasic.ChrW(10) & "ASODHGASD" & Global.Microsoft.VisualBasic.ChrW(10) & "GASHF" & Global.Microsoft.VisualBasic.ChrW(10) & "DK" & Global.Microsoft.VisualBasic.ChrW(10) & "DA"
         '
         'pbCerrar
         '
@@ -77,7 +77,7 @@ Partial Class FormDetallePlato
         Me.pbAyuda.BackColor = System.Drawing.Color.Transparent
         Me.pbAyuda.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.ayuda
         Me.pbAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbAyuda.Location = New System.Drawing.Point(701, 14)
+        Me.pbAyuda.Location = New System.Drawing.Point(708, 14)
         Me.pbAyuda.Name = "pbAyuda"
         Me.pbAyuda.Size = New System.Drawing.Size(63, 65)
         Me.pbAyuda.TabIndex = 22
@@ -88,9 +88,9 @@ Partial Class FormDetallePlato
         Me.pbCartel.BackColor = System.Drawing.Color.Transparent
         Me.pbCartel.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.cartel_carta2
         Me.pbCartel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.pbCartel.Location = New System.Drawing.Point(-6, 0)
+        Me.pbCartel.Location = New System.Drawing.Point(-1, 0)
         Me.pbCartel.Name = "pbCartel"
-        Me.pbCartel.Size = New System.Drawing.Size(795, 202)
+        Me.pbCartel.Size = New System.Drawing.Size(800, 202)
         Me.pbCartel.TabIndex = 21
         Me.pbCartel.TabStop = False
         '
@@ -115,13 +115,15 @@ Partial Class FormDetallePlato
         Me.pbVolver.TabIndex = 25
         Me.pbVolver.TabStop = False
         '
-        'PictureBox2
+        'pbSeleccionar
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(53, 348)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(230, 86)
-        Me.PictureBox2.TabIndex = 26
-        Me.PictureBox2.TabStop = False
+        Me.pbSeleccionar.BackColor = System.Drawing.Color.Transparent
+        Me.pbSeleccionar.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.SelecionarGuarniciones
+        Me.pbSeleccionar.Location = New System.Drawing.Point(47, 342)
+        Me.pbSeleccionar.Name = "pbSeleccionar"
+        Me.pbSeleccionar.Size = New System.Drawing.Size(240, 90)
+        Me.pbSeleccionar.TabIndex = 26
+        Me.pbSeleccionar.TabStop = False
         '
         'FormDetallePlato
         '
@@ -129,16 +131,17 @@ Partial Class FormDetallePlato
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Carta_fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(784, 596)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.pbSeleccionar)
         Me.Controls.Add(Me.pbVolver)
         Me.Controls.Add(Me.pbPedir)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.pbSeleccionarGuarniciones)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pbCerrar)
         Me.Controls.Add(Me.pbAyuda)
         Me.Controls.Add(Me.pbCartel)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormDetallePlato"
         Me.Text = "FormDetallePlato"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -147,16 +150,16 @@ Partial Class FormDetallePlato
         CType(Me.pbCartel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPedir, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbVolver, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbSeleccionar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents pbSeleccionarGuarniciones As System.Windows.Forms.RichTextBox
     Friend WithEvents pbCerrar As System.Windows.Forms.PictureBox
     Friend WithEvents pbAyuda As System.Windows.Forms.PictureBox
     Friend WithEvents pbCartel As System.Windows.Forms.PictureBox
     Friend WithEvents pbPedir As System.Windows.Forms.PictureBox
     Friend WithEvents pbVolver As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbSeleccionar As System.Windows.Forms.PictureBox
 End Class

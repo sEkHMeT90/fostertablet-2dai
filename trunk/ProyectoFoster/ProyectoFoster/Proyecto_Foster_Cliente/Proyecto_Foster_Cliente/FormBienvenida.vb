@@ -36,7 +36,7 @@ Public Class FormBienvenida
     End Sub
 
     Private Sub pbAyuda_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbAyuda.Click
-        'TODO: Seción ayuda
+        FormAyuda.Show()
     End Sub
 
     Private Sub FormBienvenida_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -49,6 +49,11 @@ Public Class FormBienvenida
 #End Region
     '---------------------------------- FUNCIONES -------------------------
 #Region "FUNCIONES"
+
+    ''' <summary>
+    '''  Aumenta el numero de comensales actualizando la imagen del contador
+    ''' </summary>
+    ''' <autor>Julio L. Antoranz Ros</autor>
     Private Sub AumentarNumeroContador()
         If ContadorComensales < NumeroComensalesMaximo Then
             ContadorComensales += 1
@@ -61,6 +66,10 @@ Public Class FormBienvenida
         End If
     End Sub
 
+    ''' <summary>
+    '''  Disminulle el numero de comensales actualizando la imagen del contador
+    ''' </summary>
+    ''' <autor>Julio L. Antoranz Ros</autor>
     Private Sub DisminuirNumeroContador()
         If ContadorComensales > NumeroComensalesMinimo Then
             ContadorComensales -= 1

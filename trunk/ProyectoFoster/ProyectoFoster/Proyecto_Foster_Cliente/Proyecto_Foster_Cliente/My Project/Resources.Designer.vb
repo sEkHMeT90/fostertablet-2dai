@@ -361,6 +361,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property SelecionarGuarniciones() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("SelecionarGuarniciones", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property TexMex() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("TexMex", resourceCulture)

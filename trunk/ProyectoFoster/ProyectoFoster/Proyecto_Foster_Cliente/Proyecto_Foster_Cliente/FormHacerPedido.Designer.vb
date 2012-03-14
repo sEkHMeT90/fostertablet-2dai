@@ -46,7 +46,7 @@ Partial Class FormHacerPedido
         Me.dgvPedidos.RowHeadersVisible = False
         Me.dgvPedidos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         Me.dgvPedidos.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
-        Me.dgvPedidos.Size = New System.Drawing.Size(344, 538)
+        Me.dgvPedidos.Size = New System.Drawing.Size(384, 562)
         Me.dgvPedidos.TabIndex = 0
         '
         'Pedido
@@ -65,7 +65,7 @@ Partial Class FormHacerPedido
         '
         Me.pbDescartar.BackColor = System.Drawing.Color.Transparent
         Me.pbDescartar.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.descartar
-        Me.pbDescartar.Location = New System.Drawing.Point(464, 99)
+        Me.pbDescartar.Location = New System.Drawing.Point(474, 139)
         Me.pbDescartar.Name = "pbDescartar"
         Me.pbDescartar.Size = New System.Drawing.Size(238, 66)
         Me.pbDescartar.TabIndex = 1
@@ -75,7 +75,7 @@ Partial Class FormHacerPedido
         '
         Me.pbVolver.BackColor = System.Drawing.Color.Transparent
         Me.pbVolver.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.volver
-        Me.pbVolver.Location = New System.Drawing.Point(464, 236)
+        Me.pbVolver.Location = New System.Drawing.Point(474, 276)
         Me.pbVolver.Name = "pbVolver"
         Me.pbVolver.Size = New System.Drawing.Size(238, 66)
         Me.pbVolver.TabIndex = 2
@@ -85,7 +85,7 @@ Partial Class FormHacerPedido
         '
         Me.pbContinuar.BackColor = System.Drawing.Color.Transparent
         Me.pbContinuar.Image = Global.Proyecto_Foster_Cliente.My.Resources.Resources.continuar
-        Me.pbContinuar.Location = New System.Drawing.Point(464, 373)
+        Me.pbContinuar.Location = New System.Drawing.Point(474, 413)
         Me.pbContinuar.Name = "pbContinuar"
         Me.pbContinuar.Size = New System.Drawing.Size(238, 66)
         Me.pbContinuar.TabIndex = 3
@@ -97,12 +97,13 @@ Partial Class FormHacerPedido
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Proyecto_Foster_Cliente.My.Resources.Resources.Carta_fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(784, 562)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.pbContinuar)
         Me.Controls.Add(Me.pbVolver)
         Me.Controls.Add(Me.pbDescartar)
         Me.Controls.Add(Me.dgvPedidos)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormHacerPedido"
         Me.Text = "FormHacerPedido"
         CType(Me.dgvPedidos, System.ComponentModel.ISupportInitialize).EndInit()

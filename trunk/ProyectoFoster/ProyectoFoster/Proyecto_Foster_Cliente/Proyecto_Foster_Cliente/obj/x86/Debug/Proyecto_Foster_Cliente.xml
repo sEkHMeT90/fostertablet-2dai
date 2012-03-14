@@ -6,7 +6,51 @@ Proyecto_Foster_Cliente
 </name>
 </assembly>
 <members>
-<member name="T:Proyecto_Foster_Cliente.FormListaCartaPlatos">
+<member name="M:Proyecto_Foster_Cliente.FormSeleccionarGuarnicion.InicializarCheckets">
+	<summary>
+  Inicializa los checkets a false todos
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormSeleccionarGuarnicion.MostrarOpciones(System.Int32)">
+	<summary>
+  Hace visible el numero de opciones seleccionado, maximo 4
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormSeleccionarGuarnicion.CambiarPreguntas(System.String)">
+	<summary>
+  Cambia el Texto de las opciones, solo hay que pasar por parametro el 
+ string de las preguntas por separado.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormSeleccionarGuarnicion.CambiarPreguntas(System.String,System.String)">
+	<summary>
+  Cambia el Texto de las opciones, solo hay que pasar por parametro el 
+ string de las preguntas por separado.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormSeleccionarGuarnicion.CambiarPreguntas(System.String,System.String,System.String)">
+	<summary>
+  Cambia el Texto de las opciones, solo hay que pasar por parametro el 
+ string de las preguntas por separado.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormSeleccionarGuarnicion.CambiarPreguntas(System.String,System.String,System.String,System.String)">
+	<summary>
+  Cambia el Texto de las opciones, solo hay que pasar por parametro el 
+ string de las preguntas por separado.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormListaCartaPlatos.MostrarComensales">
+	<summary>
+  Muestra los iconos de los comensales segun un numero de comensales.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormListaCartaPlatos.CambiarComensalSeleccionado">
+	<summary>
+  Cambia el fondo del icono del comensal seleccionado.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="T:Proyecto_Foster_Cliente.FormListaCartaPlatos">
 	<summary>
   Pantalla de Lista para la Carta de platos.
  Sera la segunda pantalla que el cliente emezara a seleccionar lo que quiere pedir.
@@ -25,6 +69,16 @@ Proyecto_Foster_Cliente
 	<summary>
   Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
 </summary>
+</member><member name="M:Proyecto_Foster_Cliente.FormBienvenida.AumentarNumeroContador">
+	<summary>
+  Aumenta el numero de comensales actualizando la imagen del contador
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormBienvenida.DisminuirNumeroContador">
+	<summary>
+  Disminulle el numero de comensales actualizando la imagen del contador
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
 </member><member name="T:Proyecto_Foster_Cliente.FormBienvenida">
 	<summary>
   Pantalla de Bienvenida.
@@ -36,6 +90,16 @@ Proyecto_Foster_Cliente
  ese dato se abrira una pantalla para seleccionar la mesa y se creara 
  o actualizara el fichero ".ini".
  
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormListaCarta.MostrarComensales">
+	<summary>
+  Muestra los iconos de los comensales segun un numero de comensales.
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormListaCarta.CambiarComensalSeleccionado">
+	<summary>
+  Cambia el fondo del icono del comensal seleccionado.
  </summary>
 	<autor>Julio L. Antoranz Ros</autor>
 </member><member name="T:Proyecto_Foster_Cliente.FormListaCarta">
@@ -50,17 +114,15 @@ Proyecto_Foster_Cliente
  Sera la primera pantalla que el cliente emezara a seleccionar lo que quiere pedir.
  </summary>
 	<autor>Julio L. Antoranz Ros</autor>
+</member><member name="M:Proyecto_Foster_Cliente.FormPedirCuenta.InicializarCheckets">
+	<summary>
+  Inicializa los checkets a false todos
+ </summary>
+	<autor>Julio L. Antoranz Ros</autor>
 </member><member name="T:Proyecto_Foster_Cliente.FormPedirCuenta">
 	<summary>
-  Pantalla de Bienvenida.
- Sera la primera pantalla que vera el cliente al entregarle la tablet o 
- sentarse en la mesa.
- 
- La aplicacion dispone de un ".ini" donde se guardara entre otros datos 
- el numero de mesa asignado a la tablet. En caso de no disponer de 
- ese dato se abrira una pantalla para seleccionar la mesa y se creara 
- o actualizara el fichero ".ini".
- 
+  Pantalla Cobro
+  Aqui el cliente podra seleccionar como desea pagar.
  </summary>
 	<autor>Julio L. Antoranz Ros</autor>
 </member>

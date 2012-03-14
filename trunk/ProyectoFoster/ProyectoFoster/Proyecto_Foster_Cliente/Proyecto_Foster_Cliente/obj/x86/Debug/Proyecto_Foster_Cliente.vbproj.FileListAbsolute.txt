@@ -108,3 +108,4 @@ C:\Users\Lince\Desktop\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\D
 C:\Users\Lince\Desktop\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.Resources.resources
 C:\Users\Lince\Desktop\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Lince\Desktop\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Lince\Desktop\Proyecto_Foster_Cliente\Proyecto_Foster_Cliente\obj\x86\Debug\Proyecto_Foster_Cliente.FormSeleccionarGuarnicion.resources

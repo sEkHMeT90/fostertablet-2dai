@@ -131,6 +131,12 @@
     <Compile Include="FormPedirCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSeleccionarGuarnicion.Designer.vb">
+      <DependentUpon>FormSeleccionarGuarnicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeleccionarGuarnicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormSeleccionMesa.Designer.vb">
       <DependentUpon>FormSeleccionMesa.vb</DependentUpon>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPedirCuenta.resx">
       <DependentUpon>FormPedirCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeleccionarGuarnicion.resx">
+      <DependentUpon>FormSeleccionarGuarnicion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSeleccionMesa.resx">
       <DependentUpon>FormSeleccionMesa.vb</DependentUpon>
@@ -370,6 +379,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TexMex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelecionarGuarniciones.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

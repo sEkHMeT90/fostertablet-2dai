@@ -181,7 +181,7 @@ Public Class FormListaCarta
         CambiarComensalSeleccionado()
     End Sub
     Private Sub pbPedirCuenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedirCuenta.Click
-        FormPedirCuenta.Show()
+        FormPedirCuenta.ShowDialog()
     End Sub
     Private Sub pbPedir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbPedir.Click
         FormHacerPedido.Show()
@@ -198,6 +198,11 @@ Public Class FormListaCarta
 #End Region
     '---------------------------------- FUNCIONES -------------------------
 #Region "FUNCIONES"
+
+    ''' <summary>
+    '''  Muestra los iconos de los comensales segun un numero de comensales.
+    ''' </summary>
+    ''' <autor>Julio L. Antoranz Ros</autor>
     Private Sub MostrarComensales()
         Dim NumeroComensales As Integer = FormBienvenida.ContadorComensales
         'Mostrar Todos
@@ -207,6 +212,10 @@ Public Class FormListaCarta
         CambiarComensalSeleccionado()
     End Sub
 
+    ''' <summary>
+    '''  Cambia el fondo del icono del comensal seleccionado.
+    ''' </summary>
+    ''' <autor>Julio L. Antoranz Ros</autor>
     Private Sub CambiarComensalSeleccionado()
         Dim NumeroComensales As Integer = FormBienvenida.ContadorComensales
 
