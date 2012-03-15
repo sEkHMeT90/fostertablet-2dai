@@ -49,3 +49,13 @@ C:\Users\David\Desktop\fostertablet-2dai\ProyectoClases\FostersClases\obj\Releas
 C:\Users\David\Desktop\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\FostersClases.dll
 C:\Users\David\Desktop\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\FostersClases.xml
 C:\Users\David\Desktop\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\FostersClases.pdb
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\bin\Release\FostersClases.dll
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\bin\Release\FostersClases.pdb
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\bin\Release\FostersClases.xml
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\ResolveAssemblyReference.cache
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\FostersClases.Resources.resources
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\GenerateResource.read.1.tlog
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\GenerateResource.write.1.tlog
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\FostersClases.dll
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\FostersClases.xml
+E:\final\fostertablet-2dai\ProyectoClases\FostersClases\obj\Release\FostersClases.pdb
