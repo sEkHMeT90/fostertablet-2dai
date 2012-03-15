@@ -182,10 +182,7 @@ Public Class Comanda
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(comandas, "Comandas")
-
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If  Adaptador.Update(comandas, "Comandas") > 0 Then
         Ok = True
       Else
         Ok = False

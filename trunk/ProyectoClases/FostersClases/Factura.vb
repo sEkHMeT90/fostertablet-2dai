@@ -182,7 +182,7 @@ Public Class Factura
     Dim longitudPrecio As Integer = 9
     Dim longitudLinea = 90
     Dim nombreProducto As String
-    Dim sumaIva As Single = 0.0F
+    Dim sumaIva As Double = 0.0F
 
 
     ' Cabecera
@@ -229,11 +229,11 @@ Public Class Factura
       e.Graphics.DrawString(nombreProducto.PadRight(longitudNombreProducto) & _
                             linea.Cantidad.ToString.PadLeft(longitudCantidad) & _
                             linea.IVA.ToString.PadLeft(longitudIva) & _
-                            linea.Precio.ToString("0.00").PadLeft(longitudPrecio), _
+                            CInt(linea.Precio).ToString("0.00").PadLeft(longitudPrecio), _
                             fuente, pincel, e.MarginBounds.Left, y)
       y += fuente.GetHeight
 
-      sumaIva += (linea.IVA * linea.Cantidad * linea.Precio) / 100
+      sumaIva += (linea.IVA * linea.Cantidad * CInt(linea.Precio)) / 100
     Next
 
     e.Graphics.DrawString("  ___________________________________________________________________  ",
@@ -244,13 +244,13 @@ Public Class Factura
     ' Pie
     e.Graphics.DrawString("Precio Total:", _
                           fuente, pincel, e.MarginBounds.Left, y)
-    e.Graphics.DrawString(Me._Ticket.Total.ToString("0.00").PadLeft(longitudLinea), _
+    e.Graphics.DrawString(CInt(Me._Ticket.Total).ToString("0.00").PadLeft(longitudLinea), _
                           fuente, pincel, e.MarginBounds.Left, y)
     y += fuente.GetHeight
-    e.Graphics.DrawString(("Iva: " & sumaIva.ToString("0.00")).PadLeft(longitudLinea), _
+    e.Graphics.DrawString("Iva:", _
                           fuente, pincel, e.MarginBounds.Left, y)
-    y += fuente.GetHeight + fuente.GetHeight
-
+    e.Graphics.DrawString(sumaIva.ToString("0.00").PadLeft(longitudLinea), _
+                          fuente, pincel, e.MarginBounds.Left, y)
   End Sub
 #End Region
 

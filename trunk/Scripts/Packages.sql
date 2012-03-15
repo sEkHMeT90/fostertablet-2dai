@@ -460,7 +460,7 @@ AS
 		codigo_ticket TICKETS.CODIGO%TYPE;
     BEGIN
 		codigo_ticket := SecTickets.NextVal;
-        INSERT INTO TICKETS(codigo, fecha, total) VALUES(codigo_ticket, SYSDATE, 0);
+        INSERT INTO TICKETS(codigo, fecha, total) VALUES(codigo_ticket, SYSDATE, '0');
 		RETURN codigo_ticket;
 		
     EXCEPTION
@@ -511,7 +511,7 @@ AS
         
         IF cantidad_producto > 0 THEN
             UPDATE LINEAS_TICKET
-            SET cantidad = cantidad + 1, precio = precio + pvp
+            SET cantidad = cantidad + 1, precio = to_char(to_number(precio) + to_number(pvp))
             WHERE nombre_producto = producto;
         ELSE
             SELECT MAX(numero) INTO numero
@@ -597,7 +597,7 @@ AS
     IS
         codigo COMANDAS.CODIGO%TYPE;
     BEGIN
-        codigo := SecComandas.NextVal();
+        codigo := SecComandas.NextVal;
         
         INSERT INTO COMANDAS VALUES(codigo, NULL, estado, mesa);
         RETURN codigo;
@@ -771,7 +771,6 @@ AS
         
     EXCEPTION
         WHEN OTHERS THEN
-            ROLLBACK;
             RETURN 0;
     
     END Modificar;
@@ -851,7 +850,7 @@ AS
     BEGIN
         codigo := SecTiposPago.NextVal;
 		
-        INSERT INTO TIPOS_PAGO VALUES(codigo, nombre);
+        INSERT INTO TIPOS_PAGO VALUES (codigo, nombre);
 		RETURN 1;
 		
     EXCEPTION

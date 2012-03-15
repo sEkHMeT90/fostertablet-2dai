@@ -157,8 +157,8 @@
         codigo number(8),
         nombre varchar2(45) not null,
         descripcion varchar2(200) not null,
-        precio_coste number(5,2) not null,
-        pvp number(5,2) not null,
+        precio_coste varchar2(10) not null,
+        pvp varchar2(10) not null,
         calorias number(4) not null,
         codigo_subcategoria number(3) not null,
         codigo_categoria number(3) not null,
@@ -176,7 +176,7 @@
         codigo number(8),
         fecha  date not null,
         cif_proveedor varchar2(15) not null,
-        precio_total number(12,2) not null,
+        precio_total varchar2(15) not null,
         recibido number(1) not null,
         CONSTRAINT PK_PEDIDOS PRIMARY KEY (codigo),
         CONSTRAINT FK_PEDIDOS FOREIGN KEY (cif_proveedor) REFERENCES proveedores (cif)
@@ -186,7 +186,7 @@
         numero number(3),
         codigo_pedido number(8),
         codigo_producto number(8) not null,
-        precio number(6,2) not null,
+        precio varchar2(10) not null,
         cantidad number(4) not null,
         CONSTRAINT PK_LINEAS_PEDIDO PRIMARY KEY (numero, codigo_pedido),
         CONSTRAINT FK_LINEAS_PEDIDO FOREIGN KEY (codigo_pedido) REFERENCES pedidos (codigo),
@@ -212,7 +212,7 @@
         codigo number(8),
         codigo_tipo_pago number(2),
         fecha date not null,
-        total number(6,2) not null,
+        total varchar2(10) not null,
         CONSTRAINT PK_TICKETS PRIMARY KEY (codigo),
         CONSTRAINT FK_TICKETS FOREIGN KEY (codigo_tipo_pago) REFERENCES tipos_pago (codigo)
     );
@@ -223,7 +223,7 @@
         nombre_producto varchar2(55) not null,
         cantidad number(2) not null,
         descuento number(3) not null,
-        precio number(6,2) not null,
+        precio varchar2(10) not null,
         iva number(3) not null,
         CONSTRAINT PK_LINEAS_TICKET PRIMARY KEY (numero, codigo_ticket),
         CONSTRAINT FK_LINEAS_TICKET FOREIGN KEY (codigo_ticket) REFERENCES tickets (codigo)

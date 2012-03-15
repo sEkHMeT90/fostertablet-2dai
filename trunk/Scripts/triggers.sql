@@ -1,6 +1,26 @@
 
 
-create or replace trigger ActualizarProducto
+create or replace trigger ActualizarPedido
+  after insert or update of recibido on Pedidos
+  for each row
+declare
+  CURSOR lineasPedido IS Select * from lineas_Pedido where codigo_pedido = :new.codigo;
+begin
+
+  if :new.recibido > 0 then
+    for linea in lineasPedido loop
+
+      update productos
+        set stock = stock + linea.cantidad
+        where codigo = linea.codigo_producto;
+    end loop;
+  end if;
+end;
+
+
+
+
+create or replace trigger ActualizarComanda
   after update of entregada on Lineas_Comanda 
   for each row 
 
@@ -45,11 +65,11 @@ begin
   nuevo_precio := :new.precio;
 
   if updating then
-    nuevo_precio := nuevo_precio - :old.precio;
+    nuevo_precio := to_char(to_number(nuevo_precio) - to_number(:old.precio));
   end if;
 
   UPDATE Tickets
-  SET total = total + nuevo_precio
+  SET total = to_char(to_number(total) + to_number(nuevo_precio))
   WHERE codigo = :new.codigo_ticket;
 end;
 
@@ -66,10 +86,13 @@ begin
   nuevo_precio := :new.precio;
 
   if updating then
-    nuevo_precio := nuevo_precio - :old.precio;
+    nuevo_precio := to_char(to_number(nuevo_precio) - to_number(:old.precio));
   end if;
 
   UPDATE Pedidos
-  SET precio_total = precio_total + nuevo_precio
+  SET precio_total = to_char(to_number(precio_total) + to_number(nuevo_precio))
   WHERE codigo = :new.codigo_pedido;
 end;
+
+
+

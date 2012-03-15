@@ -129,10 +129,7 @@ Public Class Mesa
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(mesas, "Mesas")
-
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If Adaptador.Update(mesas, "Mesas") > 0 Then
         Ok = True
       Else
         Ok = False
@@ -159,7 +156,7 @@ Public Class Mesa
       Comando.Parameters.Add("Resultado", OracleDbType.Int16, 1)
       Comando.CommandType = CommandType.StoredProcedure
 
-      If CBool(OrigenDatos.Modificar(Comando)) Then
+      If OrigenDatos.Modificar(Comando) <> 0 Then
         Ok = True
       Else
         Ok = False
@@ -229,6 +226,8 @@ Public Class Mesa
             Comando.Parameters("Codigo_ticket").Value = miTicket.Codigo
             If OrigenDatos.Modificar(Comando) = 0 Then
               ok = False
+            Else
+              ok = True
             End If
           End If
         End If
@@ -273,6 +272,8 @@ Public Class Mesa
 
             If OrigenDatos.Modificar(Comando) = 0 Then
               ok = False
+            Else
+              ok = True
             End If
           Next
 
