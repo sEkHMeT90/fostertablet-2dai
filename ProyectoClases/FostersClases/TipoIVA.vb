@@ -168,11 +168,7 @@ Public Class TipoIVA
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(tipos, "Tipos_IVA")
-
-      If CInt(Adaptador.InsertCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If Adaptador.Update(tipos, "Tipos_IVA") > 0 Then
         Ok = True
       Else
         Ok = False

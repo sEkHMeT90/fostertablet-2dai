@@ -21,8 +21,8 @@ Public Class Producto
   Private _Codigo As Integer
   Private _Nombre As String
   Private _Descripcion As String
-  Private _PrecioCoste As Single
-  Private _PVP As Single
+  Private _PrecioCoste As String
+  Private _PVP As String
   Private _Calorias As Integer
   Private _Stock As Integer
   Private _StockMinimo As Integer
@@ -41,8 +41,8 @@ Public Class Producto
     Me._Codigo = 0
     Me._Nombre = "Desconocido"
     Me._Descripcion = "Desconocida"
-    Me._PrecioCoste = 0.0F
-    Me._PVP = 0.0F
+    Me._PrecioCoste = "0"
+    Me._PVP = "0"
     Me._Calorias = 0
     Me._Stock = 0
     Me._StockMinimo = 0
@@ -56,7 +56,7 @@ Public Class Producto
   ''' Constructor por parámetros
   ''' </summary>
   ''' <author>Andrés Marotta</author>
-  Public Sub New(ByVal codigo As Integer, ByVal nombre As String, ByVal descripcion As String, ByVal coste As Single, ByVal pvp As Single, ByVal calorias As Integer, ByVal stock As Integer, ByVal minimo As Integer, ByVal activo As Boolean, ByVal guarniciones As List(Of Producto), ByVal subcategoria As SubCategoria, ByVal iva As TipoIVA)
+  Public Sub New(ByVal codigo As Integer, ByVal nombre As String, ByVal descripcion As String, ByVal coste As String, ByVal pvp As String, ByVal calorias As Integer, ByVal stock As Integer, ByVal minimo As Integer, ByVal activo As Boolean, ByVal guarniciones As List(Of Producto), ByVal subcategoria As SubCategoria, ByVal iva As TipoIVA)
     Me._Codigo = codigo
     Me._Nombre = nombre
     Me._Descripcion = descripcion
@@ -122,13 +122,13 @@ Public Class Producto
   ''' Propiedad del atributo "_PrecioCoste"
   ''' </summary>
   ''' <value>Un single con el valor que se le asignará al atributo</value>
-  ''' <returns>Un single con el valor del atributo</returns>
+  ''' <returns>Un string con el valor del atributo</returns>
   ''' <author>Andrés Marotta</author>
-  Public Property PrecioCoste() As Single
+  Public Property PrecioCoste() As String
     Get
       Return Me._PrecioCoste
     End Get
-    Set(ByVal value As Single)
+    Set(ByVal value As String)
       Me._PrecioCoste = value
     End Set
   End Property
@@ -137,13 +137,13 @@ Public Class Producto
   ''' Propiedad del atributo "_PVP"
   ''' </summary>
   ''' <value>Un single con el valor que se le asignará al atributo</value>
-  ''' <returns>Un single con el valor del atributo</returns>
+  ''' <returns>Un string con el valor del atributo</returns>
   ''' <author>Andrés Marotta</author>
-  Public Property PVP() As Single
+  Public Property PVP() As String
     Get
       Return Me._PVP
     End Get
-    Set(ByVal value As Single)
+    Set(ByVal value As String)
       Me._PVP = value
     End Set
   End Property
@@ -275,8 +275,8 @@ Public Class Producto
           Nuevo._Codigo = CInt(LectorProductos(0))
           Nuevo._Nombre = CStr(LectorProductos(1))
           Nuevo._Descripcion = CStr(LectorProductos(2))
-          Nuevo._PrecioCoste = CSng(LectorProductos(3))
-          Nuevo._PVP = CSng(LectorProductos(4))
+          Nuevo._PrecioCoste = CStr(LectorProductos(3))
+          Nuevo._PVP = CStr(LectorProductos(4))
           Nuevo._Calorias = CInt(LectorProductos(5))
           Nuevo._SubCategoria = SubCategoria.Cargar(CInt(LectorProductos(6)), Categoria.Cargar(CInt(LectorProductos(7))))
           Nuevo._Stock = CInt(LectorProductos(8))
@@ -333,8 +333,8 @@ Public Class Producto
           Nuevo._Codigo = CInt(LectorProductos(0))
           Nuevo._Nombre = CStr(LectorProductos(1))
           Nuevo._Descripcion = CStr(LectorProductos(2))
-          Nuevo._PrecioCoste = CSng(LectorProductos(3))
-          Nuevo._PVP = CSng(LectorProductos(4))
+          Nuevo._PrecioCoste = CStr(LectorProductos(3))
+          Nuevo._PVP = CStr(LectorProductos(4))
           Nuevo._Calorias = CInt(LectorProductos(5))
           Nuevo._SubCategoria = SubCategoria
           Nuevo._Stock = CInt(LectorProductos(8))
@@ -389,8 +389,8 @@ Public Class Producto
         Producto._Codigo = CInt(Lector(0))
         Producto._Nombre = CStr(Lector(1))
         Producto._Descripcion = CStr(Lector(2))
-        Producto._PrecioCoste = CSng(Lector(3))
-        Producto._PVP = CSng(Lector(4))
+        Producto._PrecioCoste = CStr(Lector(3))
+        Producto._PVP = CStr(Lector(4))
         Producto._Calorias = CInt(Lector(5))
         Producto._SubCategoria = SubCategoria.Cargar(CInt(Lector(6)), Categoria.Cargar(CInt(Lector(7))))
         Producto._Stock = CInt(Lector(8))
@@ -443,8 +443,8 @@ Public Class Producto
     Adaptador.UpdateCommand.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
     Adaptador.UpdateCommand.Parameters.Add("nombre", OracleDbType.Varchar2, 45, "nombre")
     Adaptador.UpdateCommand.Parameters.Add("descripcion", OracleDbType.Varchar2, 200, "descripcion")
-    Adaptador.UpdateCommand.Parameters.Add("precio_coste", OracleDbType.Double, 5, "precio_coste")
-    Adaptador.UpdateCommand.Parameters.Add("pvp", OracleDbType.Double, 5, "pvp")
+    Adaptador.UpdateCommand.Parameters.Add("precio_coste", OracleDbType.Varchar2, 10, "precio_coste")
+    Adaptador.UpdateCommand.Parameters.Add("pvp", OracleDbType.Varchar2, 10, "pvp")
     Adaptador.UpdateCommand.Parameters.Add("calorias", OracleDbType.Int32, 3, "calorias")
     Adaptador.UpdateCommand.Parameters.Add("codigo_subcategoria", OracleDbType.Int16, 3, "codigo_subcategoria")
     Adaptador.UpdateCommand.Parameters.Add("codigo_categoria", OracleDbType.Int16, 3, "codigo_categoria")
@@ -456,10 +456,7 @@ Public Class Producto
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(productos, "Productos")
-
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If Adaptador.Update(productos, "Productos") > 0 Then
         Ok = True
       Else
         Ok = False
@@ -487,8 +484,8 @@ Public Class Producto
       Comando.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
       Comando.Parameters.Add("nombre", OracleDbType.Varchar2, 45).Value = Me._Nombre
       Comando.Parameters.Add("descripcion", OracleDbType.Varchar2, 200).Value = Me._Descripcion
-      Comando.Parameters.Add("precio_coste", OracleDbType.Double, 5).Value = Me._PrecioCoste
-      Comando.Parameters.Add("pvp", OracleDbType.Double, 5).Value = Me._PVP
+      Comando.Parameters.Add("precio_coste", OracleDbType.Varchar2, 10).Value = Me._PrecioCoste
+      Comando.Parameters.Add("pvp", OracleDbType.Varchar2, 10).Value = Me._PVP
       Comando.Parameters.Add("calorias", OracleDbType.Int32, 3).Value = Me._Calorias
       Comando.Parameters.Add("codigo_subcategoria", OracleDbType.Int16, 3).Value = Me._SubCategoria.Codigo
       Comando.Parameters.Add("codigo_categoria", OracleDbType.Int16, 3).Value = Me._SubCategoria.Categoria.Codigo
@@ -537,8 +534,8 @@ Public Class Producto
     Me._Codigo = -1
     Me._Nombre = ""
     Me._Descripcion = ""
-    Me._PrecioCoste = -1.0F
-    Me._PVP = -1.0F
+    Me._PrecioCoste = "-1"
+    Me._PVP = "-1"
     Me._Calorias = -1
     Me._Stock = -1
     Me._StockMinimo = -1
@@ -556,8 +553,8 @@ Public Class Producto
     Me._Codigo = -1
     Me._Nombre = ""
     Me._Descripcion = ""
-    Me._PrecioCoste = -1.0F
-    Me._PVP = -1.0F
+    Me._PrecioCoste = "-1"
+    Me._PVP = "-1"
     Me._Calorias = -1
     Me._Stock = -1
     Me._StockMinimo = -1

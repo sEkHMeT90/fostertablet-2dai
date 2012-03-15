@@ -26,7 +26,7 @@ Public Class Ticket
   Private _TipoDePago As TipoPago
   Private _Fecha As DateTime
   Private _Lineas As List(Of LineaTicket)
-  Private _Total As Single
+  Private _Total As String
 #End Region
 
 #Region "Constructores"
@@ -39,14 +39,14 @@ Public Class Ticket
     Me._TipoDePago = New TipoPago
     Me._Fecha = Now
     Me._Lineas = New List(Of LineaTicket)
-    Me._Total = 0.0F
+    Me._Total = "0"
   End Sub
 
   ''' <summary>
   ''' Constructor por parámetros
   ''' </summary>
   ''' <author>Andrés Marotta</author>
-  Public Sub New(ByVal codigo As Integer, ByVal tipo As TipoPago, ByVal fecha As DateTime, ByVal lineas As List(Of LineaTicket), ByVal total As Single)
+  Public Sub New(ByVal codigo As Integer, ByVal tipo As TipoPago, ByVal fecha As DateTime, ByVal lineas As List(Of LineaTicket), ByVal total As String)
     Me._Codigo = codigo
     Me._TipoDePago = tipo
     Me._Fecha = fecha
@@ -121,13 +121,13 @@ Public Class Ticket
   ''' Propiedad del atributo "_Total"
   ''' </summary>
   ''' <value>Un single con el valor que se le asignará al atributo</value>
-  ''' <returns>Un single con el valor del atributo</returns>
+  ''' <returns>Un string con el valor del atributo</returns>
   ''' <author>Andrés Marotta</author>
-  Public Property Total() As Single
+  Public Property Total() As String
     Get
       Return Me._Total
     End Get
-    Set(ByVal value As Single)
+    Set(ByVal value As String)
       Me._Total = value
     End Set
   End Property
@@ -153,7 +153,7 @@ Public Class Ticket
         Ticket._Codigo = CInt(Lector(0))
         Ticket._TipoDePago = TipoPago.Cargar(CInt(Lector(1)))
         Ticket._Fecha = CDate(Lector(2))
-        Ticket._Total = CSng(Lector(3))
+        Ticket._Total = CStr(Lector(3))
 
         Lector.Close()
       Else
@@ -187,7 +187,7 @@ Public Class Ticket
         Ticket.Codigo = CInt(Lector(0))
         Ticket.TipoDePago = TipoPago.Cargar(CInt(Lector(1)))
         Ticket.Fecha = CDate(Lector(2))
-        Ticket.Total = CSng(Lector(3))
+        Ticket.Total = CStr(Lector(3))
 
         Lector.Close()
       Else
@@ -249,7 +249,7 @@ Public Class Ticket
       comando.Parameters.Add("codigo", OracleDbType.Int32, 8).Value = Me._Codigo
       comando.Parameters.Add("tipoPago", OracleDbType.Int16, 3).Value = Me._TipoDePago.Codigo
       comando.Parameters.Add("fecha", OracleDbType.Date).Value = Me._Fecha
-      comando.Parameters.Add("total", OracleDbType.Double, 3).Value = Me._Total
+      comando.Parameters.Add("total", OracleDbType.Varchar2, 10).Value = Me._Total
       comando.CommandType = CommandType.StoredProcedure
 
       If OrigenDatos.Modificar(comando) = 0 Then
@@ -330,6 +330,8 @@ Public Class Ticket
         comando.CommandType = CommandType.StoredProcedure
         If OrigenDatos.Modificar(comando) = 0 Then
           ok = False
+        Else
+          ok = True
         End If
       End If
 
@@ -399,7 +401,7 @@ Public Class Ticket
       ' imprimimos la linea
       e.Graphics.DrawString(nombreProducto.PadRight(longitudNombreProducto) & _
                             linea.Cantidad.ToString.PadLeft(longitudCantidad) & _
-                            linea.Precio.ToString("0.00").PadLeft(longitudPrecio), _
+                            CInt(linea.Precio).ToString("0.00").PadLeft(longitudPrecio), _
                             fuente, pincel, e.MarginBounds.Left, y)
       y += fuente.GetHeight
     Next
@@ -410,11 +412,14 @@ Public Class Ticket
 
 
     ' Pie
-    e.Graphics.DrawString("Precio Total:" & Me._Total.ToString("0.00").PadLeft(longitudLinea - 13), _
+    e.Graphics.DrawString("Precio Total:", _
+                          fuente, pincel, e.MarginBounds.Left, y)
+    e.Graphics.DrawString(CInt(Me._Total).ToString("0.00").PadLeft(longitudLinea), _
                           fuente, pincel, e.MarginBounds.Left, y)
     y += fuente.GetHeight
-    e.Graphics.DrawString("(iva incluido)".PadLeft(longitudLinea), _
+    e.Graphics.DrawString("(Iva incluido)".PadLeft(longitudLinea), _
                           fuente, pincel, e.MarginBounds.Left, y)
+
     y += fuente.GetHeight + fuente.GetHeight
     e.Graphics.DrawString("HASTA PRONTO".PadLeft(longitudLinea \ 2), _
                           fuente, pincel, e.MarginBounds.Left, y)
@@ -432,7 +437,7 @@ Public Class Ticket
     Me._TipoDePago.Dispose()
     Me._Fecha = #1/1/1990#
     Me._Lineas.Clear()
-    Me._Total = -1.0F
+    Me._Total = "-1"
   End Sub
 
   ''' <summary>
@@ -444,7 +449,7 @@ Public Class Ticket
     Me._TipoDePago.Dispose()
     Me._Fecha = #1/1/1990#
     Me._Lineas.Clear()
-    Me._Total = -1.0F
+    Me._Total = "-1"
   End Sub
 #End Region
 End Class

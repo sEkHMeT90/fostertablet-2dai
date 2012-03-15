@@ -86,159 +86,159 @@
   -- TABLA productos
     
   --tipos entrantes
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bacon and Cheese Fries', 'Descripción del producto',  2.90, 5.45, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Flautas Santa Fe', 'Descripción del producto', 2.85, 5.35, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Combo de Quesadillas', 'Descripción del producto', 3.20, 6.40, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Aros de Cebolla', 'Descripción del producto', 2.30, 4.65, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fingers de Queso Grand Central', 'Descripción del producto', 2.65, 5.35, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Hollywood Combo', 'Descripción del producto',  4.45, 8.95, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Macho Nachos Supreme', 'Descripción del producto', 2.8, 5.95, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Choice Chicken Fingers', 'Descripción del producto', 2.6, 5.35, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Alitas de Pollo Duke´S Baby Wings', 'Descripción del producto', 2.25, 4.55, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Academy Potato Skins', 'Descripción del producto', 3.00, 6.00, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fingers de Mozarella', 'Descripción del producto', 2.55, 5.35, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Jalapeños Tahoe', 'Descripción del producto', 3.15, 6.35, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Macho Nachos', 'Descripción del producto', 2.32, 4.65, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Tortita de Trigo Cinematic Chili Chicken', 'Descripción del producto', 3.05, 6.15, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Sopa de cebolla', 'Descripción del producto', 2.30, 4.65, 500, 1, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Quesadilla Monterrey', 'Descripción del producto', 2.7, 5.20, 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bacon and Cheese Fries', 'Descripción del producto', '2.90', '5.45', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Flautas Santa Fe', 'Descripción del producto', '2.85', '5.35', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Combo de Quesadillas', 'Descripción del producto', '3.20', '6.40', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Aros de Cebolla', 'Descripción del producto', '2.30', '4.65', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fingers de Queso Grand Central', 'Descripción del producto', '2.65', '5.35', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Hollywood Combo', 'Descripción del producto', '4.45', '8.95', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Macho Nachos Supreme', 'Descripción del producto', '2.8', '5.95', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Choice Chicken Fingers', 'Descripción del producto', '2.6', '5.35', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Alitas de Pollo Duke´S Baby Wings', 'Descripción del producto', '2.25', '4.55', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Academy Potato Skins', 'Descripción del producto', '3.00', '6.00', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fingers de Mozarella', 'Descripción del producto', '2.55', '5.35', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Jalapeños Tahoe', 'Descripción del producto', '3.15', '6.35', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Macho Nachos', 'Descripción del producto', '2.32', '4.65', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Tortita de Trigo Cinematic Chili Chicken', 'Descripción del producto', '3.05', '6.15', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Sopa de cebolla', 'Descripción del producto', '2.30', '4.65', 500, 1, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Quesadilla Monterrey', 'Descripción del producto', '2.7', '5.20', 500, 1, 3, 50, 10, 2, 1);
   
   COMMIT;
 
   --tipos ensaladas
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Santa Mónica Salad', 'Descripción del producto', 3.50, 7.55, 500, 2, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Caesar Salad', 'Descripción del producto', 3.50, 7.55, 500, 2, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Camembert Salad', 'Descripción del producto', 3.50, 7.55, 500, 2, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Tara Salad', 'Descripción del producto',  3.50, 7.55, 500, 2, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Foster´S Super Chef Salad', 'Descripción del producto', 3.50, 7.55, 500, 2, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Olivia´S Love Salad', 'Descripción del producto',  3.50, 7.55, 500, 2, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Santa Mónica Salad', 'Descripción del producto', '3.50', '7.55', 500, 2, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Caesar Salad', 'Descripción del producto', '3.50', '7.55', 500, 2, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Camembert Salad', 'Descripción del producto', '3.50', '7.55', 500, 2, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Tara Salad', 'Descripción del producto', '3.50', '7.55', 500, 2, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Foster´S Super Chef Salad', 'Descripción del producto', '3.50', '7.55', 500, 2, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Olivia´S Love Salad', 'Descripción del producto', '3.50', '7.55', 500, 2, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos texmex 
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fajitas El Paso', 'Descripción del producto', 8.8, 17.65, 500, 3, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Center Stage Cajun Pasta ', 'Descripción del producto', 3.7, 7.40, 500, 3, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Burrito Pancho ', 'Descripción del producto', 3.8, 7.70, 500, 3, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Al Sur De La Frontera ', 'Descripción del producto', 4.8, 9.65, 500, 3, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Chili Con Carne Rio Grande ', 'Descripción del producto', 3.15, 6.30, 500, 3, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fajitas El Paso', 'Descripción del producto', '8.8', '17.65', 500, 3, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Center Stage Cajun Pasta ', 'Descripción del producto', '3.7', '7.40', 500, 3, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Burrito Pancho ', 'Descripción del producto', '3.8', '7.70', 500, 3, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Al Sur De La Frontera ', 'Descripción del producto', '4.8', '9.65', 500, 3, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Chili Con Carne Rio Grande ', 'Descripción del producto', '3.15', '6.30', 500, 3, 3, 50, 10, 2, 1);
    
    COMMIT;
 
   --tipos sandwiches
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cotton Club Sandwich', 'Descripción del producto', 4.0, 8.00, 500, 4, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Philly Cheese Steak Sandwich', 'Descripción del producto', 4.20,  8.40, 500, 4, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Caesar Sandwich ', 'Descripción del producto', 4.10, 8.20, 500, 4, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Turkey Sandwich', 'Descripción del producto', 3.70, 7.45, 500, 4, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Gran Studio Sandwich', 'Descripción del producto', 4.20, 8.40, 500, 4, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cotton Club Sandwich', 'Descripción del producto', '4.0', '8.00', 500, 4, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Philly Cheese Steak Sandwich', 'Descripción del producto', '4.20', '8.40', 500, 4, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Caesar Sandwich ', 'Descripción del producto', '4.10', '8.20', 500, 4, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Turkey Sandwich', 'Descripción del producto', '3.70', '7.45', 500, 4, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Gran Studio Sandwich', 'Descripción del producto', '4.20', '8.40', 500, 4, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos pollo/pescado  
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pollo Sunset Boulevard', 'Descripción del producto', 4.50,  9.05, 500, 5, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pollo a la Barbacoa', 'Descripción del producto', 4.30, 8.60, 500, 5, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pollo Beverly Hills', 'Descripción del producto', 4.50, 9.05, 500, 5, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Teriyaki Chicken Brochette', 'Descripción del producto', 4.60, 9.20, 500, 5, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Merluza Grill', 'Descripción del producto', 5.50, 11.95, 500, 5, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Salmón Papillón', 'Descripción del producto', 5.70, 11.95, 500, 5, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'El Último Emperador', 'Descripción del producto', 5.50, 11.55, 500, 5, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pollo Sunset Boulevard', 'Descripción del producto', '4.50', '9.05', 500, 5, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pollo a la Barbacoa', 'Descripción del producto', '4.30', '8.60', 500, 5, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pollo Beverly Hills', 'Descripción del producto', '4.50', '9.05', 500, 5, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Teriyaki Chicken Brochette', 'Descripción del producto', '4.60', '9.20', 500, 5, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Merluza Grill', 'Descripción del producto', '5.50', '11.95', 500, 5, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Salmón Papillón', 'Descripción del producto', '5.70', '11.95', 500, 5, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'El Último Emperador', 'Descripción del producto', '5.50', '11.55', 500, 5, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos parrilla 
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Filet Mignon Supreme', 'Descripción del producto', 7.60, 15.20, 500, 6, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'El Neoyorkino Buey', 'Descripción del producto', 7.20, 14.55, 500, 6, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'El Ranchero', 'Descripción del producto', 5.00, 10.00, 500, 6, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Liteing Delight', 'Descripción del producto', 4.50, 9.05, 500, 6, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Filet Mignon Supreme', 'Descripción del producto', '7.60', '15.20', 500, 6, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'El Neoyorkino Buey', 'Descripción del producto', '7.20', '14.55', 500, 6, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'El Ranchero', 'Descripción del producto', '5.00', '10.00', 500, 6, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Liteing Delight', 'Descripción del producto', '4.50', '9.05', 500, 6, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos costillas 
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas California Honey', 'Descripción del producto', 4.40, 8.95, 500, 7, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas Bar B-Q', 'Descripción del producto', 4.40, 8.95, 500, 7, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas Cajun Style', 'Descripción del producto', 4.40, 8.95, 500, 7, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas Costillas Tex Hot Pepper', 'Descripción del producto', 4.40, 8.95, 500, 7, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas California Honey', 'Descripción del producto', '4.40', '8.95', 500, 7, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas Bar B-Q', 'Descripción del producto', '4.40', '8.95', 500, 7, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas Cajun Style', 'Descripción del producto', '4.40', '8.95', 500, 7, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Costillas Costillas Tex Hot Pepper', 'Descripción del producto', '4.40', '8.95', 500, 7, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos hamburguesas 
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Director´S Choice', 'Descripción del producto', 3.85, 7.90, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Chicken Burguer', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Onion Patty Melt', 'Descripción del producto', 4.05, 8.15, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cheeseburger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Champiburger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bacon Burger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bar B-Q Burger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Todo Americano Burger', 'Descripción del producto', 3.60, 7.20,  500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Hawaiian Burger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'ChiliBurger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Roquefort Burger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Mariachi Burger', 'Descripción del producto', 3.60, 7.20, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Gourmet Mediterranian Burger', 'Descripción del producto', 4.90, 9.85, 500, 8, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Gourmet Le Grand Chef', 'Descripción del producto', 4.90, 9.85, 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Director´S Choice', 'Descripción del producto', '3.85', '7.90', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Chicken Burguer', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Onion Patty Melt', 'Descripción del producto', '4.05', '8.15', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cheeseburger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Champiburger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bacon Burger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bar B-Q Burger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Todo Americano Burger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Hawaiian Burger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'ChiliBurger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Roquefort Burger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Mariachi Burger', 'Descripción del producto', '3.60', '7.20', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Gourmet Mediterranian Burger', 'Descripción del producto', '4.90', '9.85', 500, 8, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Gourmet Le Grand Chef', 'Descripción del producto', '4.90', '9.85', 500, 8, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos platos infantiles 
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'CheeseBurger', 'Descripción del producto', 2.10, 4.35, 500, 9, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fingers De Pollo', 'Descripción del producto', 2.10, 4.35, 500, 9, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'De Luxe Sandwich', 'Descripción del producto', 2.00, 4.05, 500, 9, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bocaditos De Merluza Rebozada', 'Descripción del producto', 2.10, 4.35, 500, 9, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bocaditos Fingers De Queso', 'Descripción del producto', 2.10, 4.35, 500, 9, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'CheeseBurger', 'Descripción del producto', '2.10', '4.35', 500, 9, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fingers De Pollo', 'Descripción del producto', '2.10', '4.35', 500, 9, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'De Luxe Sandwich', 'Descripción del producto', '2.00', '4.05', 500, 9, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bocaditos De Merluza Rebozada', 'Descripción del producto', '2.10', '4.35', 500, 9, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Bocaditos Fingers De Queso', 'Descripción del producto', '2.10', '4.35', 500, 9, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos bebidas- Refrescos   
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Lata', 'Descripción del producto', 0.7, 1.4, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Botella 500ml', 'Descripción del producto', 0.90, 1.9, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Jarra 1l', 'Descripción del producto', 1.42, 2.95, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Ligth Lata', 'Descripción del producto', 0.7, 1.4, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Ligth Botella 500ml', 'Descripción del producto', 0.9, 1.9, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Ligth Jarra 1l', 'Descripción del producto', 1.42, 2.95, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Naranja Lata', 'Descripción del producto', 0.7, 1.4, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Naranja Botella 500ml', 'Descripción del producto', 0.9, 1.9, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Naranja Jarra 1l', 'Descripción del producto', 1.42, 2.95, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Limon Lata', 'Descripción del producto', 0.7, 1.4, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Limon Botella 500ml', 'Descripción del producto', 0.9, 1.9, 500, 1, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Limon Jarra 1l', 'Descripción del producto', 1.42, 2.95, 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Lata', 'Descripción del producto', '0.7', '1.4', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Botella 500ml', 'Descripción del producto', '0.90', '1.9', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Jarra 1l', 'Descripción del producto', '1.42', '2.95', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Ligth Lata', 'Descripción del producto', '0.7', '1.4', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Ligth Botella 500ml', 'Descripción del producto', '0.9', '1.9', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cocacola Ligth Jarra 1l', 'Descripción del producto', '1.42', '2.95', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Naranja Lata', 'Descripción del producto', '0.7', '1.4', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Naranja Botella 500ml', 'Descripción del producto', '0.9', '1.9', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Naranja Jarra 1l', 'Descripción del producto', '1.42', '2.95', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Limon Lata', 'Descripción del producto', '0.7', '1.4', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Limon Botella 500ml', 'Descripción del producto', '0.9', '1.9', 500, 1, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Fanta Limon Jarra 1l', 'Descripción del producto', '1.42', '2.95', 500, 1, 2, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos Agua  
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Agua 500ml', 'Descripción del producto', 0.7, 1.25, 500, 3, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Agua 1l', 'Descripción del producto', 0.92, 2.00, 500, 3, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Agua 500ml', 'Descripción del producto', '0.7', '1.25', 500, 3, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Agua 1l', 'Descripción del producto', '0.92', '2.00', 500, 3, 2, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos Cerveza 
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Lata', 'Descripción del producto', 0.70, 1.5, 500, 2, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Tercio 33ml', 'Descripción del producto', 0.70, 1.5, 500, 2, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Pinta 0.5L', 'Descripción del producto', 1.42, 2.95, 500, 2, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Jarra 1L', 'Descripción del producto', 2.5, 5, 500, 2, 2, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Barril 2.5L', 'Descripción del producto', 3.85, 8, 500, 2, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Lata', 'Descripción del producto', '0.70', '1.5', 500, 2, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Tercio 33ml', 'Descripción del producto', '0.70', '1.5', 500, 2, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Pinta 0.5L', 'Descripción del producto', '1.42', '2.95', 500, 2, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Jarra 1L', 'Descripción del producto', '2.5', '5', 500, 2, 2, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Cerveza Barril 2.5L', 'Descripción del producto', '3.85', '8', 500, 2, 2, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos postres 
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Choco Cheese Cake', 'Descripción del producto', 1.95, 3.95, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pastel de Chocolate', 'Descripción del producto', 1.95, 3.95,500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Brownies', 'Descripción del producto', 2.00, 4.20, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Sunny Pancakes', 'Descripción del producto', 1.90, 3.80, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Combo De Postres', 'Descripción del producto', 3.80, 7.60, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'The Stars Apangled Banana Split', 'Descripción del producto', 2.00, 4.20, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Helado Supremo', 'Descripción del producto', 2.00, 4.20, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Viva Tiramisu', 'Descripción del producto', 1.95, 3.95, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Profiteroles Al Estilo New Orleans', 'Descripción del producto', 1.90, 3.80, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'New:Oreo Cookie Sundae', 'Descripción del producto', 1.95, 4.15, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Hawaian Paradise', 'Descripción del producto',  1.95, 4.00, 500, 10, 3, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Action Apple Pie', 'Descripción del producto', 1.90, 3.80, 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Choco Cheese Cake', 'Descripción del producto', '1.95', '3.95', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Pastel de Chocolate', 'Descripción del producto', '1.95', '3.95', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Brownies', 'Descripción del producto', '2.00', '4.20', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Sunny Pancakes', 'Descripción del producto', '1.90', '3.80', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Combo De Postres', 'Descripción del producto', '3.80', '7.60', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'The Stars Apangled Banana Split', 'Descripción del producto', '2.00', '4.20', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Helado Supremo', 'Descripción del producto', '2.00', '4.20', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Viva Tiramisu', 'Descripción del producto', '1.95', '3.95', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Profiteroles Al Estilo New Orleans', 'Descripción del producto', '1.90', '3.80', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'New:Oreo Cookie Sundae', 'Descripción del producto', '1.95', '4.15', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Hawaian Paradise', 'Descripción del producto', '1.95', '4.00', 500, 10, 3, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Action Apple Pie', 'Descripción del producto', '1.90', '3.80', 500, 10, 3, 50, 10, 2, 1);
 
   COMMIT;
 
   --tipos Guarniciones
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de col', 'Descripción del producto', 0, 0, 500, 1, 1, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de frijoles', 'Descripción del producto', 0, 0, 500, 1, 1, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats fritas', 'Descripción del producto', 0, 0, 500, 2, 1, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats asadas', 'Descripción del producto', 0, 0, 500, 2, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de col', 'Descripción del producto', '0', '0', 500, 1, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de frijoles', 'Descripción del producto', '0', '0', 500, 1, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats fritas', 'Descripción del producto', '0', '0', 500, 2, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats asadas', 'Descripción del producto', '0', '0', 500, 2, 1, 50, 10, 2, 1);
 
   COMMIT;
   
@@ -317,75 +317,75 @@
   COMMIT;
 
 -- PEDIDOS --
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('05/01/2012', 'DD-MM-YY'), 'B79265914', 0, 1);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('09/03/2012', 'DD-MM-YY'), 'A28006013', 0, 0);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('14/02/2012', 'DD-MM-YY'), 'A08000820', 0, 1);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('10/03/2012', 'DD-MM-YY'), 'A09006172', 0, 0);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('24/02/2012', 'DD-MM-YY'), 'A78593084', 0, 1);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('13/03/2012', 'DD-MM-YY'), 'A28099015', 0, 0);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('07/03/2012', 'DD-MM-YY'), 'B79265914', 0, 1);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('12/03/2012', 'DD-MM-YY'), 'A28006013', 0, 0);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('21/01/2012', 'DD-MM-YY'), 'A08000820', 0, 1);
-INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('14/03/2012', 'DD-MM-YY'), 'A09006172', 0, 0);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('05/01/2012', 'DD-MM-YY'), 'B79265914', '0', 1);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('09/03/2012', 'DD-MM-YY'), 'A28006013', '0', 0);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('14/02/2012', 'DD-MM-YY'), 'A08000820', '0', 1);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('10/03/2012', 'DD-MM-YY'), 'A09006172', '0', 0);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('24/02/2012', 'DD-MM-YY'), 'A78593084', '0', 1);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('13/03/2012', 'DD-MM-YY'), 'A28099015', '0', 0);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('07/03/2012', 'DD-MM-YY'), 'B79265914', '0', 1);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('12/03/2012', 'DD-MM-YY'), 'A28006013', '0', 0);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('21/01/2012', 'DD-MM-YY'), 'A08000820', '0', 1);
+INSERT INTO PEDIDOS VALUES(SecPedidos.NextVal, TO_DATE('14/03/2012', 'DD-MM-YY'), 'A09006172', '0', 0);
 
 COMMIT;
 
 -- LINEAS_PEDIDO --
 -- PEDIDO 1 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  1, 1, 2.90 * 5, 5);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  1, 17, 3.50 * 10, 10);
-INSERT INTO LINEAS_PEDIDO VALUES(3,  1, 23, 8.80 * 7, 7);
-INSERT INTO LINEAS_PEDIDO VALUES(4,  1, 28, 4.00 * 10, 10);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  1,  1, to_char(2.90 *  5), 5);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  1, 17, to_char(3.50 * 10), 10);
+INSERT INTO LINEAS_PEDIDO VALUES(3,  1, 23, to_char(8.80 *  7), 7);
+INSERT INTO LINEAS_PEDIDO VALUES(4,  1, 28, to_char(4.00 * 10), 10);
 -- PEDIDO 2 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  2, 33, 4.50 * 20, 20);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  2, 40, 7.60 * 10, 10);
-INSERT INTO LINEAS_PEDIDO VALUES(3,  2, 44, 4.40 * 5, 5);
-INSERT INTO LINEAS_PEDIDO VALUES(4,  2, 48, 3.85 * 15, 15);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  2, 33, to_char(4.50 * 20), 20);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  2, 40, to_char(7.60 * 10), 10);
+INSERT INTO LINEAS_PEDIDO VALUES(3,  2, 44, to_char(4.40 *  5), 5);
+INSERT INTO LINEAS_PEDIDO VALUES(4,  2, 48, to_char(3.85 * 15), 15);
 -- PEDIDO 3 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  3, 62, 2.10 * 7, 7);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  3, 67, 0.70 * 50, 50);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  3, 62, to_char(2.10 *  7), 7);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  3, 67, to_char(0.70 * 50), 50);
 -- PEDIDO 4 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  4, 79, 0.70 * 50, 50);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  4, 81, 0.70 * 50, 50);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  4, 79, to_char(0.70 * 50), 50);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  4, 81, to_char(0.70 * 50), 50);
 -- PEDIDO 5 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  5, 86, 1.95 * 5, 5);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  5, 2, 2.85 * 10, 10);
-INSERT INTO LINEAS_PEDIDO VALUES(3,  5, 18, 3.50 * 8, 8);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  5, 86, to_char(1.95 *  5), 5);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  5,  2, to_char(2.85 * 10), 10);
+INSERT INTO LINEAS_PEDIDO VALUES(3,  5, 18, to_char(3.50 *  8), 8);
 -- PEDIDO 6 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  6, 24, 3.70 * 5, 5);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  6, 29, 4.20 * 9, 9);
-INSERT INTO LINEAS_PEDIDO VALUES(3,  6, 34, 4.30 * 5, 5);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  6, 24, to_char(3.70 *  5), 5);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  6, 29, to_char(4.20 *  9), 9);
+INSERT INTO LINEAS_PEDIDO VALUES(3,  6, 34, to_char(4.30 *  5), 5);
 -- PEDIDO 7 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  7, 41, 7.20 * 5, 5);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  7, 45, 4.40 * 10, 10);
-INSERT INTO LINEAS_PEDIDO VALUES(3,  7, 49, 3.60 * 3, 3);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  7, 41, to_char(7.20 *  5), 5);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  7, 45, to_char(4.40 * 10), 10);
+INSERT INTO LINEAS_PEDIDO VALUES(3,  7, 49, to_char(3.60 *  3), 3);
 -- PEDIDO 8 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  8, 63, 2.10 * 5, 5);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  8, 68, 0.90 * 40, 40);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  8, 63, to_char(2.10 *  5), 5);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  8, 68, to_char(0.90 * 40), 40);
 -- PEDIDO 9 --
-INSERT INTO LINEAS_PEDIDO VALUES(1,  9, 80, 0.92 * 30, 30);
-INSERT INTO LINEAS_PEDIDO VALUES(2,  9, 82, 0.70 * 100, 100);
+INSERT INTO LINEAS_PEDIDO VALUES(1,  9, 80, to_char(0.92 * 30), 30);
+INSERT INTO LINEAS_PEDIDO VALUES(2,  9, 82, to_char(0.70 * 100), 100);
 -- PEDIDO 10 --
-INSERT INTO LINEAS_PEDIDO VALUES(1, 10, 87, 1.95 * 8, 8);
-INSERT INTO LINEAS_PEDIDO VALUES(2, 10, 3, 3.20 * 10, 10);
-INSERT INTO LINEAS_PEDIDO VALUES(3, 10, 19, 3.50 * 5, 5);
+INSERT INTO LINEAS_PEDIDO VALUES(1, 10, 87, to_char(1.95 *  8), 8);
+INSERT INTO LINEAS_PEDIDO VALUES(2, 10,  3, to_char(3.20 * 10), 10);
+INSERT INTO LINEAS_PEDIDO VALUES(3, 10, 19, to_char(3.50 *  5), 5);
 
 COMMIT;
 
 -- TICKETS --
-INSERT INTO TICKETS VALUES(SecTickets.NextVal, 1, SYSDATE, 0);
-INSERT INTO TICKETS VALUES(SecTickets.NextVal, 1, SYSDATE, 0);
+INSERT INTO TICKETS VALUES(SecTickets.NextVal, 1, SYSDATE, '0');
+INSERT INTO TICKETS VALUES(SecTickets.NextVal, 1, SYSDATE, '0');
 
 COMMIT;
 
 -- LINEAS_TICKET --
 -- TICKET 1 --
-INSERT INTO LINEAS_TICKET VALUES(1, 1, 'El Ranchero', 1, 0, 10.00, 8);
-INSERT INTO LINEAS_TICKET VALUES(2, 1, 'Teriyaki Chicken Brochette', 1, 0, 9.20, 8);
-INSERT INTO LINEAS_TICKET VALUES(3, 1, 'Foster´S Super Chef Salad', 1, 0, 7.55, 8);
+INSERT INTO LINEAS_TICKET VALUES(1, 1, 'El Ranchero', 1, 0, '10.00', 8);
+INSERT INTO LINEAS_TICKET VALUES(2, 1, 'Teriyaki Chicken Brochette', 1, 0, '9.20', 8);
+INSERT INTO LINEAS_TICKET VALUES(3, 1, 'Foster´S Super Chef Salad', 1, 0, '7.55', 8);
 -- TICKET 2 --
-INSERT INTO LINEAS_TICKET VALUES(1, 2, 'Burrito Pancho', 1, 0, 7.70, 8);
-INSERT INTO LINEAS_TICKET VALUES(2, 2, 'Olivia´S Love Salad', 1, 0, 7.55, 8);
+INSERT INTO LINEAS_TICKET VALUES(1, 2, 'Burrito Pancho', 1, 0, '7.70', 8);
+INSERT INTO LINEAS_TICKET VALUES(2, 2, 'Olivia´S Love Salad', 1, 0, '7.55', 8);
 
 COMMIT;
 

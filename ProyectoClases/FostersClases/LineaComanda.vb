@@ -167,10 +167,7 @@ Public Class LineaComanda
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(lineas, "Lineas_Comanda")
-
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If Adaptador.Update(lineas, "Lineas_Comanda") > 0 Then
         Ok = True
       Else
         Ok = False
@@ -201,7 +198,7 @@ Public Class LineaComanda
       Comando.Parameters.Add("codigo_comanda", OracleDbType.Int16, 1).Value = comanda.Codigo
       Comando.CommandType = CommandType.StoredProcedure
 
-      If CBool(OrigenDatos.Modificar(Comando)) Then
+      If OrigenDatos.Modificar(Comando) <> 0 Then
         Ok = True
       Else
         Ok = False

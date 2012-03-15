@@ -20,7 +20,7 @@ Public Class LineaPedido
   Private _Numero As Integer
   Private _Producto As Producto
   Private _Cantidad As Integer
-  Private _Precio As Single
+  Private _Precio As String
 #End Region
 
 #Region "Constructores"
@@ -32,18 +32,18 @@ Public Class LineaPedido
     Me._Numero = 0
     Me._Producto = New Producto
     Me._Cantidad = 0
-    Me._Precio = 0.0F
+    Me._Precio = "0"
   End Sub
 
   ''' <summary>
   ''' Constructor por parámetros
   ''' </summary>
   ''' <author>Andrés Marotta</author>
-  Public Sub New(ByVal numero As Integer, ByVal producto As Producto, ByVal cantidad As Integer)
+  Public Sub New(ByVal numero As Integer, ByVal producto As Producto, ByVal cantidad As Integer, ByVal precio As String)
     Me._Numero = numero
     Me._Producto = producto
     Me._Cantidad = cantidad
-    Me._Precio = 0.0F
+    Me._Precio = precio
   End Sub
 #End Region
 
@@ -97,13 +97,13 @@ Public Class LineaPedido
   ''' Propiedad del atributo "_Precio"
   ''' </summary>
   ''' <value>Un single con el valor que se le asignará al atributo</value>
-  ''' <returns>Un single con el valor del atributo</returns>
+  ''' <returns>Un string con el valor del atributo</returns>
   ''' <author>Andrés Marotta</author>
-  Public Property Precio() As Single
+  Public Property Precio() As String
     Get
       Return Me._Precio
     End Get
-    Set(ByVal value As Single)
+    Set(ByVal value As String)
       Me._Precio = value
     End Set
   End Property
@@ -144,17 +144,14 @@ Public Class LineaPedido
     Adaptador.UpdateCommand = New OracleCommand(_UPDATE, OrigenDatos.Conexion)
     Adaptador.UpdateCommand.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
     Adaptador.UpdateCommand.Parameters.Add("codigo_producto", OracleDbType.Int32, 8, "codigo_producto")
-    Adaptador.UpdateCommand.Parameters.Add("precio", OracleDbType.Double, 6, "precio")
+    Adaptador.UpdateCommand.Parameters.Add("precio", OracleDbType.Varchar2, 10, "precio")
     Adaptador.UpdateCommand.Parameters.Add("cantidad", OracleDbType.Int16, 4, "cantidad")
     Adaptador.UpdateCommand.Parameters.Add("codigo", OracleDbType.Int16, 3, "codigo")
     Adaptador.UpdateCommand.Parameters.Add("numero", OracleDbType.Int16, 3, "numero")
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(lineas, "Lineas_Pedido")
-
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If Adaptador.Update(lineas, "Lineas_Pedido") > 0 Then
         Ok = True
       Else
         Ok = False
@@ -182,11 +179,11 @@ Public Class LineaPedido
       Comando.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
       Comando.Parameters.Add("codigo_pedido", OracleDbType.Int32, 8).Value = pedido.Codigo
       Comando.Parameters.Add("codigo_producto", OracleDbType.Int32, 8).Value = Me._Producto.Codigo
-      Comando.Parameters.Add("precio", OracleDbType.Double).Value = Me._Precio
+      Comando.Parameters.Add("precio", OracleDbType.Varchar2, 10).Value = Me._Precio
       Comando.Parameters.Add("cantidad", OracleDbType.Int32, 4).Value = Me._Cantidad
       Comando.CommandType = CommandType.StoredProcedure
 
-      If CBool(OrigenDatos.Modificar(Comando)) Then
+      If OrigenDatos.Modificar(Comando) <> 0 Then
         Ok = True
       Else
         Ok = False
@@ -211,7 +208,7 @@ Public Class LineaPedido
     Me._Numero = -1
     Me._Producto.Dispose()
     Me._Cantidad = -1
-    Me._Precio = -1.0F
+    Me._Precio = "-1"
   End Sub
 
   ''' <summary>
@@ -222,7 +219,7 @@ Public Class LineaPedido
     Me._Numero = -1
     Me._Producto.Dispose()
     Me._Cantidad = -1
-    Me._Precio = -1.0F
+    Me._Precio = "-1"
   End Sub
 #End Region
 End Class

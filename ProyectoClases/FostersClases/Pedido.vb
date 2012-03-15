@@ -20,7 +20,7 @@ Public Class Pedido
   Private _Codigo As Integer
   Private _Fecha As DateTime
   Private _Proveedor As Proveedor
-  Private _PrecioTotal As Single
+  Private _PrecioTotal As String
   Private _Recibido As Boolean
   Private _Lineas As List(Of LineaPedido)
 #End Region
@@ -34,7 +34,7 @@ Public Class Pedido
     Me._Codigo = 0
     Me._Fecha = Now
     Me._Proveedor = New Proveedor
-    Me._PrecioTotal = 0.0F
+    Me._PrecioTotal = "0"
     Me._Recibido = True
     Me._Lineas = New List(Of LineaPedido)
   End Sub
@@ -43,7 +43,7 @@ Public Class Pedido
   ''' Constructor por parámetros
   ''' </summary>
   ''' <author>Andrés Marotta</author>
-  Public Sub New(ByVal codigo As Integer, ByVal fecha As DateTime, ByVal proveedor As Proveedor, ByVal precio As Single, ByVal recibido As Boolean, ByVal lineas As List(Of LineaPedido))
+  Public Sub New(ByVal codigo As Integer, ByVal fecha As DateTime, ByVal proveedor As Proveedor, ByVal precio As String, ByVal recibido As Boolean, ByVal lineas As List(Of LineaPedido))
     Me._Codigo = codigo
     Me._Fecha = fecha
     Me._Proveedor = proveedor
@@ -103,13 +103,13 @@ Public Class Pedido
   ''' Propiedad del atributo "_PrecioTotal"
   ''' </summary>
   ''' <value>Un single con el valor que se le asignará al atributo</value>
-  ''' <returns>Un single con el valor del atributo</returns>
+  ''' <returns>Un string con el valor del atributo</returns>
   ''' <author>Andrés Marotta</author>
-  Public Property PrecioTotal() As Single
+  Public Property PrecioTotal() As String
     Get
       Return Me._PrecioTotal
     End Get
-    Set(ByVal value As Single)
+    Set(ByVal value As String)
       Me._PrecioTotal = value
     End Set
   End Property
@@ -179,16 +179,13 @@ Public Class Pedido
     Adaptador.UpdateCommand.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
     Adaptador.UpdateCommand.Parameters.Add("fecha", OracleDbType.Date, 0, "fecha")
     Adaptador.UpdateCommand.Parameters.Add("cif_proveedor", OracleDbType.Varchar2, 15, "cif_proveedor")
-    Adaptador.UpdateCommand.Parameters.Add("precio_total", OracleDbType.Double, 3, "precio_total")
+    Adaptador.UpdateCommand.Parameters.Add("precio_total", OracleDbType.Varchar2, 15, "precio_total")
     Adaptador.UpdateCommand.Parameters.Add("recibido", OracleDbType.Int16, 1, "recibido")
     Adaptador.UpdateCommand.Parameters.Add("codigo", OracleDbType.Int32, 8, "codigo")
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(pedidos, "Pedidos")
-
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If Adaptador.Update(pedidos, "Pedidos") > 0 Then
         Ok = True
       Else
         Ok = False
@@ -216,7 +213,7 @@ Public Class Pedido
       Comando.Parameters.Add("Resultado", OracleDbType.Int16, ParameterDirection.ReturnValue)
       Comando.Parameters.Add("fecha", OracleDbType.Date).Value = Me._Fecha
       Comando.Parameters.Add("cif_proveedor", OracleDbType.Varchar2, 15).Value = Me._Proveedor.CIF
-      Comando.Parameters.Add("precio_total", OracleDbType.Double).Value = Me._PrecioTotal
+      Comando.Parameters.Add("precio_total", OracleDbType.Varchar2, 10).Value = Me._PrecioTotal
       Comando.Parameters.Add("recibido", OracleDbType.Int16, 1).Value = 0
       CodigoPedido = OrigenDatos.Modificar(Comando)
 
@@ -253,7 +250,7 @@ Public Class Pedido
     Me._Codigo = -1
     Me._Fecha = #1/1/1990#
     Me._Proveedor.Dispose()
-    Me._PrecioTotal = -1.0F
+    Me._PrecioTotal = "-1"
     Me._Recibido = False
     Me._Lineas.Clear()
   End Sub
@@ -266,7 +263,7 @@ Public Class Pedido
     Me._Codigo = -1
     Me._Fecha = #1/1/1990#
     Me._Proveedor.Dispose()
-    Me._PrecioTotal = -1.0F
+    Me._PrecioTotal = "-1"
     Me._Recibido = False
     Me._Lineas.Clear()
   End Sub

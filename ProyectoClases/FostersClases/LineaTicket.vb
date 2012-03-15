@@ -22,7 +22,7 @@ Public Class LineaTicket
   Private _Cantidad As Integer
   Private _Descuento As Integer
   Private _IVA As Integer
-  Private _Precio As Single
+  Private _Precio As String
 #End Region
 
 #Region "Constructores"
@@ -36,14 +36,14 @@ Public Class LineaTicket
     Me._Cantidad = 0
     Me._Descuento = 0
     Me._IVA = 0
-    Me._Precio = 0.0F
+    Me._Precio = "0"
   End Sub
 
   ''' <summary>
   ''' Constructor por parámetros
   ''' </summary>
   ''' <author>Andrés Marotta</author>
-  Public Sub New(ByVal numero As Integer, ByVal producto As String, ByVal cantidad As Integer, ByVal descuento As Integer, ByVal iva As Integer, ByVal precio As Single)
+  Public Sub New(ByVal numero As Integer, ByVal producto As String, ByVal cantidad As Integer, ByVal descuento As Integer, ByVal iva As Integer, ByVal precio As String)
     Me._Numero = numero
     Me._NombreProducto = producto
     Me._Cantidad = cantidad
@@ -133,13 +133,13 @@ Public Class LineaTicket
   ''' Propiedad del atributo "_Precio"
   ''' </summary>
   ''' <value>Un single con el valor que se le asignará al atributo</value>
-  ''' <returns>Un single con el valor del atributo</returns>
+  ''' <returns>Un string con el valor del atributo</returns>
   ''' <author>Andrés Marotta</author>
-  Public Property Precio() As Single
+  Public Property Precio() As String
     Get
       Return Me._Precio
     End Get
-    Set(ByVal value As Single)
+    Set(ByVal value As String)
       Me._Precio = value
     End Set
   End Property
@@ -167,7 +167,7 @@ Public Class LineaTicket
           Nueva._NombreProducto = CStr(Lector(1))
           Nueva._Cantidad = CInt(Lector(2))
           Nueva._Descuento = CInt(Lector(3))
-          Nueva._Precio = CSng(Lector(4))
+          Nueva._Precio = CStr(Lector(4))
           Nueva._IVA = CInt(Lector(5))
           Lineas.Add(Nueva)
         End While
@@ -220,17 +220,14 @@ Public Class LineaTicket
     Adaptador.UpdateCommand.Parameters.Add("nombre_producto", OracleDbType.Varchar2, 55, "nombre_producto")
     Adaptador.UpdateCommand.Parameters.Add("cantidad", OracleDbType.Int32, 2, "cantidad")
     Adaptador.UpdateCommand.Parameters.Add("descuento", OracleDbType.Int32, 3, "descuento")
-    Adaptador.UpdateCommand.Parameters.Add("precio", OracleDbType.Double, 3, "precio")
+    Adaptador.UpdateCommand.Parameters.Add("precio", OracleDbType.Varchar2, 10, "precio")
     Adaptador.UpdateCommand.Parameters.Add("iva", OracleDbType.Int32, 3, "iva")
     Adaptador.UpdateCommand.Parameters.Add("codigo_ticket", OracleDbType.Int32, 8, "codigo_ticket")
     Adaptador.UpdateCommand.Parameters.Add("numero", OracleDbType.Int16, 3, "numero")
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
     Try
-      Adaptador.Update(lineas, "Lineas_Ticket")
-
-      If CInt(Adaptador.DeleteCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Or _
-         CInt(Adaptador.UpdateCommand.Parameters("Resultado").Value.ToString.Replace(CChar("D"), "")) > 0 Then
+      If Adaptador.Update(lineas, "Lineas_Ticket") > 0 Then
         Ok = True
       Else
         Ok = False
@@ -259,11 +256,11 @@ Public Class LineaTicket
       Comando.Parameters.Add("codigo_ticket", OracleDbType.Int32, 8).Value = ticket.Codigo
       Comando.Parameters.Add("nombre_producto", OracleDbType.Varchar2, 55).Value = Me._NombreProducto
       Comando.Parameters.Add("descuento", OracleDbType.Int32, 3).Value = Me._Descuento
-      Comando.Parameters.Add("precio", OracleDbType.Double).Value = Me._Precio
+      Comando.Parameters.Add("precio", OracleDbType.Varchar2, 10).Value = Me._Precio
       Comando.Parameters.Add("iva", OracleDbType.Int32, 3).Value = Me._IVA
       Comando.CommandType = CommandType.StoredProcedure
 
-      If CBool(OrigenDatos.Modificar(Comando)) Then
+      If OrigenDatos.Modificar(Comando) <> 0 Then
         Ok = True
       Else
         Ok = False
@@ -290,7 +287,7 @@ Public Class LineaTicket
     Me._Cantidad = -1
     Me._Descuento = -1
     Me._IVA = -1
-    Me._Precio = -1.0F
+    Me._Precio = "-1"
   End Sub
 
   ''' <summary>
@@ -303,7 +300,7 @@ Public Class LineaTicket
     Me._Cantidad = -1
     Me._Descuento = -1
     Me._IVA = -1
-    Me._Precio = -1.0F
+    Me._Precio = "-1"
   End Sub
 #End Region
 End Class
