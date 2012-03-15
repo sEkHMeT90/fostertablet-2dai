@@ -93,6 +93,36 @@ Public Class Mesa
 #End Region
 
 #Region "Funciones"
+
+  ''' <summary>
+  ''' Devuelve una mesa a partir de un código
+  ''' </summary>
+  ''' <param name="CodigoMesa">Código de la mesa</param>
+  ''' <returns>Devuelve la mesa si existe en la base de datos, en caso contrario devuelve nothing</returns>
+  ''' <author>David Martínez Pérez</author>
+  Public Shared Function Cargar(ByVal CodigoMesa As Integer) As Mesa
+    Dim mesa As Mesa
+    Dim Conexion As New BBDD
+    Dim Lector As OracleDataReader
+
+    mesa = Nothing
+
+    If Conexion.Conectar Then
+      Lector = Conexion.Consultar("SELECT * FROM Mesas WHERE codigo = " & CodigoMesa)
+
+      If Lector IsNot Nothing AndAlso Lector.HasRows AndAlso Lector.Read Then
+
+        mesa = New Mesa
+        mesa._Codigo = CInt(Lector(0))
+        mesa._Estado = EstadoMesa.Cargar(CInt(Lector(1)))
+        Lector.Close()
+      End If
+      Conexion.Desconectar()
+    End If
+
+    Return mesa
+  End Function
+
   ''' <summary>
   ''' Carga todas las mesas almacenadas
   ''' </summary>
@@ -105,6 +135,37 @@ Public Class Mesa
 
     Return Mesas
   End Function
+
+
+  ''' <summary>
+  ''' Actualiza los datos de la Mesa 
+  ''' </summary>
+  ''' <returns>Un boolean indicando si la operación se realizó con éxito</returns>
+  ''' <author>Andrés Marotta, David Martínez Pérez</author>
+  Public Function Actualizar() As Boolean
+    Dim Ok As Boolean
+    Dim OrigenDatos As New BBDD
+    Dim comando As New OracleCommand
+
+    comando = New OracleCommand(_UPDATE, OrigenDatos.Conexion)
+    comando.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
+    comando.Parameters.Add("codigo_estado", OracleDbType.Int16, 3).Value = Me.Estado.Codigo
+    comando.Parameters.Add("codigo", OracleDbType.Int32, 8).Value = Me.Codigo
+    comando.CommandType = CommandType.StoredProcedure
+
+    Try
+      If OrigenDatos.Modificar(comando) > 0 Then
+        Ok = True
+      Else
+        Ok = False
+      End If
+    Catch ex As Exception
+      Ok = False
+    End Try
+
+    Return Ok
+  End Function
+
 
   ''' <summary>
   ''' Actualiza los datos de la tabla Mesas con los cambios de un DataSet dado
@@ -124,7 +185,7 @@ Public Class Mesa
 
     Adaptador.UpdateCommand = New OracleCommand(_UPDATE, OrigenDatos.Conexion)
     Adaptador.UpdateCommand.Parameters.Add("Resultado", OracleDbType.Int32, ParameterDirection.ReturnValue)
-    Adaptador.UpdateCommand.Parameters.Add("codigo_estado", OracleDbType.Int16, 3)
+    Adaptador.UpdateCommand.Parameters.Add("codigo_estado", OracleDbType.Int16, 3, "codigo_estado")
     Adaptador.UpdateCommand.Parameters.Add("codigo", OracleDbType.Int32, 8, "codigo")
     Adaptador.UpdateCommand.CommandType = CommandType.StoredProcedure
 
