@@ -620,7 +620,7 @@ AS
     IS
     BEGIN        
         INSERT INTO PRODUCTOS
-        VALUES(SecProductos.NextVal, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo);
+        VALUES (SecProductos.NextVal, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo);
 
         
         IF SQL%ROWCOUNT > 0 then       
@@ -1295,6 +1295,9 @@ AS
             WHERE codigo_comanda = comanda;
         END LOOP;
         
+        UPDATE COMANDAS
+        SET codigo_estado = 2
+        where codigo = comanda;
         
         IF SQL%ROWCOUNT > 0 then         
             COMMIT;
@@ -1608,7 +1611,7 @@ end;
 
 
 create or replace trigger PrecioTickets
-  before insert or update of precio on Lineas_Ticket
+  after insert or update of precio on Lineas_Ticket
   for each row
 declare
 
@@ -1630,7 +1633,7 @@ end;
 
 
 create or replace trigger PrecioPedido
-  before insert or update of precio on Lineas_Pedido
+  after insert or update of precio on Lineas_Pedido
   for each row
 declare
 
@@ -1645,9 +1648,54 @@ begin
   end if;
 
   UPDATE Pedidos
-  SET precio_total = to_char( to_number(replace(precio_total, '.', ',')) + to_number( replace(nuevo_precio, '.', ',')) )
+  SET precio_total =  to_char( to_number(replace(precio_total, '.', ',')) + to_number( replace(nuevo_precio, '.', ',')) )
   WHERE codigo = :new.codigo_pedido;
 end;
+
+
+
+
+create or replace trigger ActualizaMesa
+  after insert or update of codigo_estado on comandas
+  for each row
+
+  begin
+
+    if :new.codigo_estado = 1 then
+      update mesas 
+        set codigo_estado = 3
+        where codigo = :new.codigo_mesa;
+
+    elsif :new.codigo_estado = 3 then
+      update mesas 
+        set codigo_estado = 2
+        where codigo = :new.codigo_mesa;
+
+    elsif :new.codigo_estado = 4 then
+      update mesas 
+        set codigo_estado = 7
+        where codigo = :new.codigo_mesa;
+    end if;
+
+  end;
+
+
+create or replace trigger ActualizaComanda
+  after insert or update of entregada on lineas_comanda
+  for each row
+
+  begin
+
+    if :new.entregada <> 0 then
+      update comandas
+        set codigo_estado = 3
+        where codigo = :new.codigo_comanda;
+    else
+      update comandas
+        set codigo_estado = 1
+        where codigo = :new.codigo_comanda;
+    end if;
+  end;
 
 COMMIT;
 
@@ -1888,10 +1936,10 @@ COMMIT;
   COMMIT;
 
   --tipos Guarniciones
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de col', 'Descripción del producto', '0', '0', 500, 1, 1, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de frijoles', 'Descripción del producto', '0', '0', 500, 1, 1, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats fritas', 'Descripción del producto', '0', '0', 500, 2, 1, 50, 10, 2, 1);
-  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats asadas', 'Descripción del producto', '0', '0', 500, 2, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de col', 'Descripción del producto', '1', '0', 500, 1, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Ensalada de frijoles', 'Descripción del producto', '1', '0', 500, 1, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats fritas', 'Descripción del producto', '1', '0', 500, 2, 1, 50, 10, 2, 1);
+  INSERT INTO productos (codigo, nombre, descripcion, precio_coste, pvp, calorias, codigo_subcategoria, codigo_categoria, stock, stock_minimo, codigo_tipo_iva, activo) VALUES ( SecProductos.NextVal, 'Patats asadas', 'Descripción del producto', '1', '0', 500, 2, 1, 50, 10, 2, 1);
 
   COMMIT;
   
