@@ -15,3 +15,17 @@ C:\Users\Eien\Desktop\Proyecto final\ProyectoFoster\ProyectoFoster\Proyecto_Fost
 F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.exe
 F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.xml
 F:\DEG\Segundo Trimestre\Proyecto Final - Foster's Hollywood\fostertablet-2dai\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.pdb
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.exe
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.xml
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.pdb
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\bin\Debug\Proyecto_Foster_Servidor.exe
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\bin\Debug\Proyecto_Foster_Servidor.pdb
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\bin\Debug\Proyecto_Foster_Servidor.xml
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.FormPrincipal.resources
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.HacerCopiaSeguridad.resources
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.Resources.resources
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.RestaurarCopiaSeguridad.resources
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\Proyecto_Foster_Servidor.VerMesas.resources
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Lince\Desktop\Pro_Foster_Tortoise\ProyectoFoster\ProyectoFoster\Proyecto_Foster_Servidor\Proyecto_Foster_Servidor\obj\x86\Debug\GenerateResource.write.1.tlog
